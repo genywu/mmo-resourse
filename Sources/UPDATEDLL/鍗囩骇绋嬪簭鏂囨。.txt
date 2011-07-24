@@ -1,0 +1,101 @@
+
+一、升级程序主流程
+
+4、下载更新文件的信息（index.dat)
+
+
+5、分析更新文件的信息
+
+    如果有需要优先更新的程序(比如升级程序本身和升级程序相关的程序、文件)，则
+    下载这些文件，并且把这些文件和下载的文件信息写入Update.inf，
+    退出并调用更新这些文件的程序（UpdateSelf.DAT），
+    UpdateSelf.DAT在完成更新文件后，会调用升级程序继续升级，并退出自身。
+
+6、下载文件
+    HTTP/FTP，支持断点续传
+
+7、更新文件
+    没有冲突的文件就直接拷贝覆盖
+    冲突的文件，在系统重启后更新
+        Win2000／NT：
+            MoveFileEx
+
+        Win98／ME：
+            短文件名的文件:
+                Wininit.ini 中处理"SrcFileName=DestFileName"
+         
+            长文件名的文件:
+                Win98：
+                   如果能够创建KAVMove.EXE，则通过批处理（KAVMove.BAT）调用
+                   KAVMove.EXE在系统启动的时侯更新文件。
+                   否则在批处理（KAVMove.BAT）中调用命令行COPY和Del在系统启动的时
+                   侯更新文件。
+                   在C:\\Autoexec.bat或者WinStart.bat中调用KAVMove.BAT.
+                   
+                WinME：
+                   把要更新的文件的原文件和目标文件写入CopyFile.ini,在系统启动时在
+                   Win.ini的Run中调用程序CopyFile.EXE来完成拷贝工作.
+
+    如果没有文件需要重启系统才能更新的，升级结束后删除安装目录下多余文件。
+    否则在系统启动后删除多余文件。
+
+    最后，如果有文件更新后（或者是系统启动后才能更新）必须重启才能使用的，提
+    示用户并强行重启系统。
+
+    
+    －－－－－－－－－－－－－－－－－－－－－－---------------
+    如果选择的是本地升级方式，流程为：1 －－ 2 －－ 5 －－ 7
+    如果是优先更新升级程序自身后继续升级，流程为：5－－6－－7
+
+六、全局数据结构说明：
+
+typedef struct tagKUPDATE_DATA
+{
+    int nMainVersion;               // Local Program Version
+
+    char szParameter[MAX_PATH];     // Parameter
+    BOOL bUpdateSelfContinue;       // Continue after update self
+   
+    BOOL bVersionError;   // 升级数据中没有支持该版本的文件的标志
+
+    KCloseProgramMgr CloseProgramMgr;	//管理被关闭的程序
+    
+    KSaveLog SaveLog;	// 写日志的接口
+    
+    int nMethod;                    // Method of update 0: from internet  1: from LAN
+    
+    char szLocalPath[MAX_PATH];     // Path of update file,just index.dat path from LAN
+    char szHostURL[MAX_PATH];       // URL of download host
+    char szHostName[MAX_PATH];      // Name of download host
+    char szDefHostURL[MAX_PATH];    // Default URL of download host
+    char szDefHostName[MAX_PATH];   // Default Name of download host
+
+    ULONG   ulTryTimes;
+    BOOL    bAutoTryNextHost;              // Flag of try use next faster host when failed
+    BOOL    bUseFastestHost;               // Flag use the fastest host
+    
+    BOOL    bUseVerify;					
+    CHAR    szVerifyInfo[256];
+
+    
+    KPROXY_SETTING  ProxySetting;	// 代理设置
+    
+    BOOL    bAutoResume;            //L: auto-resume the previous download file
+
+    BOOL    bNeedUpdateSelfFirst;   // Need update self first flag
+    int     nNewsItemCount;			// 新闻项的总数
+    CString sAnnounce;				// 升级后显示给用户的通知或者重要通告
+
+    CString sReadme;				// 升级后显示给用户的更新文件的修正说明或者其他信息
+    
+    int  nOSPlatVersion;			// 操作系统的版本
+    
+    BOOL bDownloadFailed;            // 1 : Failed              0 : successful
+    BOOL bUpdateFailed;              // 1 : Failed              0 : successful
+    BOOL bNeedRebootFalg;            // 1 : Need reboot Now     0 : not need reboot
+    
+    BOOL bRebootFlag;                // 1 : reboot now          0 : reboot later
+    BOOL bAutoRebootFlag;            // 1 : auto ruboot         0 : reboot later 
+    BOOL bRebootFinishUpdateFlag;    // 1 : Need reboot to finish update 0: not need reboot
+
+} KUPDATE_DATA;

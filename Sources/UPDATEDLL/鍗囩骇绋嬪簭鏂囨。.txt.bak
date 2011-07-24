@@ -1,0 +1,391 @@
+
+一、升级程序主流程
+
+1、版本判断、升级期限判断、序列号正确性判断
+   UpdInfo.DAT   Iduba.dat  注册表中的序列号
+
+2、选择升级服务器
+
+3、服务器上用户身份验证 
+
+4、下载更新文件的信息（index.dat)
+
+
+5、分析更新文件的信息
+
+    如果有需要优先更新的程序(比如升级程序本身和升级程序相关的程序、文件)，则
+    下载这些文件，并且把这些文件和下载的文件信息写入Update.inf，
+    退出并调用更新这些文件的程序（UpdateSelf.DAT），
+    UpdateSelf.DAT在完成更新文件后，会调用升级程序继续升级，并退出自身。
+ 
+
+6、下载文件
+    HTTP/FTP，支持断点续传
+
+7、更新文件
+    没有冲突的文件就直接拷贝覆盖
+    冲突的文件，在系统重启后更新
+        Win2000／NT：
+            MoveFileEx
+
+        Win98／ME：
+            短文件名的文件:
+                Wininit.ini 中处理"SrcFileName=DestFileName"
+         
+            长文件名的文件:
+                Win98：
+                   如果能够创建KAVMove.EXE，则通过批处理（KAVMove.BAT）调用
+                   KAVMove.EXE在系统启动的时侯更新文件。
+                   否则在批处理（KAVMove.BAT）中调用命令行COPY和Del在系统启动的时
+                   侯更新文件。
+                   在C:\\Autoexec.bat或者WinStart.bat中调用KAVMove.BAT.
+                   
+                WinME：
+                   把要更新的文件的原文件和目标文件写入CopyFile.ini,在系统启动时在
+                   Win.ini的Run中调用程序CopyFile.EXE来完成拷贝工作.
+
+    如果没有文件需要重启系统才能更新的，升级结束后删除安装目录下多余的病毒库文件。
+    否则在系统启动后删除多余的病毒库文件。
+
+    最后，如果有文件更新后（或者是系统启动后才能更新）必须重启才能使用毒霸的，着提
+    示用户并强行重启系统。
+
+    
+    －－－－－－－－－－－－－－－－－－－－－－---------------
+    如果选择的是本地升级方式，流程为：1 －－ 2 －－ 5 －－ 7
+    如果是优先更新升级程序自身后继续升级，流程为：5－－6－－7
+
+
+三、更新文件信息Index.DAT中的信息的说明：
+    [COMMENT]
+    StandardCRC=460632014      // 毒霸一些混乱版本的Iduba.dat的CRC较验值
+    OEMCRC=2254521182
+    ZhongKeCRC=4092532557
+    HaiXingCRC=1626721120
+    IBMCRC=3140012217
+    DUBAIICRC=190338143
+    TelecomCRC=4058599001
+    DUBA2OEMCRC=690658592
+    DUBA2DIAMONDCRC=2272706378
+    DUBA2JingYingCRC=1199582562
+    JINGYINGCRC=3336904998
+    DUBA2ENGLISHCRC=3810146755
+    DUBA2ENGLISHCRC0=3810146755
+    DUBA2ENGLISHCRC1=575453003
+    DUBA2ENGLISHCRC2=3810146755
+    DUBA2ENGLISHCRC3=1812725335
+    UpdateFileFlag=0                
+    NewUpdateSelfFirstFlag=1        //最新版本的升级程序必须优先更新自身的标志
+    UpdateSelfFirstFlag=1           //第二版本的升级程序必须优先更新自身的标志
+    UpdateSelfFirst=0               //最初版本的升级程序必须优先更新自身的标志
+    Readme=                         //通告用户的重要信息
+
+    安装组件定义，在各个文件的信息中的Belong值为对应的所属组件的值的总和，
+    组件名称（ComponentName）安装程序在注册表中注册用户所选择安装的组件信息。
+    [Install]
+    ComponentName0=Duba
+    ComponentValue0=1
+    ComponentName1=mailMon
+    ComponentValue1=2
+    ComponentName2=PlugIn
+    ComponentValue2=4
+    ComponentName3=KAVPFW
+    ComponentValue3=8
+    ComponentName4=IEFW
+    ComponentValue4=16
+    ComponentName5=Agent
+    ComponentValue5=32
+    ComponentName5=Tools
+    ComponentValue5=64
+    UpdateFileFlag=0
+
+    毒霸版本信息,用于标识文件适用的版本,Version值和UpdInfo中[SN]的值是对应的.
+    [Version]
+    AppVersion0=STANDARD
+    Version0=1
+    AppVersion1=OEM
+    Version1=2
+    AppVersion2=DUBAII
+    Version2=8
+    AppVersion3=ZHONGKE
+    Version3=16
+    AppVersion4=HAIXING
+    Version4=32
+    AppVersion5=IBM
+    Version5=64
+    AppVersion6=TELECOM
+    Version6=128
+    AppVersion7=DUBA2M
+    Version7=256
+    AppVersion8=DUBA2DIAMOND
+    Version8=512
+    AppVersion9=DUBA2ENGLISH
+    Version9=1024
+    AppVersion10=DUBA3TH
+    Version10=2048
+    AppVersion11=DUBA3DIAMOND
+    Version11=4096
+    AppVersion12=DUBA3M
+    Version12=8192
+    AppVersion13=DUBA4TH
+    Version13=16384
+    AppVersion14=DUBA4DIAMOND
+    Version14=32768
+    AppVersion15=AV4M
+    Version15=65536
+    AppVersion16=DUBA4UPD
+    Version16=131072
+    AppVersion17=AV4TH
+    Version17=262144
+    AppVersion18=GD4
+    version18=524288
+    AppVersion19=TL4
+    version19=1048576
+    UpdateFileFlag=0
+    
+    程序模块退出/调用方式:      (KCloseProgramMgr)  
+    [ExitType]
+    FileName0=KAV9X.EXE        //模块名称
+    ExitType0=1                //退出方式: 
+                                 0 -- 直接通过参数调用退出
+                                 1 -- 通过IPC通讯方式和参数调用退出
+                                 2 -- 服务退出方式
+                                 3 -- 通过RPC通讯方式和参数调用退出 
+    UID0=1                     //IPC和RPC通讯中该模块的ID
+    StopParam0=/quit           //退出参数
+    StartParam0=               //启动参数
+
+
+    下载的文件类型定义信息:
+    当增加下载的文件类型时,可以不用修改程序,只需要在该Section中添加.
+    [FileType]
+    TypeName0=Program
+    Descript0=程序文件
+    DefaultUpd0=1
+    TypeName1=Engine
+    Descript1=引擎文件
+    DefaultUpd1=1
+    TypeName2=Sign
+    Descript2=病毒库文件
+    DefaultUpd2=1
+    TypeName3=Assistant
+    Descript3=帮助文档
+    DefaultUpd3=0
+    TypeName4=KillTools
+    Descript4=专杀工具
+    DefaultUpd4=0
+    TypeName5=BDSearch
+    Descript5=百度搜索
+    DefaultUpd5=1
+    UpdateFileFlag=0
+
+
+    文件信息描述说明：
+    [DrWeb32.DAT]
+	FileName=DrWeb32.DAT    //文件名
+	Version=0004.26.03      //文件版本号
+	FileSize=262473         //文件大小
+	CRC=2562036051          //CRC较验值
+	RemotePath=Standard/    //远程的相对路径（相对提供的下载路径）
+	LocalPath=%PROGRAMDIR%  //本地更新目录
+	UpdateFileFlag=1        //该Section为更新文件信息的标志
+	Reboot=0                //更新该文件后是否重启的标志
+	CheckVersionMethod=1    //判断是否要更新的方法：
+                                  0－－取标准的程序文件的版本的方式
+                                  1－－取引擎文件版本的方式 
+                                  2－－取病毒库文件版本的方式
+                                  3－－判断CRC较验值
+                                  4－－直接下载   
+                                  5－－文本文件，没有版本信息，取文件的修改时间作
+                                       为版本号
+                                  6－－判断序列号头
+	SharedNeedReboot=1      //更新冲突的情况下需要强行重启的标志
+	Description=引擎文件    //文件描述
+	ApplyVersion=STANDARD,OEM,DUBAII,ZHONGKE,HAIXING,IBM,TELECOM,DUBA2M,DUBA2DIAMOND,DUBA3TH,DUBA3DIAMOND,DUBA3M,DUBA4TH,DUBA4DIAMOND,AV4M,DUBA4UPD,AV4TH,GD4,TL4
+                                //适合使用的毒霸版本标志
+	FileType=Engine         //文件类型标志
+	UpdateRelative=0        //需要优先更新的标志
+	Belong=55               //所属的组件的标志
+	NeedDownload=1          //必须下载的标志，如果该值为1，则如果该文件下载失
+                                  败，则不更新所有已经下载的文件
+        SNMask=                 //需要验证的序列号头
+        Comment=                //修正说明信息或者其他的提示信息
+        CallBy=KAV32.EXE,KAVSVC.EXE     //调用的模块名称（用于在更新冲突的时侯退出
+                                          对应的模块）
+
+    新闻信息定义：
+        [Item0]
+	Caption=升级信息    //新闻内容
+	Color=0             //显示的颜色
+                              0：黑色
+                              1：朱红
+	Icon=0              //显示的图标
+                              0：升级程序的图标
+                              1：文本
+                              2：毒霸
+                              3：金山
+                              4：逍遥
+	Link=Line:9         //连接地址，可以是跳转到新闻信息中的第几行，
+                              或者是大开浏览器访问指定的连接地址
+	[Item1]
+	Caption=金山毒霸提醒：临近年关　小心电脑病毒扎堆捣乱
+	Color=0
+	Icon=1
+	Link=http://gz3.duba.net/press/duba_reports/2002/12/20/15366.htm
+
+
+    －－ 分析Index.dat的类 CProcessIndex －－
+
+
+四、升级前、后的补丁模块说明（BaseAction.cpp BaseAction.h   Action.cpp）
+    ActionBeforeUpdate();
+    ActionAfterUpdate();
+    
+     基类                     派生类
+     _____________         _______________
+    | CBAseAction |       | ActionMgr     |
+    |  Execute()  |------>|  Init()   ----|--创建各个Action对象到链表中
+    |_____________|       |  Execute()----|--调用Action对象链表中各个操作的Execute
+      |          |        |  UnInit() ----|--释放链表中的各个Action对象   
+      |          |        |  AddAction    |
+派生类|  ......  |        |  Action的链表 |                         
+      |          |        |_______________|                         
+  ____|____     _|_________                                  
+ | 注册OCX |   | 修改注册表|
+ | Execute |...|  Execute  |
+ |_________|   |___________|
+
+    引出接口：
+    int Action（）
+   ｛
+        CActionMgr ActionMgr;
+
+        ActionMgr.Init();
+        ActionMgr.Execute();
+        ActionMgr.UnInit();
+        return true;
+    ｝
+
+
+五、关闭更新文件调用程序的模块说明: (KCloseProgramMgr.h KCloseProgramMgr.cpp)
+         _____________________
+        | KBaseClosedProgram  |_____________________________________
+  基类  |   CloseProgram()    |                                     | 
+        |   StartProgram()    |______________                       |
+        |_____________________|              |                      |
+           |          |                      |                      |
+  派生类   |          |                      |                      |
+   ________|_____   __|______________    ____|____________    ______|_______
+  |KClosedProgram| |KClosedProgramIPC|  |KClosedProgramRPC|  |KClosedService|
+  |CloseProgram()| | CloseProgram()  |  |CloseProgram()   |  |CloseProgram()|
+  |StartProgram()| | StartProgram()  |  |StartProgram()   |  |StartProgram()|
+  |______________| |_________________|  |_________________|  |______________| 
+
+
+    被关闭的程序链表结构定义.
+    typedef struct tagKCLOSEDPROGRAMLIST
+    {
+        tagKCLOSEDPROGRAMLIST *pNext;
+        KBaseClosedProgram *pClosedProgram;
+    } KCLOSEDPROTRMLIST, *PKCLOSEDPROGRAMLIST;
+
+    管理被关闭的程序的类,负责在完全升级结束后,重新运行被关闭的程序.
+    class KCloseProgramMgr
+    {
+    public:
+        KCloseProgramMgr();
+        ~KCloseProgramMgr();     
+        int RunAllPrograms();
+        int AddClosedProgram(KBaseClosedProgram *pClosedProgram);
+  
+    private:
+        PKCLOSEDPROGRAMLIST m_pClosedProgramList;        
+    };
+
+
+六、全局数据结构说明：
+
+typedef struct tagKUPDATE_DATA
+{
+    int nVersion;                   // 0: duba   1: Online scan  2: Online scan server
+    char szParameter[MAX_PATH];     // Parameter
+    BOOL bUpdateSelfContinue;       // Continue after update self
+    BOOL bNormalFlag;               // Run KAV9X with Normal parameter
+    BOOL bAutoRunFlag;              // Auto update 
+    BOOL bPromptFlag;               // Prompt update
+    BOOL bQuietFlag;                // Run KAV9X with Quiet parameter
+    BOOL bProxySettingFlag;         // Setting Proxy only
+    BOOL bStartRunFlag;             // Auto run update  step by step
+
+    KUpdateInf UpdateInf;           // 读取UpdInfo.DAT中信息
+    int nDisplayVerFlag;            // Flag of Display version after update at the last page
+
+    int nDubaVersion;               // 毒霸的大版本号，比如.NET 2001 2002 2003
+    __int64 nApplyVersion;          // 毒霸的小版本号，比如标准版 OEM
+
+    char szRegisterKeyName[MAX_PATH];  // 毒霸信息在注册表中的位置
+    
+    int nInstallComponent;          // Installed component Flag
+
+    int nDownloadAllFlag;           // 下载所有文件的标志
+
+    BOOL bDubaVersionError;         // 升级数据中没有支持该版本的文件的标志
+    
+    BOOL bDownloadDirectly;         // 直接下载的标志（现在没有用到该标志）
+    
+    char szSerialNumber[defSerialNumberSize];  //序列号
+    char szComputerIdentify[defComputerIdentifySize];  //从注册表中取得的Computer Identify
+    char szProgramPathInReg[MAX_PATH];    //在注册表中的毒霸的安装路径
+    
+    KDUBAVersionTable VersionTable; // KAV9X,Engine,DrWeb,Sign version table
+    
+    KIPCUtility IPCUtility;         // use the class process IPC
+    KRPCUtility RPCUtility;         // use the class process RPC
+    KCloseProgramMgr CloseProgramMgr;  //管理被关闭的程序
+    
+    KSaveLog SaveLog;               // 写日志的接口
+    
+    int nMethod;                    // Method of update 0: from internet  1: from LAN
+    
+    char szLocalPath[MAX_PATH];     // Path of update file,just index.dat path from LAN
+    char szHostURL[MAX_PATH];       // URL of download host
+    char szHostName[MAX_PATH];      // Name of download host
+    char szDefHostURL[MAX_PATH];    // Default URL of download host
+    char szDefHostName[MAX_PATH];   // Default Name of download host
+
+    int  nHostIndex;                // 升级服务器在服务器列表中的序号
+    
+    KPROXY_SETTING  ProxySetting;   // 代理设置
+    
+    BOOL    bAutoResume;            //L: auto-resume the previous download file
+    int     nNeedDownloadItemType;  // 需要下载的文件类型
+    
+    BOOL    bNeedUpdateSelfFirst;   // Need update self first flag
+    int     nNewsItemCount;         // 新闻项的总数
+    CString sAnnounce;              // 升级后显示给用户的通知或者重要通告
+
+    CString sVirusNames;            // 更新的病毒名称信息
+    CString sReadme;                // 升级后显示给用户的更新文件的修正说明或者其他信息
+    
+    int  nOSPlatVersion;            // 操作系统的版本
+    
+    BOOL bDownloadFailed;           // 1 : Failed              0 : successful
+    BOOL bUpdateFailed;             // 1 : Failed              0 : successful
+    BOOL bNeedRebootFalg;           // 1 : Need reboot Now     0 : not need reboot
+    
+    BOOL bRebootFlag;               // 1 : reboot now          0 : reboot later
+
+    BOOL bAutoRebootFlag;           // 1 : auto reboot         0 : reboot later 
+
+    BOOL bRebootFinishUpdateFlag;   // 1 : Need reboot to finish update
+                                       0 : not need reboot
+
+    BOOL bUpdateBDSearchFlag;            //下载了百度搜索安装程序的标志
+    char szBDSearchFileName[MAX_PATH];   //百度搜索安装程序的全路径
+                                          （用于运行百度搜索安装程序）
+} KUPDATE_DATA;
+
+
+
+
+
