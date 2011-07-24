@@ -1,0 +1,31 @@
+////////////////////////////////////////////////////////////////////////////////
+//  
+//  FileName    :   TcpSocket.cpp
+//  Version     :   1.0
+//  Creater     :   Linsuyi
+//  Date        :   2002-02-21  15:43:16
+//  Comment     :   Tcp/ip tcp socket source file
+//  
+////////////////////////////////////////////////////////////////////////////////
+
+#include "Stdafx.h"
+#include "TcpSocket.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CTcpSocket::CTcpSocket()
+{
+    m_nSckType = SOCK_STREAM;
+    m_nSckProto = IPPROTO_TCP;
+}
+
+CTcpSocket::~CTcpSocket()
+{
+}
+
+int CTcpSocket::Create()
+{
+    return CStmSocket::Create();
+}

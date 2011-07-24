@@ -1,0 +1,18 @@
+1го  If game.exe run exit
+
+2го  Get client verson no from local
+
+3го  Connect to ftp server
+
+4го  Get server verson.no from ftp server (by a file named server_verson.txt ?)
+
+5го  If (there is a client_no to server_no update file) download it
+
+       else download client_no to max_no update client_no to max_no goto 5
+
+6го  Extract one by one to game folder
+
+7го  Set local verson to server_no
+
+8го  Execute the game.exe
+
