@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Visual Studio 生成的基于系统定义模型(SDM)的文件。-->
+<!--建议不要手动编辑此文件，这可能会导致错误。-->
+<Whitehorse>
+  <Solution><SystemDefinitionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Solution" Version="1.0.0.0" Culture="zh-CN" xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1">
+  <Import Alias="WindowsApplication1" Name="缓存服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <Import Alias="CacheServer2" Name="聊天服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <Import Alias="_聊天服务器2" Name="数据库服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <Import Alias="_数据库服务器2" Name="慢速服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <Import Alias="_延迟服务器2" Name="游戏服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <Import Alias="_游戏服务器2" Name="网关服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <Import Alias="_网关服务器2" Name="登陆服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <Import Alias="_登陆服务器2" Name="日志服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <DesignData>
+    <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+      <ModelElement Id="2dfb66f6017b41d2b5ec26e20033e1d4" Type="Microsoft.VisualStudio.EnterpriseTools.Sdm.Modeling.SolutionModelRoot">
+        <ModelElement Id="225fbf06bfe34842afdfaf956bb87856" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.Diagrams.SolutionDiagram">
+          <Property Name="IsExpanded" Value="true" />
+          <Property Name="AbsoluteBounds" Value="0, 0, 11, 8.5" />
+          <Property Name="IsCompleteView" Value="true" />
+          <Property Name="DiagramId" Value="baf1577c-ce07-4ee6-89ae-7d2ec301cce7" />
+          <Property Name="Name" Value="ApplicationDiagram1" />
+          <Property Name="BaseFontName" Value="宋体" />
+          <Property Name="BaseFontSize" Value="0.125" />
+          <ModelElement Id="b418ab7130cc493c89e7fc29eeb016cb" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.Diagrams.SoftwareComponentShape">
+            <Property Name="IsExpanded" Value="true" />
+            <Property Name="AbsoluteBounds" Value="0.5, 0.5, 2, 0.75" />
+            <Property Name="NameCache" Value="缓存服务器" />
+            <Property Name="AccessibleDescriptionCache" Value="WindowsApplication 形状" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+            <Property Name="ThemeColorCache" Value="61,107,206" />
+            <Property Name="TheBoundsRules" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAGtNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLk1vZGVsaW5nLkRpYWdyYW1zLCBWZXJzaW9uPTkuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYQUBAAAAO01pY3Jvc29mdC5WaXN1YWxTdHVkaW8uTW9kZWxpbmcuRGlhZ3JhbXMuRGVmYXVsdEJvdW5kc1J1bGVzAAAAAAIAAAAL" />
+            <Property Name="OrphanedSubjectId" Value="缓存服务器,1.0.0.0,zh-CN:缓存服务器" />
+            <Property Name="Title" Value="缓存服务器" />
+            <Property Name="Subtext" Value="WindowsApplication" />
+            <Property Name="SupplementalText" Value="" />
+            <Property Name="ImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplication.emf" />
+            <Property Name="ErrorImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplicationError.emf" />
+            <Property Name="ShowGlyphBar" Value="true" />
+            <Relationship Id="126afadced8141d0b2399bc491cee50c" Type="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes" Role1="@225fbf06bfe34842afdfaf956bb87856" RoleType1="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes.ParentShape" />
+            <Relationship Id="aae408bc2bd1411b889a1feaafb230c3" Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Role1="WindowsApplication1:缓存服务器" RoleType1="Microsoft.VisualStudio.Modeling.SubjectHasPresentation.Subject" />
+          </ModelElement>
+          <ModelElement Id="def1abfe877c4eeda280e543ae4cce1a" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.Diagrams.SoftwareComponentShape">
+            <Property Name="IsExpanded" Value="true" />
+            <Property Name="AbsoluteBounds" Value="2.75, 0.5, 2, 0.75" />
+            <Property Name="NameCache" Value="聊天服务器" />
+            <Property Name="AccessibleDescriptionCache" Value="WindowsApplication 形状" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+            <Property Name="ThemeColorCache" Value="61,107,206" />
+            <Property Name="TheBoundsRules" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAGtNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLk1vZGVsaW5nLkRpYWdyYW1zLCBWZXJzaW9uPTkuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYQUBAAAAO01pY3Jvc29mdC5WaXN1YWxTdHVkaW8uTW9kZWxpbmcuRGlhZ3JhbXMuRGVmYXVsdEJvdW5kc1J1bGVzAAAAAAIAAAAL" />
+            <Property Name="OrphanedSubjectId" Value="聊天服务器,1.0.0.0,zh-CN:聊天服务器" />
+            <Property Name="Title" Value="聊天服务器" />
+            <Property Name="Subtext" Value="WindowsApplication" />
+            <Property Name="SupplementalText" Value="" />
+            <Property Name="ImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplication.emf" />
+            <Property Name="ErrorImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplicationError.emf" />
+            <Property Name="ShowGlyphBar" Value="true" />
+            <Relationship Id="d61b8107c5554903b6915aa4776098c4" Type="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes" Role1="@225fbf06bfe34842afdfaf956bb87856" RoleType1="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes.ParentShape" />
+            <Relationship Id="e97a443941aa4d5e928ebe267c4f01d5" Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Role1="CacheServer2:聊天服务器" RoleType1="Microsoft.VisualStudio.Modeling.SubjectHasPresentation.Subject" />
+          </ModelElement>
+          <ModelElement Id="688155dbe2bc4b999d968c32169268fa" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.Diagrams.SoftwareComponentShape">
+            <Property Name="IsExpanded" Value="true" />
+            <Property Name="AbsoluteBounds" Value="5, 0.5, 2, 0.75" />
+            <Property Name="NameCache" Value="数据库服务器" />
+            <Property Name="AccessibleDescriptionCache" Value="WindowsApplication 形状" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+            <Property Name="ThemeColorCache" Value="61,107,206" />
+            <Property Name="TheBoundsRules" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAGtNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLk1vZGVsaW5nLkRpYWdyYW1zLCBWZXJzaW9uPTkuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYQUBAAAAO01pY3Jvc29mdC5WaXN1YWxTdHVkaW8uTW9kZWxpbmcuRGlhZ3JhbXMuRGVmYXVsdEJvdW5kc1J1bGVzAAAAAAIAAAAL" />
+            <Property Name="OrphanedSubjectId" Value="数据库服务器,1.0.0.0,zh-CN:数据库服务器" />
+            <Property Name="Title" Value="数据库服务器" />
+            <Property Name="Subtext" Value="WindowsApplication" />
+            <Property Name="SupplementalText" Value="" />
+            <Property Name="ImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplication.emf" />
+            <Property Name="ErrorImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplicationError.emf" />
+            <Property Name="ShowGlyphBar" Value="true" />
+            <Relationship Id="8842c55fcb104e86868fa9c6d078126c" Type="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes" Role1="@225fbf06bfe34842afdfaf956bb87856" RoleType1="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes.ParentShape" />
+            <Relationship Id="32c03e47b09e4263b2405329b25e0389" Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Role1="_聊天服务器2:数据库服务器" RoleType1="Microsoft.VisualStudio.Modeling.SubjectHasPresentation.Subject" />
+          </ModelElement>
+          <ModelElement Id="7f106651f34148f9bc196a96c61986f0" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.Diagrams.SoftwareComponentShape">
+            <Property Name="IsExpanded" Value="true" />
+            <Property Name="AbsoluteBounds" Value="0.5, 1.5, 2, 0.75" />
+            <Property Name="NameCache" Value="慢速服务器" />
+            <Property Name="AccessibleDescriptionCache" Value="WindowsApplication 形状" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+            <Property Name="ThemeColorCache" Value="61,107,206" />
+            <Property Name="TheBoundsRules" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAGtNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLk1vZGVsaW5nLkRpYWdyYW1zLCBWZXJzaW9uPTkuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYQUBAAAAO01pY3Jvc29mdC5WaXN1YWxTdHVkaW8uTW9kZWxpbmcuRGlhZ3JhbXMuRGVmYXVsdEJvdW5kc1J1bGVzAAAAAAIAAAAL" />
+            <Property Name="OrphanedSubjectId" Value="慢速服务器,1.0.0.0,zh-CN:慢速服务器" />
+            <Property Name="Title" Value="慢速服务器" />
+            <Property Name="Subtext" Value="WindowsApplication" />
+            <Property Name="SupplementalText" Value="" />
+            <Property Name="ImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplication.emf" />
+            <Property Name="ErrorImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplicationError.emf" />
+            <Property Name="ShowGlyphBar" Value="true" />
+            <Relationship Id="abac35692a1444248ccdaf1501a979d0" Type="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes" Role1="@225fbf06bfe34842afdfaf956bb87856" RoleType1="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes.ParentShape" />
+            <Relationship Id="1996097b65744ccfb5565dcb39419052" Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Role1="_数据库服务器2:慢速服务器" RoleType1="Microsoft.VisualStudio.Modeling.SubjectHasPresentation.Subject" />
+          </ModelElement>
+          <ModelElement Id="f42833942a25459183f488bffbcd1ec2" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.Diagrams.SoftwareComponentShape">
+            <Property Name="IsExpanded" Value="true" />
+            <Property Name="AbsoluteBounds" Value="2.75, 1.5, 2, 0.75" />
+            <Property Name="NameCache" Value="游戏服务器" />
+            <Property Name="AccessibleDescriptionCache" Value="WindowsApplication 形状" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+            <Property Name="ThemeColorCache" Value="61,107,206" />
+            <Property Name="TheBoundsRules" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAGtNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLk1vZGVsaW5nLkRpYWdyYW1zLCBWZXJzaW9uPTkuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYQUBAAAAO01pY3Jvc29mdC5WaXN1YWxTdHVkaW8uTW9kZWxpbmcuRGlhZ3JhbXMuRGVmYXVsdEJvdW5kc1J1bGVzAAAAAAIAAAAL" />
+            <Property Name="OrphanedSubjectId" Value="游戏服务器,1.0.0.0,zh-CN:游戏服务器" />
+            <Property Name="Title" Value="游戏服务器" />
+            <Property Name="Subtext" Value="WindowsApplication" />
+            <Property Name="SupplementalText" Value="" />
+            <Property Name="ImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplication.emf" />
+            <Property Name="ErrorImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplicationError.emf" />
+            <Property Name="ShowGlyphBar" Value="true" />
+            <Relationship Id="9e86f17d5c13405284bc221be646e633" Type="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes" Role1="@225fbf06bfe34842afdfaf956bb87856" RoleType1="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes.ParentShape" />
+            <Relationship Id="f08fda6ffdcd448886046812c484b731" Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Role1="_延迟服务器2:游戏服务器" RoleType1="Microsoft.VisualStudio.Modeling.SubjectHasPresentation.Subject" />
+          </ModelElement>
+          <ModelElement Id="fca1fd950ffd45479782f1e0170c2092" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.Diagrams.SoftwareComponentShape">
+            <Property Name="IsExpanded" Value="true" />
+            <Property Name="AbsoluteBounds" Value="5, 1.5, 2, 0.75" />
+            <Property Name="NameCache" Value="网关服务器" />
+            <Property Name="AccessibleDescriptionCache" Value="WindowsApplication 形状" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+            <Property Name="ThemeColorCache" Value="61,107,206" />
+            <Property Name="TheBoundsRules" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAGtNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLk1vZGVsaW5nLkRpYWdyYW1zLCBWZXJzaW9uPTkuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYQUBAAAAO01pY3Jvc29mdC5WaXN1YWxTdHVkaW8uTW9kZWxpbmcuRGlhZ3JhbXMuRGVmYXVsdEJvdW5kc1J1bGVzAAAAAAIAAAAL" />
+            <Property Name="OrphanedSubjectId" Value="网关服务器,1.0.0.0,zh-CN:网关服务器" />
+            <Property Name="Title" Value="网关服务器" />
+            <Property Name="Subtext" Value="WindowsApplication" />
+            <Property Name="SupplementalText" Value="" />
+            <Property Name="ImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplication.emf" />
+            <Property Name="ErrorImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplicationError.emf" />
+            <Property Name="ShowGlyphBar" Value="true" />
+            <Relationship Id="368d7f835dfe4c2faa542d63a4e77464" Type="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes" Role1="@225fbf06bfe34842afdfaf956bb87856" RoleType1="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes.ParentShape" />
+            <Relationship Id="c1b72941826c4893abd9e82fd7cb9f54" Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Role1="_游戏服务器2:网关服务器" RoleType1="Microsoft.VisualStudio.Modeling.SubjectHasPresentation.Subject" />
+          </ModelElement>
+          <ModelElement Id="a758b34a85b540c7a00e32bccfbbfe44" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.Diagrams.SoftwareComponentShape">
+            <Property Name="IsExpanded" Value="true" />
+            <Property Name="AbsoluteBounds" Value="0.5, 2.5, 2, 0.75" />
+            <Property Name="NameCache" Value="登陆服务器" />
+            <Property Name="AccessibleDescriptionCache" Value="WindowsApplication 形状" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+            <Property Name="ThemeColorCache" Value="61,107,206" />
+            <Property Name="TheBoundsRules" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAGtNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLk1vZGVsaW5nLkRpYWdyYW1zLCBWZXJzaW9uPTkuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYQUBAAAAO01pY3Jvc29mdC5WaXN1YWxTdHVkaW8uTW9kZWxpbmcuRGlhZ3JhbXMuRGVmYXVsdEJvdW5kc1J1bGVzAAAAAAIAAAAL" />
+            <Property Name="OrphanedSubjectId" Value="登陆服务器,1.0.0.0,zh-CN:登陆服务器" />
+            <Property Name="Title" Value="登陆服务器" />
+            <Property Name="Subtext" Value="WindowsApplication" />
+            <Property Name="SupplementalText" Value="" />
+            <Property Name="ImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplication.emf" />
+            <Property Name="ErrorImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplicationError.emf" />
+            <Property Name="ShowGlyphBar" Value="true" />
+            <Relationship Id="c006a3e90c8b44e4b1c206db0170a31b" Type="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes" Role1="@225fbf06bfe34842afdfaf956bb87856" RoleType1="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes.ParentShape" />
+            <Relationship Id="1669c9c9237542a6b411de5f92c63ed3" Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Role1="_网关服务器2:登陆服务器" RoleType1="Microsoft.VisualStudio.Modeling.SubjectHasPresentation.Subject" />
+          </ModelElement>
+          <ModelElement Id="8ca190948c464cbd94ad967d19d9a779" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.Diagrams.SoftwareComponentShape">
+            <Property Name="IsExpanded" Value="true" />
+            <Property Name="AbsoluteBounds" Value="2.75, 2.5, 2, 0.75" />
+            <Property Name="NameCache" Value="日志服务器" />
+            <Property Name="AccessibleDescriptionCache" Value="WindowsApplication 形状" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+            <Property Name="ThemeColorCache" Value="61,107,206" />
+            <Property Name="TheBoundsRules" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAGtNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLk1vZGVsaW5nLkRpYWdyYW1zLCBWZXJzaW9uPTkuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYQUBAAAAO01pY3Jvc29mdC5WaXN1YWxTdHVkaW8uTW9kZWxpbmcuRGlhZ3JhbXMuRGVmYXVsdEJvdW5kc1J1bGVzAAAAAAIAAAAL" />
+            <Property Name="OrphanedSubjectId" Value="日志服务器,1.0.0.0,zh-CN:日志服务器" />
+            <Property Name="Title" Value="日志服务器" />
+            <Property Name="Subtext" Value="WindowsApplication" />
+            <Property Name="SupplementalText" Value="" />
+            <Property Name="ImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplication.emf" />
+            <Property Name="ErrorImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\WindowsApplicationError.emf" />
+            <Property Name="ShowGlyphBar" Value="true" />
+            <Relationship Id="8eecd597023c431ca0e25677bddca490" Type="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes" Role1="@225fbf06bfe34842afdfaf956bb87856" RoleType1="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes.ParentShape" />
+            <Relationship Id="c6f7139c394c452294a07a82121d26c3" Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Role1="_登陆服务器2:日志服务器" RoleType1="Microsoft.VisualStudio.Modeling.SubjectHasPresentation.Subject" />
+          </ModelElement>
+          <Relationship Id="e75ba0c4c99d417b8af6c1a198d13cbb" Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Role1="@2dfb66f6017b41d2b5ec26e20033e1d4" RoleType1="Microsoft.VisualStudio.Modeling.SubjectHasPresentation.Subject" />
+        </ModelElement>
+      </ModelElement>
+    </VisualStudio>
+  </DesignData>
+</SystemDefinitionModel></Solution>
+  <SdmDocument><SystemDefinitionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DEFAULT" Version="1.0.0.0" Culture="zh-CN" DocumentLanguage="zh-CN" xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1">
+  <Import Alias="System" Name="System" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftDistributedApplication" Name="Microsoft.DistributedApplication" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftOfficeApplication" Name="Microsoft.OfficeApplication" Version="1.0.60130.0" />
+  <Import Alias="WindowsApplication1" Name="缓存服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <Import Alias="MicrosoftWindowsApplication" Name="Microsoft.WindowsApplication" Version="1.0.60130.0" />
+  <Import Alias="CacheServer2" Name="聊天服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <Import Alias="_聊天服务器2" Name="数据库服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <Import Alias="_数据库服务器2" Name="慢速服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <Import Alias="_延迟服务器2" Name="游戏服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <Import Alias="_游戏服务器2" Name="网关服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <Import Alias="_网关服务器2" Name="登陆服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <Import Alias="_登陆服务器2" Name="日志服务器" Version="1.0.0.0" Culture="zh-CN" />
+  <DesignData>
+    <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+      <ModelElement Id="b795c4750676437e82748e74ecfe9f1e" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.DeploymentDiagramDocument">
+        <Property Name="DocumentType" Value="ApplicationCompoundComponent" />
+        <Property Name="Version" Value="1" />
+      </ModelElement>
+    </VisualStudio>
+  </DesignData>
+  <SystemDefinition Name="Default" Extends="MicrosoftDistributedApplication:DistributedApplication" SimulationRoot="false">
+    <DesignData>
+      <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+        <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.ApplicationCompoundComponentType" />
+      </VisualStudio>
+    </DesignData>
+    <Subsystem Name="缓存服务器" Definition="WindowsApplication1:缓存服务器" MinOccurs="1" MaxOccurs="1" Reference="true">
+      <DesignData>
+        <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+          <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponent">
+            <Property Name="AbstractComponentTypeId" Value="Microsoft.WindowsApplication,1.0.60130.0:WindowsApplication" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+          </ModelElement>
+        </VisualStudio>
+      </DesignData>
+    </Subsystem>
+    <Containment Name="缓存服务器Containment" Definition="MicrosoftWindowsApplication:DistributedApplicationContainsWindowsApplication" ChildMember="缓存服务器" />
+    <Subsystem Name="聊天服务器" Definition="CacheServer2:聊天服务器" MinOccurs="1" MaxOccurs="1" Reference="true">
+      <DesignData>
+        <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+          <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponent">
+            <Property Name="AbstractComponentTypeId" Value="Microsoft.WindowsApplication,1.0.60130.0:WindowsApplication" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+          </ModelElement>
+        </VisualStudio>
+      </DesignData>
+    </Subsystem>
+    <Containment Name="聊天服务器Containment" Definition="MicrosoftWindowsApplication:DistributedApplicationContainsWindowsApplication" ChildMember="聊天服务器" />
+    <Subsystem Name="数据库服务器" Definition="_聊天服务器2:数据库服务器" MinOccurs="1" MaxOccurs="1" Reference="true">
+      <DesignData>
+        <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+          <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponent">
+            <Property Name="AbstractComponentTypeId" Value="Microsoft.WindowsApplication,1.0.60130.0:WindowsApplication" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+          </ModelElement>
+        </VisualStudio>
+      </DesignData>
+    </Subsystem>
+    <Containment Name="数据库服务器Containment" Definition="MicrosoftWindowsApplication:DistributedApplicationContainsWindowsApplication" ChildMember="数据库服务器" />
+    <Subsystem Name="慢速服务器" Definition="_数据库服务器2:慢速服务器" MinOccurs="1" MaxOccurs="1" Reference="true">
+      <DesignData>
+        <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+          <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponent">
+            <Property Name="AbstractComponentTypeId" Value="Microsoft.WindowsApplication,1.0.60130.0:WindowsApplication" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+          </ModelElement>
+        </VisualStudio>
+      </DesignData>
+    </Subsystem>
+    <Containment Name="慢速服务器Containment" Definition="MicrosoftWindowsApplication:DistributedApplicationContainsWindowsApplication" ChildMember="慢速服务器" />
+    <Subsystem Name="游戏服务器" Definition="_延迟服务器2:游戏服务器" MinOccurs="1" MaxOccurs="1" Reference="true">
+      <DesignData>
+        <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+          <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponent">
+            <Property Name="AbstractComponentTypeId" Value="Microsoft.WindowsApplication,1.0.60130.0:WindowsApplication" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+          </ModelElement>
+        </VisualStudio>
+      </DesignData>
+    </Subsystem>
+    <Containment Name="游戏服务器Containment" Definition="MicrosoftWindowsApplication:DistributedApplicationContainsWindowsApplication" ChildMember="游戏服务器" />
+    <Subsystem Name="网关服务器" Definition="_游戏服务器2:网关服务器" MinOccurs="1" MaxOccurs="1" Reference="true">
+      <DesignData>
+        <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+          <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponent">
+            <Property Name="AbstractComponentTypeId" Value="Microsoft.WindowsApplication,1.0.60130.0:WindowsApplication" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+          </ModelElement>
+        </VisualStudio>
+      </DesignData>
+    </Subsystem>
+    <Containment Name="网关服务器Containment" Definition="MicrosoftWindowsApplication:DistributedApplicationContainsWindowsApplication" ChildMember="网关服务器" />
+    <Subsystem Name="登陆服务器" Definition="_网关服务器2:登陆服务器" MinOccurs="1" MaxOccurs="1" Reference="true">
+      <DesignData>
+        <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+          <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponent">
+            <Property Name="AbstractComponentTypeId" Value="Microsoft.WindowsApplication,1.0.60130.0:WindowsApplication" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+          </ModelElement>
+        </VisualStudio>
+      </DesignData>
+    </Subsystem>
+    <Containment Name="登陆服务器Containment" Definition="MicrosoftWindowsApplication:DistributedApplicationContainsWindowsApplication" ChildMember="登陆服务器" />
+    <Subsystem Name="日志服务器" Definition="_登陆服务器2:日志服务器" MinOccurs="1" MaxOccurs="1" Reference="true">
+      <DesignData>
+        <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+          <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponent">
+            <Property Name="AbstractComponentTypeId" Value="Microsoft.WindowsApplication,1.0.60130.0:WindowsApplication" />
+            <Property Name="TypeNameCache" Value="WindowsApplication" />
+          </ModelElement>
+        </VisualStudio>
+      </DesignData>
+    </Subsystem>
+    <Containment Name="日志服务器Containment" Definition="MicrosoftWindowsApplication:DistributedApplicationContainsWindowsApplication" ChildMember="日志服务器" />
+  </SystemDefinition>
+</SystemDefinitionModel></SdmDocument>
+  <SdmDocument><SystemDefinitionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="缓存服务器" Version="1.0.0.0" Culture="zh-CN" DocumentLanguage="zh-CN" xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1">
+  <Import Alias="System" Name="System" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftWindowsApplication" Name="Microsoft.WindowsApplication" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftFileSystem" Name="Microsoft.FileSystem" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftConfiguration" Name="Microsoft.Configuration" Version="1.0.60130.0" />
+  <DesignData>
+    <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+      <ModelElement Id="3c70fcf89d27457c845d787d9dcd7902" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocument">
+        <Property Name="Version" Value="1" />
+        <Property Name="VSProjectId" Value="00e9a2ad-0ce5-4428-9cd9-ee45702a9560" />
+        <Relationship Id="7e5e19fa895840d08bd2dcb8f685b9b5" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject" Role1="@3441c19f62474fc8be146c15e442bab5" RoleType1="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject.VSProject" />
+        <ModelElement Id="3441c19f62474fc8be146c15e442bab5" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProject">
+          <Property Name="Name" Value="缓存服务器" />
+          <Property Name="Guid" Value="00e9a2ad-0ce5-4428-9cd9-ee45702a9560" />
+          <Property Name="ProjectType" Value="Executable" />
+          <ModelElement Id="5c951aa999a640b19a299c02a8183c42" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassModelRoot">
+            <ModelElement Id="f212cebd36934ddebd9cff462784d22a" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.RootNamespace">
+              <Property Name="CustomAttributes" Value="" />
+              <Property Name="LanguageType" Value="VisualBasic" />
+              <Relationship Id="1d1f846756c442b987ddff3f89390142" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace" Role1="@5c951aa999a640b19a299c02a8183c42" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace.ProjectClassModelRoot" />
+            </ModelElement>
+            <Relationship Id="390b3a9ee8fd40aab84390291df4ef63" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot" Role1="@3441c19f62474fc8be146c15e442bab5" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot.VSProject" />
+          </ModelElement>
+        </ModelElement>
+      </ModelElement>
+    </VisualStudio>
+  </DesignData>
+  <SystemDefinition Name="缓存服务器" Extends="MicrosoftWindowsApplication:WindowsApplication" SimulationRoot="false">
+    <DesignData>
+      <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+        <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponentType">
+          <Property Name="Project" Value="缓存服务器" />
+        </ModelElement>
+      </VisualStudio>
+    </DesignData>
+    <ResourceDefinition Name="Directory" Extends="MicrosoftFileSystem:Directory">
+      <ResourceDefinition Name="Configuration" Extends="MicrosoftConfiguration:Configuration" />
+      <Resource Name="Configuration" Definition="缓存服务器.Directory.Configuration" MinOccurs="1" MaxOccurs="1" Reference="false" />
+      <Containment Name="ConfigurationContainment" Definition="MicrosoftFileSystem:DirectoryContainsFile" ChildMember="Configuration" />
+    </ResourceDefinition>
+    <Resource Name="Directory" Definition="缓存服务器.Directory" MinOccurs="1" MaxOccurs="1" Reference="false" />
+    <Containment Name="DirectoryContainment" Definition="MicrosoftWindowsApplication:WindowsApplicationContainsDirectory" ChildMember="Directory" />
+    <Hosting Name="DirectoryHostsConfiguration" Definition="MicrosoftFileSystem:DirectoryHostsFile" GuestMember="Directory.Configuration" HostMember="Directory" />
+  </SystemDefinition>
+</SystemDefinitionModel></SdmDocument>
+  <SdmDocument><SystemDefinitionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="聊天服务器" Version="1.0.0.0" Culture="zh-CN" DocumentLanguage="zh-CN" xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1">
+  <Import Alias="System" Name="System" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftWindowsApplication" Name="Microsoft.WindowsApplication" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftFileSystem" Name="Microsoft.FileSystem" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftConfiguration" Name="Microsoft.Configuration" Version="1.0.60130.0" />
+  <DesignData>
+    <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+      <ModelElement Id="234522e7dce74be189a633074d9fb835" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocument">
+        <Property Name="Version" Value="1" />
+        <Property Name="VSProjectId" Value="4ebf09a0-ecf9-4de1-bae1-f5417f5a6e3f" />
+        <Relationship Id="dcd599d5aef34800a7049d03953aac61" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject" Role1="@6566039ae49f4397ab2c1ae035cf9f7b" RoleType1="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject.VSProject" />
+        <ModelElement Id="6566039ae49f4397ab2c1ae035cf9f7b" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProject">
+          <Property Name="Name" Value="聊天服务器" />
+          <Property Name="Guid" Value="4ebf09a0-ecf9-4de1-bae1-f5417f5a6e3f" />
+          <Property Name="ProjectType" Value="Executable" />
+          <ModelElement Id="9928f3c0b87b4c159597c9c3ec58fb52" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassModelRoot">
+            <ModelElement Id="f62cc0377b5e4be1852b503fb3b70929" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.RootNamespace">
+              <Property Name="CustomAttributes" Value="" />
+              <Property Name="LanguageType" Value="VisualBasic" />
+              <Relationship Id="c19a5794d1944eca89265a5fad3fa2ca" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace" Role1="@9928f3c0b87b4c159597c9c3ec58fb52" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace.ProjectClassModelRoot" />
+            </ModelElement>
+            <Relationship Id="b566dd72f23e428d8057303854f0d717" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot" Role1="@6566039ae49f4397ab2c1ae035cf9f7b" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot.VSProject" />
+          </ModelElement>
+        </ModelElement>
+      </ModelElement>
+    </VisualStudio>
+  </DesignData>
+  <SystemDefinition Name="聊天服务器" Extends="MicrosoftWindowsApplication:WindowsApplication" SimulationRoot="false">
+    <DesignData>
+      <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+        <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponentType">
+          <Property Name="Project" Value="聊天服务器" />
+        </ModelElement>
+      </VisualStudio>
+    </DesignData>
+    <ResourceDefinition Name="Directory" Extends="MicrosoftFileSystem:Directory">
+      <ResourceDefinition Name="Configuration" Extends="MicrosoftConfiguration:Configuration" />
+      <Resource Name="Configuration" Definition="聊天服务器.Directory.Configuration" MinOccurs="1" MaxOccurs="1" Reference="false" />
+      <Containment Name="ConfigurationContainment" Definition="MicrosoftFileSystem:DirectoryContainsFile" ChildMember="Configuration" />
+    </ResourceDefinition>
+    <Resource Name="Directory" Definition="聊天服务器.Directory" MinOccurs="1" MaxOccurs="1" Reference="false" />
+    <Containment Name="DirectoryContainment" Definition="MicrosoftWindowsApplication:WindowsApplicationContainsDirectory" ChildMember="Directory" />
+    <Hosting Name="DirectoryHostsConfiguration" Definition="MicrosoftFileSystem:DirectoryHostsFile" GuestMember="Directory.Configuration" HostMember="Directory" />
+  </SystemDefinition>
+</SystemDefinitionModel></SdmDocument>
+  <SdmDocument><SystemDefinitionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="数据库服务器" Version="1.0.0.0" Culture="zh-CN" DocumentLanguage="zh-CN" xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1">
+  <Import Alias="System" Name="System" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftWindowsApplication" Name="Microsoft.WindowsApplication" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftFileSystem" Name="Microsoft.FileSystem" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftConfiguration" Name="Microsoft.Configuration" Version="1.0.60130.0" />
+  <DesignData>
+    <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+      <ModelElement Id="aee37213b5a044a087c46cf35a54f5b1" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocument">
+        <Property Name="Version" Value="1" />
+        <Property Name="VSProjectId" Value="2ea00f39-6a87-4712-9d32-93f061d47c1c" />
+        <Relationship Id="785bf0ce8b9847258a6f0e536e0b8d92" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject" Role1="@5e2e1cb6142648fba8c0c280a923d51a" RoleType1="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject.VSProject" />
+        <ModelElement Id="5e2e1cb6142648fba8c0c280a923d51a" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProject">
+          <Property Name="Name" Value="数据库服务器" />
+          <Property Name="Guid" Value="2ea00f39-6a87-4712-9d32-93f061d47c1c" />
+          <Property Name="ProjectType" Value="Executable" />
+          <ModelElement Id="b58482c9726f4ffd8798261c8c944285" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassModelRoot">
+            <ModelElement Id="5f74af88562947f893978052f2918d77" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.RootNamespace">
+              <Property Name="CustomAttributes" Value="" />
+              <Property Name="LanguageType" Value="VisualBasic" />
+              <Relationship Id="c673e8b55fc54f849142b4eb261eeaf2" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace" Role1="@b58482c9726f4ffd8798261c8c944285" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace.ProjectClassModelRoot" />
+            </ModelElement>
+            <Relationship Id="4b8d7958e6284d9789b5198894002653" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot" Role1="@5e2e1cb6142648fba8c0c280a923d51a" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot.VSProject" />
+          </ModelElement>
+        </ModelElement>
+      </ModelElement>
+    </VisualStudio>
+  </DesignData>
+  <SystemDefinition Name="数据库服务器" Extends="MicrosoftWindowsApplication:WindowsApplication" SimulationRoot="false">
+    <DesignData>
+      <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+        <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponentType">
+          <Property Name="Project" Value="数据库服务器" />
+        </ModelElement>
+      </VisualStudio>
+    </DesignData>
+    <ResourceDefinition Name="Directory" Extends="MicrosoftFileSystem:Directory">
+      <ResourceDefinition Name="Configuration" Extends="MicrosoftConfiguration:Configuration" />
+      <Resource Name="Configuration" Definition="数据库服务器.Directory.Configuration" MinOccurs="1" MaxOccurs="1" Reference="false" />
+      <Containment Name="ConfigurationContainment" Definition="MicrosoftFileSystem:DirectoryContainsFile" ChildMember="Configuration" />
+    </ResourceDefinition>
+    <Resource Name="Directory" Definition="数据库服务器.Directory" MinOccurs="1" MaxOccurs="1" Reference="false" />
+    <Containment Name="DirectoryContainment" Definition="MicrosoftWindowsApplication:WindowsApplicationContainsDirectory" ChildMember="Directory" />
+    <Hosting Name="DirectoryHostsConfiguration" Definition="MicrosoftFileSystem:DirectoryHostsFile" GuestMember="Directory.Configuration" HostMember="Directory" />
+  </SystemDefinition>
+</SystemDefinitionModel></SdmDocument>
+  <SdmDocument><SystemDefinitionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="慢速服务器" Version="1.0.0.0" Culture="zh-CN" DocumentLanguage="zh-CN" xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1">
+  <Import Alias="System" Name="System" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftWindowsApplication" Name="Microsoft.WindowsApplication" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftFileSystem" Name="Microsoft.FileSystem" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftConfiguration" Name="Microsoft.Configuration" Version="1.0.60130.0" />
+  <DesignData>
+    <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+      <ModelElement Id="0fdb23c1d740425cba98e2068e14e489" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocument">
+        <Property Name="Version" Value="1" />
+        <Property Name="VSProjectId" Value="c3cd808d-6400-4953-af77-1898b0111a76" />
+        <Relationship Id="a28b9c0a2903424285ffc8fb78d671af" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject" Role1="@923483b2f0744c2fb6713b3c8ecf6691" RoleType1="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject.VSProject" />
+        <ModelElement Id="923483b2f0744c2fb6713b3c8ecf6691" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProject">
+          <Property Name="Name" Value="慢速服务器" />
+          <Property Name="Guid" Value="c3cd808d-6400-4953-af77-1898b0111a76" />
+          <Property Name="ProjectType" Value="Executable" />
+          <ModelElement Id="d67613f7d9804c7f9a6247408348208c" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassModelRoot">
+            <ModelElement Id="eeca003dd580467bbfc99ebb3ced348b" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.RootNamespace">
+              <Property Name="CustomAttributes" Value="" />
+              <Property Name="LanguageType" Value="VisualBasic" />
+              <Relationship Id="767d8b8718c5422bad16a27e4e568cb5" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace" Role1="@d67613f7d9804c7f9a6247408348208c" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace.ProjectClassModelRoot" />
+            </ModelElement>
+            <Relationship Id="60a237d3acb9430683813895ecb5eb68" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot" Role1="@923483b2f0744c2fb6713b3c8ecf6691" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot.VSProject" />
+          </ModelElement>
+        </ModelElement>
+      </ModelElement>
+    </VisualStudio>
+  </DesignData>
+  <SystemDefinition Name="慢速服务器" Extends="MicrosoftWindowsApplication:WindowsApplication" SimulationRoot="false">
+    <DesignData>
+      <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+        <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponentType">
+          <Property Name="Project" Value="慢速服务器" />
+        </ModelElement>
+      </VisualStudio>
+    </DesignData>
+    <ResourceDefinition Name="Directory" Extends="MicrosoftFileSystem:Directory">
+      <ResourceDefinition Name="Configuration" Extends="MicrosoftConfiguration:Configuration" />
+      <Resource Name="Configuration" Definition="慢速服务器.Directory.Configuration" MinOccurs="1" MaxOccurs="1" Reference="false" />
+      <Containment Name="ConfigurationContainment" Definition="MicrosoftFileSystem:DirectoryContainsFile" ChildMember="Configuration" />
+    </ResourceDefinition>
+    <Resource Name="Directory" Definition="慢速服务器.Directory" MinOccurs="1" MaxOccurs="1" Reference="false" />
+    <Containment Name="DirectoryContainment" Definition="MicrosoftWindowsApplication:WindowsApplicationContainsDirectory" ChildMember="Directory" />
+    <Hosting Name="DirectoryHostsConfiguration" Definition="MicrosoftFileSystem:DirectoryHostsFile" GuestMember="Directory.Configuration" HostMember="Directory" />
+  </SystemDefinition>
+</SystemDefinitionModel></SdmDocument>
+  <SdmDocument><SystemDefinitionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="游戏服务器" Version="1.0.0.0" Culture="zh-CN" DocumentLanguage="zh-CN" xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1">
+  <Import Alias="System" Name="System" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftWindowsApplication" Name="Microsoft.WindowsApplication" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftFileSystem" Name="Microsoft.FileSystem" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftConfiguration" Name="Microsoft.Configuration" Version="1.0.60130.0" />
+  <DesignData>
+    <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+      <ModelElement Id="e26254343a7f443e85d6866c48ac33fb" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocument">
+        <Property Name="Version" Value="1" />
+        <Property Name="VSProjectId" Value="67b59869-5583-4ff3-81ae-4bb77b228b44" />
+        <Relationship Id="8d008b0239b4451c92680955de7e7232" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject" Role1="@6ec5f5b9ec6f4fc295a9a1c657aa5a3b" RoleType1="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject.VSProject" />
+        <ModelElement Id="6ec5f5b9ec6f4fc295a9a1c657aa5a3b" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProject">
+          <Property Name="Name" Value="游戏服务器" />
+          <Property Name="Guid" Value="67b59869-5583-4ff3-81ae-4bb77b228b44" />
+          <Property Name="ProjectType" Value="Executable" />
+          <ModelElement Id="3cdf36e44eb44c5e8d3ed10170551ba1" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassModelRoot">
+            <ModelElement Id="f67c5847ebb145d5aaa9bc8971144824" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.RootNamespace">
+              <Property Name="CustomAttributes" Value="" />
+              <Property Name="LanguageType" Value="VisualBasic" />
+              <Relationship Id="318517f3583041fbbf43cbbae75a8c5c" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace" Role1="@3cdf36e44eb44c5e8d3ed10170551ba1" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace.ProjectClassModelRoot" />
+            </ModelElement>
+            <Relationship Id="3aeb47a347b043aeb9cd35479d324838" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot" Role1="@6ec5f5b9ec6f4fc295a9a1c657aa5a3b" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot.VSProject" />
+          </ModelElement>
+        </ModelElement>
+      </ModelElement>
+    </VisualStudio>
+  </DesignData>
+  <SystemDefinition Name="游戏服务器" Extends="MicrosoftWindowsApplication:WindowsApplication" SimulationRoot="false">
+    <DesignData>
+      <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+        <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponentType">
+          <Property Name="Project" Value="游戏服务器" />
+        </ModelElement>
+      </VisualStudio>
+    </DesignData>
+    <ResourceDefinition Name="Directory" Extends="MicrosoftFileSystem:Directory">
+      <ResourceDefinition Name="Configuration" Extends="MicrosoftConfiguration:Configuration" />
+      <Resource Name="Configuration" Definition="游戏服务器.Directory.Configuration" MinOccurs="1" MaxOccurs="1" Reference="false" />
+      <Containment Name="ConfigurationContainment" Definition="MicrosoftFileSystem:DirectoryContainsFile" ChildMember="Configuration" />
+    </ResourceDefinition>
+    <Resource Name="Directory" Definition="游戏服务器.Directory" MinOccurs="1" MaxOccurs="1" Reference="false" />
+    <Containment Name="DirectoryContainment" Definition="MicrosoftWindowsApplication:WindowsApplicationContainsDirectory" ChildMember="Directory" />
+    <Hosting Name="DirectoryHostsConfiguration" Definition="MicrosoftFileSystem:DirectoryHostsFile" GuestMember="Directory.Configuration" HostMember="Directory" />
+  </SystemDefinition>
+</SystemDefinitionModel></SdmDocument>
+  <SdmDocument><SystemDefinitionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="网关服务器" Version="1.0.0.0" Culture="zh-CN" DocumentLanguage="zh-CN" xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1">
+  <Import Alias="System" Name="System" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftWindowsApplication" Name="Microsoft.WindowsApplication" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftFileSystem" Name="Microsoft.FileSystem" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftConfiguration" Name="Microsoft.Configuration" Version="1.0.60130.0" />
+  <DesignData>
+    <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+      <ModelElement Id="bfeff0e94d8c4dd6b383a7fc8b14531d" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocument">
+        <Property Name="Version" Value="1" />
+        <Property Name="VSProjectId" Value="44c35798-22d7-4bc4-82d1-1f95dfbda9f0" />
+        <Relationship Id="577034d3e0c9434c8b95ec73be078a5f" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject" Role1="@4f53455b6a8d4e1cb42ef6b49b02145f" RoleType1="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject.VSProject" />
+        <ModelElement Id="4f53455b6a8d4e1cb42ef6b49b02145f" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProject">
+          <Property Name="Name" Value="网关服务器" />
+          <Property Name="Guid" Value="44c35798-22d7-4bc4-82d1-1f95dfbda9f0" />
+          <Property Name="ProjectType" Value="Executable" />
+          <ModelElement Id="3f84562d75394e37a460b416dc12d16f" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassModelRoot">
+            <ModelElement Id="b6ad8c1043f1412ebc7eab830fbc8af1" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.RootNamespace">
+              <Property Name="CustomAttributes" Value="" />
+              <Property Name="LanguageType" Value="VisualBasic" />
+              <Relationship Id="577a27322b8044fe843fe1f2a2dcfbe4" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace" Role1="@3f84562d75394e37a460b416dc12d16f" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace.ProjectClassModelRoot" />
+            </ModelElement>
+            <Relationship Id="0c08035fd8314726b4616ccb9a733796" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot" Role1="@4f53455b6a8d4e1cb42ef6b49b02145f" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot.VSProject" />
+          </ModelElement>
+        </ModelElement>
+      </ModelElement>
+    </VisualStudio>
+  </DesignData>
+  <SystemDefinition Name="网关服务器" Extends="MicrosoftWindowsApplication:WindowsApplication" SimulationRoot="false">
+    <DesignData>
+      <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+        <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponentType">
+          <Property Name="Project" Value="网关服务器" />
+        </ModelElement>
+      </VisualStudio>
+    </DesignData>
+    <ResourceDefinition Name="Directory" Extends="MicrosoftFileSystem:Directory">
+      <ResourceDefinition Name="Configuration" Extends="MicrosoftConfiguration:Configuration" />
+      <Resource Name="Configuration" Definition="网关服务器.Directory.Configuration" MinOccurs="1" MaxOccurs="1" Reference="false" />
+      <Containment Name="ConfigurationContainment" Definition="MicrosoftFileSystem:DirectoryContainsFile" ChildMember="Configuration" />
+    </ResourceDefinition>
+    <Resource Name="Directory" Definition="网关服务器.Directory" MinOccurs="1" MaxOccurs="1" Reference="false" />
+    <Containment Name="DirectoryContainment" Definition="MicrosoftWindowsApplication:WindowsApplicationContainsDirectory" ChildMember="Directory" />
+    <Hosting Name="DirectoryHostsConfiguration" Definition="MicrosoftFileSystem:DirectoryHostsFile" GuestMember="Directory.Configuration" HostMember="Directory" />
+  </SystemDefinition>
+</SystemDefinitionModel></SdmDocument>
+  <SdmDocument><SystemDefinitionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="登陆服务器" Version="1.0.0.0" Culture="zh-CN" DocumentLanguage="zh-CN" xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1">
+  <Import Alias="System" Name="System" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftWindowsApplication" Name="Microsoft.WindowsApplication" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftFileSystem" Name="Microsoft.FileSystem" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftConfiguration" Name="Microsoft.Configuration" Version="1.0.60130.0" />
+  <DesignData>
+    <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+      <ModelElement Id="f1b9f02e74ef450ca57dce43f8014d98" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocument">
+        <Property Name="Version" Value="1" />
+        <Property Name="VSProjectId" Value="9d291235-21c4-4e4b-9e49-ada5851a997d" />
+        <Relationship Id="e919a84be64c45af98e0273d6be2bfcd" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject" Role1="@0ecd95f9dbc9408587bb92205a4ad516" RoleType1="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject.VSProject" />
+        <ModelElement Id="0ecd95f9dbc9408587bb92205a4ad516" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProject">
+          <Property Name="Name" Value="登陆服务器" />
+          <Property Name="Guid" Value="9d291235-21c4-4e4b-9e49-ada5851a997d" />
+          <Property Name="ProjectType" Value="Executable" />
+          <ModelElement Id="295a71b782cf4b68a9c8624f07cc8ce5" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassModelRoot">
+            <ModelElement Id="574501e5d45b41e89299791e6fa9b36f" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.RootNamespace">
+              <Property Name="CustomAttributes" Value="" />
+              <Property Name="LanguageType" Value="VisualBasic" />
+              <Relationship Id="35789d73ce804d2fbe7ddc8310621df6" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace" Role1="@295a71b782cf4b68a9c8624f07cc8ce5" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace.ProjectClassModelRoot" />
+            </ModelElement>
+            <Relationship Id="1ad13d223f284c05bea85b2bc9042fa7" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot" Role1="@0ecd95f9dbc9408587bb92205a4ad516" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot.VSProject" />
+          </ModelElement>
+        </ModelElement>
+      </ModelElement>
+    </VisualStudio>
+  </DesignData>
+  <SystemDefinition Name="登陆服务器" Extends="MicrosoftWindowsApplication:WindowsApplication" SimulationRoot="false">
+    <DesignData>
+      <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+        <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponentType">
+          <Property Name="Project" Value="登陆服务器" />
+        </ModelElement>
+      </VisualStudio>
+    </DesignData>
+    <ResourceDefinition Name="Directory" Extends="MicrosoftFileSystem:Directory">
+      <ResourceDefinition Name="Configuration" Extends="MicrosoftConfiguration:Configuration" />
+      <Resource Name="Configuration" Definition="登陆服务器.Directory.Configuration" MinOccurs="1" MaxOccurs="1" Reference="false" />
+      <Containment Name="ConfigurationContainment" Definition="MicrosoftFileSystem:DirectoryContainsFile" ChildMember="Configuration" />
+    </ResourceDefinition>
+    <Resource Name="Directory" Definition="登陆服务器.Directory" MinOccurs="1" MaxOccurs="1" Reference="false" />
+    <Containment Name="DirectoryContainment" Definition="MicrosoftWindowsApplication:WindowsApplicationContainsDirectory" ChildMember="Directory" />
+    <Hosting Name="DirectoryHostsConfiguration" Definition="MicrosoftFileSystem:DirectoryHostsFile" GuestMember="Directory.Configuration" HostMember="Directory" />
+  </SystemDefinition>
+</SystemDefinitionModel></SdmDocument>
+  <SdmDocument><SystemDefinitionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="日志服务器" Version="1.0.0.0" Culture="zh-CN" DocumentLanguage="zh-CN" xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1">
+  <Import Alias="System" Name="System" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftWindowsApplication" Name="Microsoft.WindowsApplication" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftFileSystem" Name="Microsoft.FileSystem" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftConfiguration" Name="Microsoft.Configuration" Version="1.0.60130.0" />
+  <DesignData>
+    <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+      <ModelElement Id="558bd79e14a64030845b514651365e55" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocument">
+        <Property Name="Version" Value="1" />
+        <Property Name="VSProjectId" Value="6fb658d3-a173-4aa7-97d5-fc5c9d96869c" />
+        <Relationship Id="7dd1c6c5fc7a4b8fa5612ff8c8d5c1d7" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject" Role1="@2ff1a506dae547569f5f56f6133a7a2c" RoleType1="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject.VSProject" />
+        <ModelElement Id="2ff1a506dae547569f5f56f6133a7a2c" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProject">
+          <Property Name="Name" Value="日志服务器" />
+          <Property Name="Guid" Value="6fb658d3-a173-4aa7-97d5-fc5c9d96869c" />
+          <Property Name="ProjectType" Value="Executable" />
+          <ModelElement Id="f3c6352e944d44ef8426856826f502ac" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassModelRoot">
+            <ModelElement Id="1d8d1be01e7e4455b144b33544cdc0ba" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.RootNamespace">
+              <Property Name="CustomAttributes" Value="" />
+              <Property Name="LanguageType" Value="VisualBasic" />
+              <Relationship Id="1d0564cb2a2f47c689f6632d19599e1f" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace" Role1="@f3c6352e944d44ef8426856826f502ac" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace.ProjectClassModelRoot" />
+            </ModelElement>
+            <Relationship Id="70997fb32b354f8d9df271ccee969f3a" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot" Role1="@2ff1a506dae547569f5f56f6133a7a2c" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot.VSProject" />
+          </ModelElement>
+        </ModelElement>
+      </ModelElement>
+    </VisualStudio>
+  </DesignData>
+  <SystemDefinition Name="日志服务器" Extends="MicrosoftWindowsApplication:WindowsApplication" SimulationRoot="false">
+    <DesignData>
+      <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+        <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.PlugIns.WindowsComponentType">
+          <Property Name="Project" Value="日志服务器" />
+        </ModelElement>
+      </VisualStudio>
+    </DesignData>
+    <ResourceDefinition Name="Directory" Extends="MicrosoftFileSystem:Directory">
+      <ResourceDefinition Name="Configuration" Extends="MicrosoftConfiguration:Configuration" />
+      <Resource Name="Configuration" Definition="日志服务器.Directory.Configuration" MinOccurs="1" MaxOccurs="1" Reference="false" />
+      <Containment Name="ConfigurationContainment" Definition="MicrosoftFileSystem:DirectoryContainsFile" ChildMember="Configuration" />
+    </ResourceDefinition>
+    <Resource Name="Directory" Definition="日志服务器.Directory" MinOccurs="1" MaxOccurs="1" Reference="false" />
+    <Containment Name="DirectoryContainment" Definition="MicrosoftWindowsApplication:WindowsApplicationContainsDirectory" ChildMember="Directory" />
+    <Hosting Name="DirectoryHostsConfiguration" Definition="MicrosoftFileSystem:DirectoryHostsFile" GuestMember="Directory.Configuration" HostMember="Directory" />
+  </SystemDefinition>
+</SystemDefinitionModel></SdmDocument>
+</Whitehorse>

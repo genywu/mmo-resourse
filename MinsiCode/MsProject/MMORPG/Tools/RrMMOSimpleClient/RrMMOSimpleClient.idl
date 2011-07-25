@@ -1,0 +1,29 @@
+// RrMMOSimpleClient.idl : RrMMOSimpleClient.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(RrMMOSimpleClient.tlb)。
+
+[ uuid(5B178151-D3A0-4F01-BB26-1227ABE1A979), version(1.0) ]
+library RrMMOSimpleClient
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    //  CRrMMOSimpleClientDoc 的主调度接口
+
+    [ uuid(16F8DBF5-6632-43DD-9834-F96AD0BDC911) ]
+    dispinterface IRrMMOSimpleClient
+    {
+        properties:
+
+        methods:
+    };
+
+    //  CRrMMOSimpleClientDoc 的类信息
+
+    [ uuid(54913426-1B7F-4EFB-A4C9-0A00628AD316) ]
+    coclass CRrMMOSimpleClientDoc
+    {
+        [default] dispinterface IRrMMOSimpleClient;
+    };
+};

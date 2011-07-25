@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ms2DInputTest", "..\..\..\MsPrivateWork\MsTest\LibTest\Ms2DInputTest\Ms2DInputTest.vcproj", "{E5A25101-B20D-49E7-B89B-FAE33538DFCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Intel_Debug|Win32 = Intel_Debug|Win32
+		Intel_Debug|x64 = Intel_Debug|x64
+		Intel_Release|Win32 = Intel_Release|Win32
+		Intel_Release|x64 = Intel_Release|x64
+		__VC_Debug|Win32 = __VC_Debug|Win32
+		__VC_Debug|x64 = __VC_Debug|x64
+		VC_Release|Win32 = VC_Release|Win32
+		VC_Release|x64 = VC_Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.Intel_Debug|Win32.ActiveCfg = Intel_Debug|Win32
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.Intel_Debug|Win32.Build.0 = Intel_Debug|Win32
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.Intel_Debug|x64.ActiveCfg = Intel_Debug|x64
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.Intel_Debug|x64.Build.0 = Intel_Debug|x64
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.Intel_Release|Win32.ActiveCfg = Intel_Release|Win32
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.Intel_Release|Win32.Build.0 = Intel_Release|Win32
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.Intel_Release|x64.ActiveCfg = Intel_Release|x64
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.Intel_Release|x64.Build.0 = Intel_Release|x64
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.__VC_Debug|Win32.ActiveCfg = __VC_Debug|Win32
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.__VC_Debug|Win32.Build.0 = __VC_Debug|Win32
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.__VC_Debug|x64.ActiveCfg = __VC_Debug|x64
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.__VC_Debug|x64.Build.0 = __VC_Debug|x64
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.VC_Release|Win32.ActiveCfg = VC_Release|Win32
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.VC_Release|Win32.Build.0 = VC_Release|Win32
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.VC_Release|x64.ActiveCfg = VC_Release|x64
+		{E5A25101-B20D-49E7-B89B-FAE33538DFCC}.VC_Release|x64.Build.0 = VC_Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
