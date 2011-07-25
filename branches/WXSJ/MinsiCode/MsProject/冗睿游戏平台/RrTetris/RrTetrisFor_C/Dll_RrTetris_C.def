@@ -1,0 +1,6 @@
+LIBRARY	"Dll_RrTetris_C"
+EXPORTS
+    SetGameStationWritePacketFun
+    SetGameStationLogicThreadId
+    GetDllGameLogicThread
+    StopDllGame

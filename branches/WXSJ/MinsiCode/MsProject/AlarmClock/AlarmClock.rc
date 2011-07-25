@@ -1,0 +1,625 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\AlarmClock.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\AlarmClock.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ALARMCLOCK_DIALOG_MAIN DIALOGEX 0, 0, 82, 27
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "AlarmClock"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "新增定时",IDC_BUTTON1,7,7,34,13
+    PUSHBUTTON      "查看定时",IDC_BUTTON3,41,7,34,13
+END
+
+IDD_ALARMCLOCK_DIALOG_ADD DIALOGEX 0, 0, 274, 159
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "AlarmClock"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RADIO13,"Button",BS_AUTORADIOBUTTON | WS_GROUP,10,9,10,10
+    CONTROL         "",IDC_RADIO14,"Button",BS_AUTORADIOBUTTON,10,35,9,10
+    COMBOBOX        IDC_COMBO1,21,8,22,144,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,55,8,22,144,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,94,8,22,144,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,128,8,22,144,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_DATETIMEPICKER3,"SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,21,32,54,15
+    CONTROL         "",IDC_DATETIMEPICKER2,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP | 0x8,75,32,46,15
+    EDITTEXT        IDC_EDIT1,7,54,260,15,ES_AUTOHSCROLL
+    CONTROL         "提示一次",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,84,43,10
+    CONTROL         "一直提示",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON,57,84,43,10
+    CONTROL         "间隔提示",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON,107,84,39,10
+    EDITTEXT        IDC_EDIT2,165,84,31,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,214,84,31,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "在每天",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,114,37,10
+    CONTROL         "仅一次",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,44,114,37,10
+    CONTROL         "仅周一",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,7,124,37,10
+    CONTROL         "仅周二",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,44,124,37,10
+    CONTROL         "仅周三",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,81,124,37,10
+    CONTROL         "仅周四",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,118,124,37,10
+    CONTROL         "仅周五",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,155,124,37,10
+    CONTROL         "仅周六",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,192,124,37,10
+    CONTROL         "仅周日",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,230,124,37,10
+    PUSHBUTTON      "确定新增",IDC_BUTTON1,7,139,34,13
+    PUSHBUTTON      "重置",IDC_BUTTON2,117,139,34,13
+    PUSHBUTTON      "取消",IDC_BUTTON3,233,139,34,13
+    LTEXT           "间隔",IDC_STATIC,148,84,15,10
+    LTEXT           "次数",IDC_STATIC,198,84,14,10
+    GROUPBOX        "提示时间",IDC_STATIC,7,104,260,34
+    GROUPBOX        "提示类型",IDC_STATIC,7,74,260,23
+    LTEXT           "天",IDC_STATIC,46,8,8,12
+    LTEXT           "小时",IDC_STATIC,79,8,15,12
+    LTEXT           "分",IDC_STATIC,119,8,8,12
+    LTEXT           "秒之后",IDC_STATIC,153,8,33,12
+END
+
+IDD_ALARMCLOCK_DIALOG_LOOK DIALOGEX 0, 0, 151, 60
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "AlarmClock"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "删除定时",IDC_BUTTON2,7,40,34,13
+    PUSHBUTTON      "查看定时",IDC_BUTTON3,42,40,34,13
+    PUSHBUTTON      "修改定时",IDC_BUTTON4,77,40,34,13
+    CONTROL         "",IDC_DATETIMEPICKER2,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,63,15,46,13
+    CONTROL         "",IDC_DATETIMEPICKER3,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,7,15,54,13
+    CTEXT           "",IDC_STATIC,7,7,102,8,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT1,7,28,137,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "上一个",IDC_BUTTON5,110,7,34,10
+    PUSHBUTTON      "下一个",IDC_BUTTON6,110,17,34,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "AlarmClock.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "AlarmClock.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ALARMCLOCK_DIALOG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 75
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 20
+    END
+
+    IDD_ALARMCLOCK_DIALOG_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_ALARMCLOCK_DIALOG_LOOK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    POPUP "菜单"
+    BEGIN
+        MENUITEM "显示",                          ID_MENU_SHOW
+        MENUITEM "退出",                          ID_MENU_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ALARMCLOCK_DIALOG_ADD DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO1, 0x403, 3, 0
+0x3130, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3230, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3330, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3430, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3530, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3630, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3830, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COMBO2, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO2, 0x403, 3, 0
+0x3130, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3230, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3330, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3430, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3530, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3630, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3830, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO3, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO3, 0x403, 3, 0
+0x3130, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3230, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3330, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3430, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3530, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3630, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3830, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3434, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3934, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3135, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3235, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3335, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3435, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3535, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3635, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3735, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3835, "\000" 
+    IDC_COMBO3, 0x403, 3, 0
+0x3935, "\000" 
+    IDC_COMBO4, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO4, 0x403, 3, 0
+0x3130, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3230, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3330, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3430, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3530, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3630, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3830, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3434, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3934, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3135, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3235, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3335, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3435, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3535, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3635, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3735, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3835, "\000" 
+    IDC_COMBO4, 0x403, 3, 0
+0x3935, "\000" 
+    0
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\AlarmClock.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

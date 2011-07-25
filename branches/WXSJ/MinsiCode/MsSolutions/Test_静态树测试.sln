@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticTreeTest", "..\..\..\MsPrivateWork\MsTest\LibTest\StaticTreeTest\StaticTreeTest.vcproj", "{382FBEED-8F8D-4D73-BB30-9BB374430DFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		_Intel_Debug|Win32 = _Intel_Debug|Win32
+		_Intel_Debug|x64 = _Intel_Debug|x64
+		_Intel_Release|Win32 = _Intel_Release|Win32
+		_Intel_Release|x64 = _Intel_Release|x64
+		__VC_Debug|Win32 = __VC_Debug|Win32
+		__VC_Debug|x64 = __VC_Debug|x64
+		__VC_Release|Win32 = __VC_Release|Win32
+		__VC_Release|x64 = __VC_Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}._Intel_Debug|Win32.ActiveCfg = _Intel_Debug|Win32
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}._Intel_Debug|Win32.Build.0 = _Intel_Debug|Win32
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}._Intel_Debug|x64.ActiveCfg = _Intel_Debug|x64
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}._Intel_Debug|x64.Build.0 = _Intel_Debug|x64
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}._Intel_Release|Win32.ActiveCfg = _Intel_Release|Win32
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}._Intel_Release|Win32.Build.0 = _Intel_Release|Win32
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}._Intel_Release|x64.ActiveCfg = _Intel_Release|x64
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}._Intel_Release|x64.Build.0 = _Intel_Release|x64
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}.__VC_Debug|Win32.ActiveCfg = __VC_Debug|Win32
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}.__VC_Debug|Win32.Build.0 = __VC_Debug|Win32
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}.__VC_Debug|x64.ActiveCfg = __VC_Debug|x64
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}.__VC_Debug|x64.Build.0 = __VC_Debug|x64
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}.__VC_Release|Win32.ActiveCfg = __VC_Release|Win32
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}.__VC_Release|Win32.Build.0 = __VC_Release|Win32
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}.__VC_Release|x64.ActiveCfg = __VC_Release|x64
+		{382FBEED-8F8D-4D73-BB30-9BB374430DFF}.__VC_Release|x64.Build.0 = __VC_Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

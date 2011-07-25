@@ -1,0 +1,29 @@
+// MsScriptEditor.idl : MsScriptEditor.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(MsScriptEditor.tlb)。
+
+[ uuid(B2345D30-C386-498F-8BCB-C75C84308C6C), version(1.0) ]
+library MsScriptEditor
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CMsScriptEditorDoc 的主调度接口
+	
+	[ uuid(BB07F553-F611-44E1-ACEA-17EB2A472FC9) ]
+	dispinterface IMsScriptEditor
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CMsScriptEditorDoc 的类信息
+	
+	[ uuid(59671746-F458-454D-B853-6CD97E4BDE8F) ]
+	coclass CMsScriptEditorDoc
+	{
+		[default] dispinterface IMsScriptEditor;
+	};
+};

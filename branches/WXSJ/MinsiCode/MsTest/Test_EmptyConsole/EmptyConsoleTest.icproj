@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioProject
+	ProjectType="Intel C++ Project"
+	Version="11.1"
+	Name="EmptyConsoleTest"
+	ProjectGUID="{E69562E8-69BF-4D9D-9FB5-7A1D2D6455A1}"
+	VCNestedProjectGUID="{382FBEED-8F8D-4D73-BB30-9BB374430DFF}"
+	VCNestedProjectFileName="EmptyConsoleTest.vcproj">
+	<Configurations/>
+	<Files/>
+</VisualStudioProject>

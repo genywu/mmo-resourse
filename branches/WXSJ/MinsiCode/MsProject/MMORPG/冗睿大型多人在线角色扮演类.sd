@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Visual Studio 生成的基于系统定义模型(SDM)的文件。-->
+<!--建议不要手动编辑此文件，这可能会导致错误。-->
+<SystemDefinitionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="冗睿大型多人在线角色扮演类" Version="1.0.0.0" Culture="zh-CN" DocumentLanguage="zh-CN" xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1">
+  <Import Alias="System" Name="System" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftDistributedApplication" Name="Microsoft.DistributedApplication" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftGenericApplication" Name="Microsoft.GenericApplication" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftOfficeApplication" Name="Microsoft.OfficeApplication" Version="1.0.60130.0" />
+  <Import Alias="MicrosoftWindowsApplication" Name="Microsoft.WindowsApplication" Version="1.0.60130.0" />
+  <DesignData>
+    <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+      <ModelElement Id="f26d776d7ea9429fa10b335751c369c8" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.DeploymentDiagramDocument">
+        <Property Name="DocumentType" Value="ApplicationCompoundComponent" />
+        <Property Name="Version" Value="1" />
+        <Property Name="VSProjectId" Value="889fcfaa-e8e1-4f1a-8fc2-dd7096026534" />
+        <Relationship Id="54eb76bab0984110aa35f898b5f95271" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject" Role1="@f06a7b4519ae424da697cba544610b92" RoleType1="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.SoftwareComponentDocumentAffiliatedWithVSProject.VSProject" />
+        <ModelElement Id="f06a7b4519ae424da697cba544610b92" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProject">
+          <Property Name="Name" Value="SystemDiagramDocument1" />
+          <Property Name="Guid" Value="889fcfaa-e8e1-4f1a-8fc2-dd7096026534" />
+          <ModelElement Id="063a573c241e464b807a8a9e7fbea8e2" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassModelRoot">
+            <ModelElement Id="437df5b62336481ea6d0413281cc47d8" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.RootNamespace">
+              <Property Name="CustomAttributes" Value="" />
+              <Property Name="LanguageType" Value="VisualBasic" />
+              <Relationship Id="84e99c1fd87942b694e49ebe8ab9be67" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace" Role1="@063a573c241e464b807a8a9e7fbea8e2" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Clr.ProjectClassRootContainsNamespace.ProjectClassModelRoot" />
+            </ModelElement>
+            <Relationship Id="bbc892f4a460496ab7ed6924e9ab5937" Type="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot" Role1="@f06a7b4519ae424da697cba544610b92" RoleType1="Microsoft.VisualStudio.EnterpriseTools.ArtifactModel.Project.VSProjectContainsClassModelRoot.VSProject" />
+          </ModelElement>
+        </ModelElement>
+        <ModelElement Id="1d18a1e6633e4f6199f8294ff1679d6f" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.Diagrams.DeploymentDiagram">
+          <Property Name="IsExpanded" Value="true" />
+          <Property Name="AbsoluteBounds" Value="0, 0, 11, 8.5" />
+          <Property Name="IsCompleteView" Value="true" />
+          <Property Name="DiagramId" Value="8e93648f-4563-4af9-9a15-4cac37d1fb98" />
+          <Property Name="BaseFontName" Value="宋体" />
+          <Property Name="BaseFontSize" Value="0.125" />
+          <ModelElement Id="9d26440a92364cdaaf12496953c8f1f5" Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.Diagrams.ApplicationCompoundComponentShape">
+            <Property Name="IsExpanded" Value="true" />
+            <Property Name="AbsoluteBounds" Value="0.2, 0.2, 7.541666666666667, 3.65625" />
+            <Property Name="NameCache" Value="冗睿大型多人在线角色扮演类" />
+            <Property Name="AccessibleDescriptionCache" Value="系统" />
+            <Property Name="TypeNameCache" Value="系统" />
+            <Property Name="ThemeColorCache" Value="0,0,212" />
+            <Property Name="TheBoundsRules" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAHZNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLkVudGVycHJpc2VUb29scy5TZG1EZXNpZ25lcnMsIFZlcnNpb249OS4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhBQEAAABKTWljcm9zb2Z0LlZpc3VhbFN0dWRpby5FbnRlcnByaXNlVG9vbHMuU2RtLk1vZGVsaW5nLkRpYWdyYW1zLk5vQm91bmRzUnVsZXMAAAAAAgAAAAs=" />
+            <Property Name="OrphanedSubjectId" Value="冗睿大型多人在线角色扮演类,1.0.0.0,zh-CN:冗睿大型多人在线角色扮演类" />
+            <Property Name="Title" Value="冗睿大型多人在线角色扮演类" />
+            <Property Name="Subtext" Value="System" />
+            <Property Name="SupplementalText" Value="" />
+            <Property Name="ImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\DistributedApplication.emf" />
+            <Property Name="ErrorImageResourceLocator" Value="C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\DistributedApplication.emf" />
+            <Property Name="ShowGlyphBar" Value="true" />
+            <Relationship Id="b0c8a814b1494da6b04027a2f2ae1fb4" Type="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes" Role1="@1d18a1e6633e4f6199f8294ff1679d6f" RoleType1="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes.ParentShape" />
+            <Relationship Id="d50e5b9f986443e183c6767764b674cf" Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Role1="冗睿大型多人在线角色扮演类" RoleType1="Microsoft.VisualStudio.Modeling.SubjectHasPresentation.Subject" />
+          </ModelElement>
+          <Relationship Id="80557c1548484a21a993592237e2005f" Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Role1="@f26d776d7ea9429fa10b335751c369c8" RoleType1="Microsoft.VisualStudio.Modeling.SubjectHasPresentation.Subject" />
+        </ModelElement>
+      </ModelElement>
+    </VisualStudio>
+  </DesignData>
+  <SystemDefinition Name="冗睿大型多人在线角色扮演类" Extends="MicrosoftDistributedApplication:DistributedApplication" SimulationRoot="false">
+    <DesignData>
+      <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+        <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.Application.Modeling.ApplicationCompoundComponentType" />
+      </VisualStudio>
+    </DesignData>
+  </SystemDefinition>
+</SystemDefinitionModel>

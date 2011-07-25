@@ -1,0 +1,22 @@
+REGEDIT
+; 此 .REG 文件可能由 SETUP 程序使用。
+;   如果 SETUP 程序不可用，则调用
+;   CWinApp::RegisterShellFileTypes 和 COleObjectFactory::UpdateRegistryAll
+;   在 InitInstance 中对下列项自动进行注册。
+
+HKEY_CLASSES_ROOT\.lue = MsScriptEditor.Document
+HKEY_CLASSES_ROOT\MsScriptEditor.Document\shell\open\command = MsScriptEditor.EXE %1
+HKEY_CLASSES_ROOT\MsScriptEditor.Document\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\MsScriptEditor.Document\shell\open\ddeexec\application = MsScriptEditor
+    ; 注意: 此应用程序是可选的
+    ;  (默认为“命令”中的应用程序名)
+
+HKEY_CLASSES_ROOT\MsScriptEditor.Document = MsScriptEditor.Document
+
+
+HKEY_CLASSES_ROOT\MsScriptEditor.Document\CLSID = {59671746-F458-454D-B853-6CD97E4BDE8F}
+
+HKEY_CLASSES_ROOT\CLSID\{59671746-F458-454D-B853-6CD97E4BDE8F} = MsScriptEditor.Document
+HKEY_CLASSES_ROOT\CLSID\{59671746-F458-454D-B853-6CD97E4BDE8F}\ProgId = MsScriptEditor.Document
+
+HKEY_CLASSES_ROOT\CLSID\{59671746-F458-454D-B853-6CD97E4BDE8F}\LocalServer32 = MsScriptEditor.EXE

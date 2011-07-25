@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RORobot_Client", "..\测试机器人\RORobot_Client\RORobot_Client.vcproj", "{7B8D15F7-A5AA-4DC3-800A-0199ABA6739A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5E1F6EE3-F357-4D76-AA65-2F45FEFF1505} = {5E1F6EE3-F357-4D76-AA65-2F45FEFF1505}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_RORobot_Common", "..\测试机器人\RORobot_Common\RORobot_Common.vcproj", "{5E1F6EE3-F357-4D76-AA65-2F45FEFF1505}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RORobot_Server", "..\测试机器人\RORobot_Server\RORobot_Server.vcproj", "{C6633C47-0261-473C-8C4E-8395508CFA2B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5E1F6EE3-F357-4D76-AA65-2F45FEFF1505} = {5E1F6EE3-F357-4D76-AA65-2F45FEFF1505}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B8D15F7-A5AA-4DC3-800A-0199ABA6739A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7B8D15F7-A5AA-4DC3-800A-0199ABA6739A}.Debug|Win32.Build.0 = Debug|Win32
+		{7B8D15F7-A5AA-4DC3-800A-0199ABA6739A}.Release|Win32.ActiveCfg = Release|Win32
+		{7B8D15F7-A5AA-4DC3-800A-0199ABA6739A}.Release|Win32.Build.0 = Release|Win32
+		{5E1F6EE3-F357-4D76-AA65-2F45FEFF1505}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5E1F6EE3-F357-4D76-AA65-2F45FEFF1505}.Debug|Win32.Build.0 = Debug|Win32
+		{5E1F6EE3-F357-4D76-AA65-2F45FEFF1505}.Release|Win32.ActiveCfg = Release|Win32
+		{5E1F6EE3-F357-4D76-AA65-2F45FEFF1505}.Release|Win32.Build.0 = Release|Win32
+		{C6633C47-0261-473C-8C4E-8395508CFA2B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C6633C47-0261-473C-8C4E-8395508CFA2B}.Debug|Win32.Build.0 = Debug|Win32
+		{C6633C47-0261-473C-8C4E-8395508CFA2B}.Release|Win32.ActiveCfg = Release|Win32
+		{C6633C47-0261-473C-8C4E-8395508CFA2B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
