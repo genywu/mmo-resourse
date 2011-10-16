@@ -1,0 +1,52 @@
+// stdafx.h : 标准系统包含文件的包含文件，
+// 或是经常使用但不常更改的
+// 特定于项目的包含文件
+//
+
+#pragma once
+#pragma warning(disable:4244)
+#pragma warning(disable:4267)
+#pragma warning(disable:4018)
+#pragma warning(disable:4311)
+#pragma warning(disable:4312)
+
+#define WIN32_LEAN_AND_MEAN		// 从 Windows 头中排除极少使用的资料
+
+#ifndef _USE_32BIT_TIME_T
+#define _USE_32BIT_TIME_T
+#endif
+
+#define _WIN32_WINNT 0x0501
+
+// Windows 头文件:
+#include <windows.h>
+#include <wtypes.h>
+#include <WinBase.h>
+#include <process.h>
+
+
+// C 运行时头文件
+#include <stdlib.h>
+#include <malloc.h>
+#include <memory.h>
+#include <tchar.h>
+
+// TODO: 在此处引用程序要求的附加头文件
+#include <assert.h>
+#include <time.h>
+#include <MMSystem.h>
+
+// 标准模板库
+#include <list>
+#include <string>
+#include <sstream>
+#include <fstream>
+#include <string>
+#include <algorithm>
+#include <vector>
+#include <map>
+#include <deque>
+#include <set>
+
+
+using namespace std;

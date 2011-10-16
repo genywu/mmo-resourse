@@ -1,0 +1,450 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 358, 284
+STYLE DS_SETFONT | WS_POPUP | WS_BORDER
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    CONTROL         "同意",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,75,264,60,13
+    CONTROL         "不同意",ID_NOTAGREE,"Button",BS_OWNERDRAW | WS_TABSTOP,192,264,60,13
+    CONTROL         "",IDC_HINTINFO_PROTOCONTEXT,
+                    "{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,0,24,351,230
+    CONTROL         "CANCEL",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,301,1,50,14
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 230, 332
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "游戏设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SLIDER_EFFECT,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | TBS_TOOLTIPS | WS_TABSTOP,5,31,144,24
+    COMBOBOX        IDC_COMBO_RES,12,84,54,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COLOR,72,84,36,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_REFEASH,114,84,42,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,168,60,50,14
+    PUSHBUTTON      "取消",IDCANCEL,168,78,50,14
+    PUSHBUTTON      "高级 >>",ID_BUTTON_MORE,168,97,50,14,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_MODEL,18,145,90,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_LIGHT,120,145,90,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SHADOW,18,174,90,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TEXTURE,120,174,90,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_WEAHTER,18,204,90,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CONTROL,120,204,90,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_SLIDER_VIEWRANGE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,72,234,126,15
+    CONTROL         "音乐",IDC_CHECK1_MUSIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,252,32,10
+    CONTROL         "",IDC_SLIDER_MUSIC,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,72,252,126,15
+    CONTROL         "音效",IDC_CHECK_SOUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,271,32,10
+    CONTROL         "",IDC_SLIDER_SOUND,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,72,271,126,15
+    LTEXT           "分辨率",IDC_STATIC,12,73,25,8
+    LTEXT           "Gamma",IDC_STATIC,18,234,24,8,NOT WS_VISIBLE
+    LTEXT           "简化模型",IDC_STATIC,18,132,33,8
+    LTEXT           "光照效果",IDC_STATIC,120,132,33,8
+    LTEXT           "阴影效果",IDC_STATIC,18,162,33,8
+    LTEXT           "材质效果",IDC_STATIC,120,162,33,8
+    LTEXT           "天气效果",IDC_STATIC,18,193,33,8
+    LTEXT           "屏幕转动",IDC_STATIC,120,193,33,8
+    LTEXT           "视野范围",IDC_STATIC,18,234,33,8
+    GROUPBOX        "效果",IDC_STATIC,6,6,156,48
+    LTEXT           " 速度",IDC_STATIC,18,18,19,8
+    LTEXT           "质量",IDC_STATIC,132,18,17,8
+    GROUPBOX        "",IDC_STATIC,6,60,156,48
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_REALSIZEIMAGE | WS_BORDER,5,112,225,212
+    LTEXT           "颜色",IDC_STATIC,72,73,17,8
+    LTEXT           "刷新率",IDC_STATIC,114,73,25,8
+    CONTROL         "",IDC_SLIDER_GAMMA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,72,234,126,15
+    LTEXT           "亮",IDC_STATIC,204,234,9,8
+    LTEXT           "远",IDC_STATIC,204,234,9,8
+    LTEXT           "大",IDC_STATIC,204,252,9,8
+    LTEXT           "大",IDC_STATIC,204,270,9,8
+    LTEXT           "暗",IDC_STATIC,60,234,9,8,NOT WS_VISIBLE
+    LTEXT           "近",IDC_STATIC,60,234,9,8
+    LTEXT           "小",IDC_STATIC,60,252,9,8
+    LTEXT           "小",IDC_STATIC,60,270,9,8
+    CONTROL         "窗口模式",IDC_CHECK_WINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,168,42,48,10
+    CONTROL         "语音",IDC_CHECK_SPEECH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,291,32,10
+    LTEXT           "小",IDC_STATIC,60,292,10,8
+    LTEXT           "大",IDC_STATIC,204,291,9,8
+    CONTROL         "",IDC_SLIDER_Speech,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,72,288,126,15
+    CONTROL         "强化脚步",IDC_CHECK_FOOTSTEP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,309,49,8
+    CONTROL         "后台画面同步刷新",IDC_CHECK_UPDATEONFOUCE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,309,88,8
+END
+
+IDD_DIALOG_INITIALIFNO DIALOGEX 0, 0, 417, 303
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER | 0x1,23,253,355,14
+    PUSHBUTTON      "退出",IDCANCEL,171,273,50,14
+    CONTROL         "",IDC_DOWNLOADHINTINFO,
+                    "{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,107,57,148,116
+END
+
+IDD_DIALOG_SETUP DIALOGEX 0, 0, 369, 334
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_BORDER | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_APPWINDOW
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_HINTINFO,"{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,185,263,116,18
+    CONTROL         "校验全部文件",IDC_BUTTON_CHECKALLFILE,"Button",BS_OWNERDRAW | NOT WS_VISIBLE | WS_TABSTOP,170,319,59,14
+    CONTROL         "系统设置",IDC_BUTTON_SYSSET,"Button",BS_OWNERDRAW | WS_TABSTOP,313,257,43,14
+    CONTROL         "进入游戏",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,311,195,46,14
+    CONTROL         "Cacel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,315,288,31,14
+    CONTROL         "游戏更新",IDC_BUTTON_LOGIN,"Button",BS_OWNERDRAW | WS_TABSTOP,309,225,50,14
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",0x1,55,318,251,15,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    CONTROL         "首页",IDC_BUTTON_FIRSTPAGE,"Button",BS_OWNERDRAW | WS_TABSTOP,53,0,47,19
+    CONTROL         "进度条",IDC_BUTTON_LONGING,"Button",BS_OWNERDRAW | WS_TABSTOP,83,259,52,18
+    CONTROL         "退出",IDC_BUTTON_CACEL,"Button",BS_OWNERDRAW | WS_TABSTOP,339,57,21,13
+    CONTROL         "电信",IDC_BUTTON_WIRE,"Button",BS_OWNERDRAW | WS_TABSTOP,17,243,36,13
+    CONTROL         "网通",IDC_BUTTON_NET,"Button",BS_OWNERDRAW | WS_TABSTOP,19,273,32,16
+    CONTROL         "选择1",IDC_BUTTON5_CHOOSER,"Button",BS_OWNERDRAW | WS_TABSTOP,147,245,25,18
+    CONTROL         "选择2",IDC_BUTTON_CHOOSER2,"Button",BS_OWNERDRAW | WS_TABSTOP,151,277,24,17
+    CONTROL         "",IDC_HINTINFO2,"{8856F961-340A-11D0-A96B-00C04FD705A2}",0x0,60,49,229,173
+    CONTROL         "新闻中心",IDC_BUTTON_NEW,"Button",BS_OWNERDRAW | WS_TABSTOP,110,0,46,18
+    CONTROL         "帐号管理",IDC_BUTTON_ZHANGHAO,"Button",BS_OWNERDRAW | WS_TABSTOP,157,0,46,18
+    CONTROL         "下载中心",IDC_BUTTON_DOWNLOAD,"Button",BS_OWNERDRAW | WS_TABSTOP,204,0,50,19
+    CONTROL         "客服中心",IDC_BUTTON_KEFU,"Button",BS_OWNERDRAW | WS_TABSTOP,255,1,47,18
+    CONTROL         "游戏论坛",IDC_BUTTON_LUNTAN,"Button",BS_OWNERDRAW | WS_TABSTOP,308,1,34,16
+END
+
+IDD_DIALOG_SELECTSERVER DIALOGEX 0, 0, 294, 79
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "取消",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,123,58,50,14
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,7,28,280,22
+END
+
+IDD_DIALOG_SETUPSERVER DIALOGEX 0, 0, 137, 91
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择更新服务器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,62,50,14
+    PUSHBUTTON      "取消",IDCANCEL,80,62,50,14
+    COMBOBOX        IDC_COMBO1,29,19,80,55,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 351
+        BOTTOMMARGIN, 277
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 324
+    END
+
+    IDD_DIALOG_INITIALIFNO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 410
+        BOTTOMMARGIN, 296
+    END
+
+    IDD_DIALOG_SETUP, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 333
+    END
+
+    "IDD_DIALOG_SELECTSERVER", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_DIALOG_SETUPSERVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 130
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 84
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "RES\\Icon48.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG2 DLGINIT
+BEGIN
+    IDC_COMBO_MODEL, 0x403, 5, 0
+0xd8b9, 0xd5b1, "\000" 
+    IDC_COMBO_MODEL, 0x403, 5, 0
+0xaabf, 0xf4c6, "\000" 
+    IDC_COMBO_LIGHT, 0x403, 5, 0
+0xd8b9, 0xd5b1, "\000" 
+    IDC_COMBO_LIGHT, 0x403, 5, 0
+0xaabf, 0xf4c6, "\000" 
+    IDC_COMBO_SHADOW, 0x403, 5, 0
+0xa3c4, 0xfdba, "\000" 
+    IDC_COMBO_SHADOW, 0x403, 5, 0
+0xe5c7, 0xface, "\000" 
+    IDC_COMBO_TEXTURE, 0x403, 3, 0
+0xcdb5, "\000" 
+    IDC_COMBO_TEXTURE, 0x403, 3, 0
+0xdfb8, "\000" 
+    IDC_COMBO_WEAHTER, 0x403, 3, 0
+0xd8b9, "\000" 
+    IDC_COMBO_WEAHTER, 0x403, 3, 0
+0xaabf, "\000" 
+    IDC_COMBO_CONTROL, 0x403, 9, 0
+0xfcbc, 0xccc5, 0xd8bf, 0xc6d6, "\000" 
+    IDC_COMBO_CONTROL, 0x403, 9, 0
+0xf3ca, 0xeab1, 0xd8bf, 0xc6d6, "\000" 
+    0
+END
+
+IDD_DIALOG_SETUP DLGINIT
+BEGIN
+    IDC_HINTINFO, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x11fc, 0x0000, 0x02ca, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    IDC_HINTINFO2, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x238e, 0x0000, 0x1adf, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_DIALOG1 DLGINIT
+BEGIN
+    IDC_HINTINFO_PROTOCONTEXT, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x3678, 0x0000, 0x23a8, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_DIALOG_INITIALIFNO DLGINIT
+BEGIN
+    IDC_DOWNLOADHINTINFO, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x16f2, 0x0000, 0x11fc, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_BACKPAGE     BITMAP                  "RES\\launcher.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_BINDSTATUS23        "Class install location"
+    IDS_BINDSTATUS24        "Decoding..."
+    IDS_BINDSTATUS25        "???"
+    IDS_PROGRESS            "  %lu of %lu"
+    IDS_FAILED              "Failed."
+    IDS_CANCELED            "Canceled."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BINDSTATUS07        "Begin download components"
+    IDS_BINDSTATUS08        "Installing components..."
+    IDS_BINDSTATUS09        "End download components"
+    IDS_BINDSTATUS10        "Using cached copy..."
+    IDS_BINDSTATUS11        "Sending request..."
+    IDS_BINDSTATUS12        "Class ID available"
+    IDS_BINDSTATUS13        "MIME type available"
+    IDS_BINDSTATUS14        "Cache filename available"
+    IDS_BINDSTATUS15        "Begin sync operation"
+    IDS_BINDSTATUS16        "End sync operation"
+    IDS_BINDSTATUS17        "Begin upload data"
+    IDS_BINDSTATUS18        "Uploading data..."
+    IDS_BINDSTATUS19        "End upload data"
+    IDS_BINDSTATUS20        "Protocol class ID"
+    IDS_BINDSTATUS21        "Encoding..."
+    IDS_BINDSTATUS22        "Verfied MIME type available"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "下载..."
+    IDS_HTTPDOWNLOAD_BYTES  "%1 Bytes"
+    IDS_HTTPDOWNLOAD_KILOBYTES "%1 KB"
+    IDS_HTTPDOWNLOAD_MEGABYTES "%1 MB"
+    IDS_HTTPDOWNLOAD_SECONDS "%1 sec"
+    IDS_HTTPDOWNLOAD_MINUTES "%1 min"
+    IDS_HTTPDOWNLOAD_MINUTES_AND_SECONDS "%1 min %2 sec"
+    IDS_HTTPDOWNLOAD_BYTESPERSECOND "%1 Bytes/Sec"
+    IDS_HTTPDOWNLOAD_KILOBYTESPERSECOND "%1 KB/Sec"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Download..."
+    IDS_ERRINVALIDURL       "The URL is invalid."
+    IDS_ERRCREATETHREAD     "Could not create the thread."
+    IDS_BTNDOWNLOAD         "退出"
+    IDS_BTNSTOP             "退出"
+    IDS_BINDSTATUS01        "Finding resource..."
+    IDS_BINDSTATUS02        "Connecting..."
+    IDS_BINDSTATUS03        "Redirecting..."
+    IDS_BINDSTATUS04        "Begin download data"
+    IDS_BINDSTATUS05        "Downloading data..."
+    IDS_BINDSTATUS06        "End download data"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

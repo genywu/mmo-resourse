@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\Server.vcproj", "{EA3257FF-4C88-46B4-A9F4-A9548034859D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0157275E-736A-4582-805D-474517230C8B} = {0157275E-736A-4582-805D-474517230C8B}
+		{63F0E44B-CED4-44DE-8864-E1AA459C0CE0} = {63F0E44B-CED4-44DE-8864-E1AA459C0CE0}
+		{75097773-B9BB-4BB6-BF6A-4B6D06B9AE30} = {75097773-B9BB-4BB6-BF6A-4B6D06B9AE30}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Net", "..\..\NETS\Net\Net.vcproj", "{63F0E44B-CED4-44DE-8864-E1AA459C0CE0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Public", "..\..\PUBLIC\Public\Public.vcproj", "{75097773-B9BB-4BB6-BF6A-4B6D06B9AE30}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LogClient", "..\..\LogClient\LogClient.vcproj", "{0157275E-736A-4582-805D-474517230C8B}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccProjectName0 = \\Workspace\\Game_Program_Develop
+		SccLocalPath0 = ..\\..\\..
+		SccProvider0 = MSSCCI:Alienbrain
+		SccProjectFilePathRelativizedFromConnection0 = guangmang\\SERVER\\Server\\
+		SccProjectUniqueName1 = ..\\..\\NETS\\Net\\Net.vcproj
+		SccLocalPath1 = ..\\..\\..
+		SccProjectFilePathRelativizedFromConnection1 = guangmang\\NETS\\Net\\
+		SccProjectUniqueName2 = ..\\..\\PUBLIC\\Public\\Public.vcproj
+		SccLocalPath2 = ..\\..\\..
+		SccProjectFilePathRelativizedFromConnection2 = guangmang\\PUBLIC\\Public\\
+		SccProjectUniqueName3 = Server\\Server.vcproj
+		SccLocalPath3 = ..\\..\\..
+		SccProjectFilePathRelativizedFromConnection3 = guangmang\\SERVER\\Server\\Server\\
+		SccProjectUniqueName4 = ..\\..\\LogClient\\LogClient.vcproj
+		SccLocalPath4 = ..\\..\\..
+		SccProjectFilePathRelativizedFromConnection4 = guangmang\\LogClient\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA3257FF-4C88-46B4-A9F4-A9548034859D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA3257FF-4C88-46B4-A9F4-A9548034859D}.Debug|Win32.Build.0 = Debug|Win32
+		{EA3257FF-4C88-46B4-A9F4-A9548034859D}.Release|Win32.ActiveCfg = Release|Win32
+		{EA3257FF-4C88-46B4-A9F4-A9548034859D}.Release|Win32.Build.0 = Release|Win32
+		{63F0E44B-CED4-44DE-8864-E1AA459C0CE0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{63F0E44B-CED4-44DE-8864-E1AA459C0CE0}.Debug|Win32.Build.0 = Debug|Win32
+		{63F0E44B-CED4-44DE-8864-E1AA459C0CE0}.Release|Win32.ActiveCfg = Release|Win32
+		{63F0E44B-CED4-44DE-8864-E1AA459C0CE0}.Release|Win32.Build.0 = Release|Win32
+		{75097773-B9BB-4BB6-BF6A-4B6D06B9AE30}.Debug|Win32.ActiveCfg = Debug|Win32
+		{75097773-B9BB-4BB6-BF6A-4B6D06B9AE30}.Debug|Win32.Build.0 = Debug|Win32
+		{75097773-B9BB-4BB6-BF6A-4B6D06B9AE30}.Release|Win32.ActiveCfg = Release|Win32
+		{75097773-B9BB-4BB6-BF6A-4B6D06B9AE30}.Release|Win32.Build.0 = Release|Win32
+		{0157275E-736A-4582-805D-474517230C8B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0157275E-736A-4582-805D-474517230C8B}.Debug|Win32.Build.0 = Debug|Win32
+		{0157275E-736A-4582-805D-474517230C8B}.Release|Win32.ActiveCfg = Release|Win32
+		{0157275E-736A-4582-805D-474517230C8B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

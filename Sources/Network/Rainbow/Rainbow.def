@@ -1,5 +1,0 @@
-LIBRARY   Rainbow.dll
-DESCRIPTION "Rainbow Library"
-
-EXPORTS
-	QueryClientInterface	@1

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--系统配置内网-->
+<Config>
+	<Categories>
+		<Category id="1" name="大型游戏"/>
+		<Category id="2" name="休闲游戏"/>
+		<Category id="4" name="网页游戏"/>
+		<Category id="3" name="娱乐平台"/>
+	</Categories>
+	<Games>
+		<Game id="4" name="热血传奇" RegKey="Legend of mir" category="1" Loader="Mir.exe">
+			<DXDownUrl>http://dlc2.sdo.com/FTP/mir2/20080527/2/mir2install20080527.exe</DXDownUrl>
+			<WTDownUrl>http://dlc2.sdo.com/FTP/mir2/20080527/2/mir2install20080527.exe</WTDownUrl>
+			<BTDownUrl>http://mini-patch.sdo.com/ctorrent/mir2_mir20080527.torrent</BTDownUrl>
+		</Game>
+		<Game id="1" name="传奇世界" RegKey="Woool" category="1" Loader="Woool.exe" hue="38">
+			<DXDownUrl>ftp://down:down@218.60.31.69/FTP/woool/20080327/1/Woool_1.9.5.0_full_20080327.exe</DXDownUrl>
+			<WTDownUrl>ftp://down:down@218.60.31.69/FTP/woool/20080327/1/Woool_1.9.5.0_full_20080327.exe</WTDownUrl>
+			<BTDownUrl>http://mini-patch.sdo.com/ctorrent/woool_Woool_1.9.5.0_full_2.torrent</BTDownUrl>
+		</Game>
+		<Game id="2" name="梦幻国度" RegKey="Mland" category="1" Loader="Mland.exe" hue="194">
+			<DXDownUrl>ftp://down:down@221.208.177.105/FTP/mland/20080610/1/mland_1.8.5.5.exe</DXDownUrl>
+			<WTDownUrl>ftp://down:down@221.208.177.105/FTP/mland/20080610/1/mland_1.8.5.5.exe</WTDownUrl>
+			<BTDownUrl>http://mini-patch.sdo.com/ctorrent/mland_1.8.5.5.torrent</BTDownUrl>
+		</Game>
+		<Game id="30" name="霸王" RegKey="Archlord" category="1" Loader="archlord.exe">
+			<DXDownUrl>ftp://down:down@221.208.157.124/FTP/ac/20070725/4/archlord0620.exe</DXDownUrl>
+			<WTDownUrl>ftp://down:down@221.208.177.102/FTP/ac/20070725/4/archlord0620.exe</WTDownUrl>
+			<BTDownUrl>http://58.48.111.10/archlord0620.EXE.torrent</BTDownUrl>
+		</Game>
+		<Game id="70" name="千年3" RegKey="1000y" category="1" Loader="updata.exe" chgcolor="0">
+			<DXDownUrl>http://dlc2.sdo.com/FTP/1000Y/20080606/1/1000yinstall20080606.exe</DXDownUrl>
+			<WTDownUrl>http://dlc2.sdo.com/FTP/1000Y/20080606/1/1000yinstall20080606.exe</WTDownUrl>
+			<BTDownUrl>http://mini-patch.sdo.com/ctorrent/1000Y_20080606.torrent</BTDownUrl>
+		</Game>
+		<Game id="16" name="仙境传说(RO)" RegKey="RO" category="1" Loader="RoClient.exe" hue="189">
+			<DXDownUrl>ftp://down:down@221.208.177.108/FTP/ro/20080115/1/InstallRO11-3.exe</DXDownUrl>
+			<WTDownUrl>ftp://down:down@221.208.177.108/FTP/ro/20080115/1/InstallRO11-3.exe</WTDownUrl>
+			<BTDownUrl>ftp://mini-patch.sdo.com/ctorrent/InstallRO11-3.exe.torrent</BTDownUrl>
+		</Game>
+		<Game id="8" name="神迹" RegKey="S3D" category="1" Loader="S3D.exe">
+			<DXDownUrl>ftp://down:down@221.208.177.109/FTP/s3d/20070813/1/S3D-v1.80.01-20060308.exe</DXDownUrl>
+			<WTDownUrl>ftp://down:down@221.208.177.109/FTP/s3d/20070813/1/S3D-v1.80.01-20060308.exe</WTDownUrl>
+			<BTDownUrl>http://221.231.130.241/S3D-v1.80.01-20060308.exe.torrent</BTDownUrl>
+		</Game>
+		<Game id="29" name="龙与地下城" RegKey="DDO" category="1" Loader="dndlauncher.exe">
+			<DXDownUrl>http://mini-patch.sdo.com/patch/P2SP_ddo-client-20070515.exe</DXDownUrl>
+			<WTDownUrl>http://mini-patch.sdo.com/patch/P2SP_ddo-client-20070515.exe</WTDownUrl>
+			<BTDownUrl>http://58.48.111.10/ddo-client-20070515.torrent</BTDownUrl>
+		</Game>
+		<Game id="48" name="新英雄年代" RegKey="NEWHERO" category="1" Loader="AutoUpdate.exe" hue="27">
+			<DXDownUrl>http://dlc2.sdo.com/FTP/theage/20080604/3/newhero_setup0.9.8.0.exe</DXDownUrl>
+			<WTDownUrl>http://dlc2.sdo.com/FTP/theage/20080604/3/newhero_setup0.9.8.0.exe</WTDownUrl>
+			<BTDownUrl>http://mini-patch.sdo.com/ctorrent/theage_0_980604.torrent</BTDownUrl>
+		</Game>
+		<Game id="5" name="冒险岛" RegKey="MXD" category="2" Loader="MapleStory.exe">
+			<DXDownUrl>ftp://down:down@221.208.178.42/FTP/maplestory/20080625/1/MapleStory063.exe</DXDownUrl>
+			<WTDownUrl>ftp://down:down@221.208.178.42/FTP/maplestory/20080625/1/MapleStory063.exe</WTDownUrl>
+			<BTDownUrl>http://mini-patch.sdo.com/ctorrent/maplestory_MapleStory063.exe.torrent</BTDownUrl>
+		</Game>
+		<Game id="17" name="功夫小子" RegKey="KongfuKids" category="2" Loader="gfxz.exe" color="255">
+			<DXDownUrl>http://dlc2.sdo.com/FTP/gfxz/20080614/2/KongfuKids_Setup_1.3.1.99_0616.exe</DXDownUrl>
+			<WTDownUrl>http://dlc2.sdo.com/FTP/gfxz/20080614/2/KongfuKids_Setup_1.3.1.99_0616.exe</WTDownUrl>
+			<BTDownUrl>http://mini-patch.sdo.com/ctorrent/gfxz_1.3.1.99_0616.torrent</BTDownUrl>
+		</Game>
+		<Game id="11" name="泡泡堂" RegKey="BNB" category="2" Loader="CA.exe">
+			<DXDownUrl>ftp://down:down@221.208.177.111/FTP/bnb/20080610/1/bnb_040.exe</DXDownUrl>
+			<WTDownUrl>ftp://down:down@221.208.177.111/FTP/bnb/20080610/1/bnb_040.exe</WTDownUrl>
+			<BTDownUrl>http://mini-patch.sdo.com/ctorrent/bnb_bnb_040.torrent</BTDownUrl>
+		</Game>
+		<Game id="13" name="热血英豪" RegKey="GetAmpad" category="2" Loader="AmpedLoad.exe" hue="28">
+			<DXDownUrl>ftp://down:down@221.208.177.113/FTP/rexue/20080429/1/GAsetup252_0424.exe</DXDownUrl>
+			<WTDownUrl>ftp://down:down@221.208.177.111/FTP/rexue/20080429/1/GAsetup252_0424.exe</WTDownUrl>
+			<BTDownUrl>http://mini-patch.sdo.com/ctorrent/rexue_2.52.torrent</BTDownUrl>
+		</Game>
+		<Game id="14" name="疯狂赛车Ⅱ" RegKey="CrazyKart" category="2" Loader="CrazyKart.exe" hue="196" color="255">
+			<DXDownUrl>ftp://down:down@221.208.159.76/FTP/crazykart/20080611/1/CrazyKart20080610.exe</DXDownUrl>
+			<WTDownUrl>ftp://down:down@221.208.159.76/FTP/crazykart/20080611/1/CrazyKart20080610.exe</WTDownUrl>
+			<BTDownUrl>http://mini-patch.sdo.com/ctorrent/crazykart_080611.torrent</BTDownUrl>
+		</Game>
+		<Game id="45" name="超级跑跑" RegKey="talesrunner" category="2" Loader="trgame.exe" hue="206" chgcolor="15187578">
+			<DXDownUrl>http://dlc2.sdo.com/FTP/pao/20080623/3/pao_setup_v3.0.exe</DXDownUrl>
+			<WTDownUrl>http://dlc2.sdo.com/FTP/pao/20080623/3/pao_setup_v3.0.exe</WTDownUrl>
+			<BTDownUrl>http://mini-patch.sdo.com/ctorrent/pao_pao_setup_3.0.torrent</BTDownUrl>
+		</Game>
+		<Game id="31" name="推推侠" RegKey="PushPushOnline" category="2" Loader="client.exe" hue="187">
+			<DXDownUrl>ftp://down:down@221.208.178.12/FTP/ttx/20080313/2/TTX_Patch_1.0.5.1.exe</DXDownUrl>
+			<WTDownUrl>ftp://down:down@221.208.157.198/FTP/ttx/20080313/2/TTX_Patch_1.0.5.1.exe</WTDownUrl>
+			<BTDownUrl>http://mini-patch.sdo.com/ctorrent/ttx_1.0.5.1.torrent</BTDownUrl>
+		</Game>
+		<Game id="33" name="泡泡岛" RegKey="Paopaoland" category="2" Loader="autopatch.exe" hue="210">
+			<DXDownUrl>ftp://down:down@221.208.157.165/FTP/ppd/20080512/1/ppd1.0.32.111.exe</DXDownUrl>
+			<WTDownUrl>ftp://down:down@221.208.157.165/FTP/ppd/20080512/1/ppd1.0.32.111.exe</WTDownUrl>
+			<BTDownUrl>http://mini-patch.sdo.com/ctorrent/ppd_1.0.32.111.torrent</BTDownUrl>
+		</Game>
+		<Game id="7" name="浩方对战平台" RegKey="CGA" category="3" Loader="gameclient.exe">
+			<DXDownUrl>http://ftp6.cga.com.cn/HFsetup.exe</DXDownUrl>
+			<WTDownUrl>http://ftp7.cga.com.cn/gameclient/hfsetup.exe</WTDownUrl>
+		</Game>
+		<Game id="6" name="边锋棋牌" RegKey="GameABC" category="3" Loader="AsdeGame.exe">
+			<DXDownUrl>ftp://down:down@221.208.177.20/FTP/bf/20080617/1/LobbySetup.exe</DXDownUrl>
+			<WTDownUrl>ftp://down:down@221.208.177.20/FTP/bf/20080617/1/LobbySetup.exe</WTDownUrl>
+		</Game>
+		<Game id="10" name="起点中文网" type="1" RegKey="QD" category="3" Loader="AsdeGame.exe">
+		</Game>
+		<Game id="46" name="迪士尼魔幻飞板" RegKey="Disney Magic Board" category="2" Loader="DisneyGame.exe" hue="9">
+			<DXDownUrl>http://dlc2.sdo.com/FTP/disney/20080626/1/dmb_Setup1.30.1.exe</DXDownUrl>
+			<WTDownUrl>http://dlc2.sdo.com/FTP/disney/20080626/1/dmb_Setup1.30.1.exe</WTDownUrl>
+			<BTDownUrl>http://mini-patch.sdo.com/ctorrent/disney_1.30.1.torrent</BTDownUrl>
+		</Game>
+		<Game id="42" name="积分游乐场" type="1" RegKey="jf" category="3" Loader="AsdeGame.exe">
+		</Game>
+		<Game id="43" name="盛大易聊" type="1" RegKey="EZTalk" category="3" Loader="EZ_Talk.exe">
+		</Game>
+		<Game id="52" name="纵横天下" type="1" RegKey="zh" category="4" Loader="AsdeGame.exe">
+		</Game>
+	</Games>
+</Config>

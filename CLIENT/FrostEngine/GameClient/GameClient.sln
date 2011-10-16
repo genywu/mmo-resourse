@@ -1,0 +1,131 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppClient", "AppClient\AppClient.vcproj", "{FDDAF1B5-6EBD-49B4-9ECF-4FCDFB8AF326}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5509391E-19EF-4631-A413-713D18C480EA} = {5509391E-19EF-4631-A413-713D18C480EA}
+		{80515284-513C-4A0F-B488-1BC6F844FEA9} = {80515284-513C-4A0F-B488-1BC6F844FEA9}
+		{683C4C89-2097-4F25-8433-2E1AF879AB83} = {683C4C89-2097-4F25-8433-2E1AF879AB83}
+		{95C40399-8478-43F1-ACD4-A7EA6CD13381} = {95C40399-8478-43F1-ACD4-A7EA6CD13381}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netclient", "..\..\nets\netclient\netclient.vcproj", "{5509391E-19EF-4631-A413-713D18C480EA}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Input", "Input\Input.vcproj", "{80515284-513C-4A0F-B488-1BC6F844FEA9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameUI", "GameUI\GameUI.vcproj", "{683C4C89-2097-4F25-8433-2E1AF879AB83}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameExtend", "GameExtend\GameExtend.vcproj", "{95C40399-8478-43F1-ACD4-A7EA6CD13381}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameClient", "GameClient\GameClient.vcproj", "{E97D1298-5AE0-473C-A6A6-4AA498A15C76}"
+	ProjectSection(ProjectDependencies) = postProject
+		{80908C0B-7A6D-4CB9-BEAB-FDBA4E6108AA} = {80908C0B-7A6D-4CB9-BEAB-FDBA4E6108AA}
+		{5509391E-19EF-4631-A413-713D18C480EA} = {5509391E-19EF-4631-A413-713D18C480EA}
+		{80515284-513C-4A0F-B488-1BC6F844FEA9} = {80515284-513C-4A0F-B488-1BC6F844FEA9}
+		{683C4C89-2097-4F25-8433-2E1AF879AB83} = {683C4C89-2097-4F25-8433-2E1AF879AB83}
+		{95C40399-8478-43F1-ACD4-A7EA6CD13381} = {95C40399-8478-43F1-ACD4-A7EA6CD13381}
+		{FDDAF1B5-6EBD-49B4-9ECF-4FCDFB8AF326} = {FDDAF1B5-6EBD-49B4-9ECF-4FCDFB8AF326}
+		{25B58CDC-5949-47EC-A7FC-B73117C6640C} = {25B58CDC-5949-47EC-A7FC-B73117C6640C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameAudio", "GameAudio\GameAudio.vcproj", "{80908C0B-7A6D-4CB9-BEAB-FDBA4E6108AA}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FrostEngine_Client", "..\FrostEngine_Client\FrostEngine_Client.vcproj", "{25B58CDC-5949-47EC-A7FC-B73117C6640C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 9
+		SccProjectName0 = \u0022$/project/Client/GameClient\u0022,\u0020TFAAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = false
+		SolutionUniqueID = {1B6E472A-5E7B-40D7-847A-CDA7E728A620}
+		SccProjectUniqueName1 = AppClient\\AppClient.vcproj
+		SccProjectName1 = \u0022$/project\u0022,\u0020BAAAAAAA
+		SccLocalPath1 = ..\\..
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection1 = Client\\GameClient\\AppClient\\
+		SccProjectUniqueName2 = ..\\..\\nets\\netclient\\netclient.vcproj
+		SccProjectName2 = \u0022$/project/NETS\u0022,\u0020CSAAAAAA
+		SccLocalPath2 = ..\\..\\nets
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection2 = netclient\\
+		SccProjectUniqueName3 = Input\\Input.vcproj
+		SccLocalPath3 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection3 = Input\\
+		SccProjectUniqueName4 = GameUI\\GameUI.vcproj
+		SccLocalPath4 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection4 = GameUI\\
+		SccProjectUniqueName5 = GameExtend\\GameExtend.vcproj
+		SccProjectName5 = \u0022$/project/Client/GameClient/GameExtend\u0022,\u0020AIEAAAAA
+		SccLocalPath5 = GameExtend
+		CanCheckoutShared = false
+		SccProjectUniqueName6 = GameClient\\GameClient.vcproj
+		SccProjectName6 = \u0022$/project/Client/GameClient/GameClient\u0022,\u0020IICAAAAA
+		SccLocalPath6 = GameClient
+		CanCheckoutShared = false
+		SccProjectUniqueName7 = GameAudio\\GameAudio.vcproj
+		SccLocalPath7 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection7 = GameAudio\\
+		SccProjectUniqueName8 = ..\\FrostEngine_Client\\FrostEngine_Client.vcproj
+		SccProjectName8 = \u0022$/project/Client\u0022,\u0020GFAAAAAA
+		SccLocalPath8 = ..
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection8 = FrostEngine_Client\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FDDAF1B5-6EBD-49B4-9ECF-4FCDFB8AF326}.Debug.ActiveCfg = Debug|Win32
+		{FDDAF1B5-6EBD-49B4-9ECF-4FCDFB8AF326}.Debug.Build.0 = Debug|Win32
+		{FDDAF1B5-6EBD-49B4-9ECF-4FCDFB8AF326}.Release.ActiveCfg = Release|Win32
+		{FDDAF1B5-6EBD-49B4-9ECF-4FCDFB8AF326}.Release.Build.0 = Release|Win32
+		{5509391E-19EF-4631-A413-713D18C480EA}.Debug.ActiveCfg = Debug|Win32
+		{5509391E-19EF-4631-A413-713D18C480EA}.Debug.Build.0 = Debug|Win32
+		{5509391E-19EF-4631-A413-713D18C480EA}.Release.ActiveCfg = Release|Win32
+		{5509391E-19EF-4631-A413-713D18C480EA}.Release.Build.0 = Release|Win32
+		{80515284-513C-4A0F-B488-1BC6F844FEA9}.Debug.ActiveCfg = Debug|Win32
+		{80515284-513C-4A0F-B488-1BC6F844FEA9}.Debug.Build.0 = Debug|Win32
+		{80515284-513C-4A0F-B488-1BC6F844FEA9}.Release.ActiveCfg = Release|Win32
+		{80515284-513C-4A0F-B488-1BC6F844FEA9}.Release.Build.0 = Release|Win32
+		{683C4C89-2097-4F25-8433-2E1AF879AB83}.Debug.ActiveCfg = Debug|Win32
+		{683C4C89-2097-4F25-8433-2E1AF879AB83}.Debug.Build.0 = Debug|Win32
+		{683C4C89-2097-4F25-8433-2E1AF879AB83}.Release.ActiveCfg = Release|Win32
+		{683C4C89-2097-4F25-8433-2E1AF879AB83}.Release.Build.0 = Release|Win32
+		{95C40399-8478-43F1-ACD4-A7EA6CD13381}.Debug.ActiveCfg = Debug|Win32
+		{95C40399-8478-43F1-ACD4-A7EA6CD13381}.Debug.Build.0 = Debug|Win32
+		{95C40399-8478-43F1-ACD4-A7EA6CD13381}.Release.ActiveCfg = Release|Win32
+		{95C40399-8478-43F1-ACD4-A7EA6CD13381}.Release.Build.0 = Release|Win32
+		{E97D1298-5AE0-473C-A6A6-4AA498A15C76}.Debug.ActiveCfg = Debug|Win32
+		{E97D1298-5AE0-473C-A6A6-4AA498A15C76}.Debug.Build.0 = Debug|Win32
+		{E97D1298-5AE0-473C-A6A6-4AA498A15C76}.Release.ActiveCfg = Release|Win32
+		{E97D1298-5AE0-473C-A6A6-4AA498A15C76}.Release.Build.0 = Release|Win32
+		{80908C0B-7A6D-4CB9-BEAB-FDBA4E6108AA}.Debug.ActiveCfg = Debug|Win32
+		{80908C0B-7A6D-4CB9-BEAB-FDBA4E6108AA}.Debug.Build.0 = Debug|Win32
+		{80908C0B-7A6D-4CB9-BEAB-FDBA4E6108AA}.Release.ActiveCfg = Release|Win32
+		{80908C0B-7A6D-4CB9-BEAB-FDBA4E6108AA}.Release.Build.0 = Release|Win32
+		{25B58CDC-5949-47EC-A7FC-B73117C6640C}.Debug.ActiveCfg = Debug|Win32
+		{25B58CDC-5949-47EC-A7FC-B73117C6640C}.Debug.Build.0 = Debug|Win32
+		{25B58CDC-5949-47EC-A7FC-B73117C6640C}.Release.ActiveCfg = Release|Win32
+		{25B58CDC-5949-47EC-A7FC-B73117C6640C}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

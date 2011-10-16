@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="GB2312" standalone="no"?>
+<!--人物应用模块相关操作的配置-->
+<InterfaceIndex>
+     <Frame>
+        <Background Name="Launcherback" w="802" h="600"  webX="24" webY="42" webW="753" webH="412" Image="launcher\\Interface\\launcher\\launcher.bmp"/>
+        <Button Name="Quit" x="679" y="560" w="86" h="28"  Normal="launcher\\Interface\\launcher\\launcher-exitEx.bmp" Suspend="launcher\\Interface\\launcher\\launcher-exit-movetoEx.bmp" Pressed="launcher\\Interface\\launcher\\launcher-exit-downEx.bmp"/>
+        <Button Name="PlayGame" x="579" y="492" w="186" h="60"  Normal="launcher\\Interface\\launcher\\launcher-playEx.bmp" Suspend="launcher\\Interface\\launcher\\launcher-play-movetoEx.bmp" Pressed="launcher\\Interface\\launcher\\launcher-play-downEx.bmp"/>
+        <Button Name="SelectUpdate" x="579" y="492" w="186" h="60"  Normal="launcher\\Interface\\launcher\\launcher-updateEx.bmp" Suspend="launcher\\Interface\\launcher\\launcher-update-movetoEx.bmp" Pressed="launcher\\Interface\\launcher\\launcher-update-downEx.bmp"/>
+        <Button Name="SysSet" x="580" y="560" w="86" h="28"  Normal="launcher\\Interface\\launcher\\launcher-setupEx.bmp" Suspend="launcher\\Interface\\launcher\\launcher-setup-movetoEx.bmp" Pressed="launcher\\Interface\\launcher\\launcher-setup-downEx.bmp"/>
+        <Button Name="Loading" x="42" y="518" w="501" h="16"  Normal="launcher\\Interface\\launcher\\launcher-loadingEx.bmp" Suspend="launcher\\Interface\\launcher\\launcher-loadingEx.bmp" Pressed="launcher\\Interface\\launcher\\launcher-loadingEx.bmp"/>
+       
+        <Button Name="ServerWire" x="265" y="480" w="25" h="23"  Normal="launcher\\Interface\\launcher\\launcher-choose01.bmp" Suspend="launcher\\Interface\\launcher\\launcher-choose01.bmp" Pressed="launcher\\Interface\\launcher\\launcher-choose01.bmp"/>
+        <Button Name="ServerNet" x="383" y="480" w="25" h="23"  Normal="launcher\\Interface\\launcher\\launcher-choose01.bmp" Suspend="launcher\\Interface\\launcher\\launcher-choose01.bmp" Pressed="launcher\\Interface\\launcher\\launcher-choose01.bmp"/>
+        <Button Name="ServerChoose" x="265" y="480" w="25" h="23"  Normal="launcher\\Interface\\launcher\\launcher-choose.bmp" Suspend="launcher\\Interface\\launcherlauncher-choose.bmp" Pressed="launcher\\Interface\\launcher\\launcher-choose.bmp"/>
+        <Button Name="ServerChoose2" x="383" y="480" w="25" h="23"  Normal="launcher\\Interface\\launcher\\launcher-choose.bmp" Suspend="launcher\\Interface\\launcherlauncher-choose.bmp" Pressed="launcher\\Interface\\launcher\\launcher-choose.bmp"/>
+        <Button Name="FirstPage" x="167" y="6" w="63" h="20"  Normal="launcher\\Interface\\launcher\\gwzy0.bmp" Suspend="launcher\\Interface\\launcher\\gwzy1.bmp" Pressed="launcher\\Interface\\launcher\\gwzy0.bmp"/>
+        <Button Name="NEW" x="245" y="6" w="63" h="20"  Normal="launcher\\Interface\\launcher\\xwzx0.bmp" Suspend="launcher\\Interface\\launcher\\xwzx1.bmp" Pressed="launcher\\Interface\\launcher\\xwzx0.bmp"/>
+        <Button Name="ZhangHao" x="327" y="6" w="63" h="20"  Normal="launcher\\Interface\\launcher\\zhgl0.bmp" Suspend="launcher\\Interface\\launcher\\zhgl1.bmp" Pressed="launcher\\Interface\\launcher\\zhgl0.bmp"/>
+        <Button Name="DownLoad" x="406" y="6" w="63" h="20"  Normal="launcher\\Interface\\launcher\\xzzx0.bmp" Suspend="launcher\\Interface\\launcher\\xzzx1.bmp" Pressed="launcher\\Interface\\launcher\\xzzx0.bmp"/>
+        <Button Name="KeFu" x="486" y="6" w="63" h="20"  Normal="launcher\\Interface\\launcher\\kfzx0.bmp" Suspend="launcher\\Interface\\launcher\\kfzx1.bmp" Pressed="launcher\\Interface\\launcher\\kfzx0.bmp"/>
+        <Button Name="LunTan" x="564" y="6" w="63" h="20"  Normal="launcher\\Interface\\launcher\\yxlt0.bmp" Suspend="launcher\\Interface\\launcher\\yxlt1.bmp" Pressed="launcher\\Interface\\launcher\\yxlt0.bmp"/>
+     </Frame>
+</InterfaceIndex>

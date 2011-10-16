@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoginServer", "LoginServer\LoginServer.vcproj", "{617D751C-35BA-4E06-8EF0-0DBE422F44D9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E209710D-05B9-4F4C-85D0-CCB02FCEC456} = {E209710D-05B9-4F4C-85D0-CCB02FCEC456}
+		{3CC780CE-F73A-47AA-8BA3-AD01356117DA} = {3CC780CE-F73A-47AA-8BA3-AD01356117DA}
+		{33D8B0FB-33C0-4BB7-9BEF-E870387677CF} = {33D8B0FB-33C0-4BB7-9BEF-E870387677CF}
+		{273C48D0-6988-4FA1-B1F9-24D86DBF71AF} = {273C48D0-6988-4FA1-B1F9-24D86DBF71AF}
+		{E89B2ACB-0787-4323-A0A4-137D0781FE99} = {E89B2ACB-0787-4323-A0A4-137D0781FE99}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netlogin", "..\..\NETS\netlogin\netlogin.vcproj", "{E209710D-05B9-4F4C-85D0-CCB02FCEC456}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoginDB", "..\..\DBACCESS\LoginDB\LoginDB.vcproj", "{E89B2ACB-0787-4323-A0A4-137D0781FE99}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppLogin", "AppLogin\AppLogin.vcproj", "{33D8B0FB-33C0-4BB7-9BEF-E870387677CF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoginPublic", "..\..\PUBLIC\LoginPublic.vcproj", "{273C48D0-6988-4FA1-B1F9-24D86DBF71AF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemManage", "..\..\MemManage\MemManage\MemManage.vcproj", "{3CC780CE-F73A-47AA-8BA3-AD01356117DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{617D751C-35BA-4E06-8EF0-0DBE422F44D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{617D751C-35BA-4E06-8EF0-0DBE422F44D9}.Debug|Win32.Build.0 = Debug|Win32
+		{617D751C-35BA-4E06-8EF0-0DBE422F44D9}.Release|Win32.ActiveCfg = Release|Win32
+		{617D751C-35BA-4E06-8EF0-0DBE422F44D9}.Release|Win32.Build.0 = Release|Win32
+		{E209710D-05B9-4F4C-85D0-CCB02FCEC456}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E209710D-05B9-4F4C-85D0-CCB02FCEC456}.Debug|Win32.Build.0 = Debug|Win32
+		{E209710D-05B9-4F4C-85D0-CCB02FCEC456}.Release|Win32.ActiveCfg = Release|Win32
+		{E209710D-05B9-4F4C-85D0-CCB02FCEC456}.Release|Win32.Build.0 = Release|Win32
+		{E89B2ACB-0787-4323-A0A4-137D0781FE99}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E89B2ACB-0787-4323-A0A4-137D0781FE99}.Debug|Win32.Build.0 = Debug|Win32
+		{E89B2ACB-0787-4323-A0A4-137D0781FE99}.Release|Win32.ActiveCfg = Release|Win32
+		{E89B2ACB-0787-4323-A0A4-137D0781FE99}.Release|Win32.Build.0 = Release|Win32
+		{33D8B0FB-33C0-4BB7-9BEF-E870387677CF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{33D8B0FB-33C0-4BB7-9BEF-E870387677CF}.Debug|Win32.Build.0 = Debug|Win32
+		{33D8B0FB-33C0-4BB7-9BEF-E870387677CF}.Release|Win32.ActiveCfg = Release|Win32
+		{33D8B0FB-33C0-4BB7-9BEF-E870387677CF}.Release|Win32.Build.0 = Release|Win32
+		{273C48D0-6988-4FA1-B1F9-24D86DBF71AF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{273C48D0-6988-4FA1-B1F9-24D86DBF71AF}.Debug|Win32.Build.0 = Debug|Win32
+		{273C48D0-6988-4FA1-B1F9-24D86DBF71AF}.Release|Win32.ActiveCfg = Release|Win32
+		{273C48D0-6988-4FA1-B1F9-24D86DBF71AF}.Release|Win32.Build.0 = Release|Win32
+		{3CC780CE-F73A-47AA-8BA3-AD01356117DA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3CC780CE-F73A-47AA-8BA3-AD01356117DA}.Debug|Win32.Build.0 = Debug|Win32
+		{3CC780CE-F73A-47AA-8BA3-AD01356117DA}.Release|Win32.ActiveCfg = Release|Win32
+		{3CC780CE-F73A-47AA-8BA3-AD01356117DA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

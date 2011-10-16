@@ -1,0 +1,65 @@
+<!--
+@file MonsterScriptAI.xml
+@brief To config script ai for monsters.
+@history
+
+name配置大小写敏感，scripts忽略大小写。当scripts配置为空时，AI执行时将屏蔽默认行为。
+
+函数说明：
+- SearchEnemy :
+	功能：搜寻敌人
+	参数：无
+	返回值：无
+- WhenBeenHurted :
+	功能：被攻击时调用
+	参数：
+		AttackerType : 攻击者类型
+		AttackerID : 攻击者GUID
+		Hurt : 伤害HP值
+	返回值：无
+- Init :
+	功能：怪物出生、重生时初始化其AI，主要用于定义变量、常量等，不建议加入AI逻辑
+	参数：无
+	返回值：无
+- Tracing:
+	功能：战斗状态中追击敌人
+	参数：
+		TargetType : 追击目标类型
+		TargetID : 追击目标GUID
+	返回值：
+		0 ： 追击成功，怪物将对目标施放技能
+- CheckReturnPeace:
+	功能：检查是否可以恢复和平状态
+	参数：无
+	返回值：无
+- OnFightState:
+	功能：怪物战斗状态逻辑
+	参数：无
+	返回值：无
+- OnSkillEnd:
+	功能：技能释放完的处理
+	参数：无
+	返回值：1或0
+-->
+<AISet>
+	<AI type="256">
+		<Function name="Init" script="scripts/monsterai/256/Init.script" />
+		<Function name="SearchEnemy" script="scripts/monsterai/256/SearchEnemy.script" />
+		<Function name="WhenBeenHurted" script="scripts/monsterai/256/WhenBeenHurted.script" />
+		<Function name="Tracing" script="scripts/monsterai/256/Tracing.script" />
+	</AI>
+	<!--BOSS哈蒙的AI-->
+	<AI type="1001">
+		<Function name="Init" script="scripts/monsterai/BOSSHamen1001/Init.script" />
+		<Function name="SearchEnemy" script="scripts/monsterai/BOSSHamen1001/SearchEnemy.script" />
+		<Function name="Tracing" script="" />
+		<Function name="CheckReturnPeace" script="" />
+		<Function name="OnFightState" script="scripts/monsterai/BOSSHamen1001/OnFightState.script" />
+		<Function name="WhenBeenHurted" script="" />
+		<Function name="OnSkillEnd" script="" />
+	</AI>
+</AISet>
+
+
+
+
