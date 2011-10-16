@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\Server.vcproj", "{617D751C-35BA-4E06-8EF0-0DBE422F44D9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DB5B7ED8-12AE-43CA-88EC-4710287C7ADD} = {DB5B7ED8-12AE-43CA-88EC-4710287C7ADD}
+		{229DEFE1-D136-453B-8496-4F835B40166E} = {229DEFE1-D136-453B-8496-4F835B40166E}
+		{33D8B0FB-33C0-4BB7-9BEF-E870387677CF} = {33D8B0FB-33C0-4BB7-9BEF-E870387677CF}
+		{E89B2ACB-0787-4323-A0A4-137D0781FE99} = {E89B2ACB-0787-4323-A0A4-137D0781FE99}
+		{E209710D-05B9-4F4C-85D0-CCB02FCEC456} = {E209710D-05B9-4F4C-85D0-CCB02FCEC456}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "App", "App\App.vcproj", "{33D8B0FB-33C0-4BB7-9BEF-E870387677CF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DB", "DB\DB.vcproj", "{E89B2ACB-0787-4323-A0A4-137D0781FE99}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Net", "Net\Net.vcproj", "{E209710D-05B9-4F4C-85D0-CCB02FCEC456}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Public", "..\..\Public\Public.vcproj", "{DB5B7ED8-12AE-43CA-88EC-4710287C7ADD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServerPublic", "..\..\Public\ServerPublic\ServerPublic.vcproj", "{229DEFE1-D136-453B-8496-4F835B40166E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{617D751C-35BA-4E06-8EF0-0DBE422F44D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{617D751C-35BA-4E06-8EF0-0DBE422F44D9}.Debug|Win32.Build.0 = Debug|Win32
+		{617D751C-35BA-4E06-8EF0-0DBE422F44D9}.Release|Win32.ActiveCfg = Release|Win32
+		{617D751C-35BA-4E06-8EF0-0DBE422F44D9}.Release|Win32.Build.0 = Release|Win32
+		{33D8B0FB-33C0-4BB7-9BEF-E870387677CF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{33D8B0FB-33C0-4BB7-9BEF-E870387677CF}.Debug|Win32.Build.0 = Debug|Win32
+		{33D8B0FB-33C0-4BB7-9BEF-E870387677CF}.Release|Win32.ActiveCfg = Release|Win32
+		{33D8B0FB-33C0-4BB7-9BEF-E870387677CF}.Release|Win32.Build.0 = Release|Win32
+		{E89B2ACB-0787-4323-A0A4-137D0781FE99}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E89B2ACB-0787-4323-A0A4-137D0781FE99}.Debug|Win32.Build.0 = Debug|Win32
+		{E89B2ACB-0787-4323-A0A4-137D0781FE99}.Release|Win32.ActiveCfg = Release|Win32
+		{E89B2ACB-0787-4323-A0A4-137D0781FE99}.Release|Win32.Build.0 = Release|Win32
+		{E209710D-05B9-4F4C-85D0-CCB02FCEC456}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E209710D-05B9-4F4C-85D0-CCB02FCEC456}.Debug|Win32.Build.0 = Debug|Win32
+		{E209710D-05B9-4F4C-85D0-CCB02FCEC456}.Release|Win32.ActiveCfg = Release|Win32
+		{E209710D-05B9-4F4C-85D0-CCB02FCEC456}.Release|Win32.Build.0 = Release|Win32
+		{DB5B7ED8-12AE-43CA-88EC-4710287C7ADD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DB5B7ED8-12AE-43CA-88EC-4710287C7ADD}.Debug|Win32.Build.0 = Debug|Win32
+		{DB5B7ED8-12AE-43CA-88EC-4710287C7ADD}.Release|Win32.ActiveCfg = Release|Win32
+		{DB5B7ED8-12AE-43CA-88EC-4710287C7ADD}.Release|Win32.Build.0 = Release|Win32
+		{229DEFE1-D136-453B-8496-4F835B40166E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{229DEFE1-D136-453B-8496-4F835B40166E}.Debug|Win32.Build.0 = Debug|Win32
+		{229DEFE1-D136-453B-8496-4F835B40166E}.Release|Win32.ActiveCfg = Release|Win32
+		{229DEFE1-D136-453B-8496-4F835B40166E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

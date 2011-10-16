@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GUILayout >
+  <Window Type="TaharezLook/FrameWindow" Name="GoodsTreeFrame" >
+    <Property Name="Font" Value="Chinese" />
+    <Property Name="Text" Value="物品列表" />
+    <Property Name="TitlebarFont" Value="Chinese" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.001000,0},{0.000000,0},{0.713000,0},{0.999000,0}}" />
+    <Property Name="DragMovingEnabled" Value="True" />
+    <Property Name="CloseButtonEnabled" Value="False" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Window Type="TaharezLook/Tree" Name="GoodsTreeFrame/Tree" >
+      <Property Name="Font" Value="Chinese" />
+      <Property Name="ID" Value="1" />
+      <Property Name="Text" Value="所有物品" />
+      <Property Name="UnifiedAreaRect" Value="{{0.00681088,0},{0.0198282,0},{0.190000,0},{0.984058,0}}" />
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="GoodsTreeFrame/MultiColumnList" >
+      <Property Name="Font" Value="Chinese" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0917252,0},{-0.43089,0},{0.899808,0},{-0.329685,0}}" />
+      <Property Name="VerticalAlignment" Value="Centre" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Property Name="DragMovingEnabled" Value="False" />
+      <Property Name="ColumnsMovable" Value="False" />
+      <Property Name="ColumnsSizable" Value="True" />
+      <Property Name="SortSettingEnabled" Value="False" />
+      <Property Name="ColumnHeader" Value="text:ID width:{0.06,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:原始名称 width:{0.13,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:显示名称 width:{0.13,0} id:2" />
+      <Property Name="ColumnHeader" Value="text:存数据库 width:{0.13,0} id:3" />
+      <Property Name="ColumnHeader" Value="text:客户端图标 width:{0.15,0} id:4" />
+      <Property Name="ColumnHeader" Value="text:落地图标 width:{0.13,0} id:5" />
+      <Property Name="ColumnHeader" Value="text:装备图标 width:{0.13,0} id:6" />
+      <Property Name="ColumnHeader" Value="text:金价 width:{0.08,0} id:7" />
+      <Property Name="ColumnHeader" Value="text:银价 width:{0.08,0} id:8" />
+      <Property Name="ColumnHeader" Value="text:物品类型 width:{0.13,0} id:9" />
+      <Property Name="ColumnHeader" Value="text:拾取声音 width:{0.13,0} id:10" />
+      <Property Name="ColumnHeader" Value="text:描述 width:{0.4,0} id:11" />
+      <Property Name="ColumnHeader" Value="text:挥动/弱伤害声音 width:{0.21,0} id:12" />
+      <Property Name="ColumnHeader" Value="text:特殊攻击/击中声音 width:{0.23,0} id:13" />
+      <Property Name="ColumnHeader" Value="text:攻击时混音 width:{0.15,0} id:14" />
+    </Window>
+    <Window Type="TaharezLook/GroupBox" Name="GoodsTreeFrame/BaseProperty" >
+      <Property Name="Font" Value="Chinese" />
+      <Property Name="Text" Value="基本属性" />
+      <Property Name="RiseOnClick" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.197741,0},{0.122135,0},{0.529157,0},{0.464353,0}}" />
+      <AutoWindow NameSuffix="__auto_contentpane__" >
+        <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/BaseProperty/Index" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" Value="Index" />
+          <Property Name="HorzExtent" Value="34" />
+          <Property Name="VertExtent" Value="13" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00699168,0},{0.00168175,0},{0.381992,0},{0.150000,0}}" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/BaseProperty/EditIndex" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="MaxTextLength" Value="1073741823" />
+          <Property Name="UnifiedAreaRect" Value="{{0.418855,0},{0.00713761,0},{0.99,0},{0.143454,0}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/BaseProperty/IsDB" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" Value="存数据库" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="13" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00260919,0},{0.153431,0},{0.37761,0},{0.308746,0}}" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+        <Window Type="TaharezLook/Combobox" Name="GoodsTreeFrame/BaseProperty/CombBoxIsDB" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.418855,0},{0.170884,0},{0.99,0},{0.523986,0}}" />
+          <Property Name="MaxEditTextLength" Value="1073741823" />
+          <AutoWindow NameSuffix="__auto_editbox__" >
+            <Property Name="Font" Value="Chinese" />
+            <Property Name="ReadOnly" Value="True" />
+            <Property Name="MaxTextLength" Value="1073741823" />
+            <Property Name="TextParsingEnabled" Value="False" />
+            <Property Name="ActiveSelectionColour" Value="FF6060FF" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_droplist__" >
+            <Property Name="Font" Value="Chinese" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="DistributeCapturedInputs" Value="True" />
+            <AutoWindow NameSuffix="__auto_hscrollbar__" >
+              <Property Name="RestoreOldCapture" Value="True" />
+              <AutoWindow NameSuffix="__auto_incbtn__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+              <AutoWindow NameSuffix="__auto_decbtn__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+              <AutoWindow NameSuffix="__auto_thumb__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+            </AutoWindow>
+            <AutoWindow NameSuffix="__auto_vscrollbar__" >
+              <Property Name="RestoreOldCapture" Value="True" />
+              <AutoWindow NameSuffix="__auto_incbtn__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+              <AutoWindow NameSuffix="__auto_decbtn__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+              <AutoWindow NameSuffix="__auto_thumb__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+            </AutoWindow>
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_button__" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/BaseProperty/GoodType" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" Value="物品类型" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="13" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00182831,0},{0.314524,0},{0.383881,0},{0.470686,0}}" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+        <Window Type="TaharezLook/Combobox" Name="GoodsTreeFrame/BaseProperty/CombboxGoodType" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.423238,0},{0.330828,0},{0.994383,0},{0.999,0}}" />
+          <Property Name="MaxEditTextLength" Value="1073741823" />
+          <AutoWindow NameSuffix="__auto_editbox__" >
+            <Property Name="Font" Value="Chinese" />
+            <Property Name="ReadOnly" Value="True" />
+            <Property Name="MaxTextLength" Value="1073741823" />
+            <Property Name="TextParsingEnabled" Value="False" />
+            <Property Name="ActiveSelectionColour" Value="FF6060FF" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_droplist__" >
+            <Property Name="Font" Value="Chinese" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="DistributeCapturedInputs" Value="True" />
+            <AutoWindow NameSuffix="__auto_hscrollbar__" >
+              <Property Name="RestoreOldCapture" Value="True" />
+              <AutoWindow NameSuffix="__auto_incbtn__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+              <AutoWindow NameSuffix="__auto_decbtn__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+              <AutoWindow NameSuffix="__auto_thumb__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+            </AutoWindow>
+            <AutoWindow NameSuffix="__auto_vscrollbar__" >
+              <Property Name="RestoreOldCapture" Value="True" />
+              <AutoWindow NameSuffix="__auto_incbtn__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+              <AutoWindow NameSuffix="__auto_decbtn__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+              <AutoWindow NameSuffix="__auto_thumb__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+            </AutoWindow>
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_button__" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/BaseProperty/DisName" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" Value="显示名称" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="13" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00182831,0},{0.478927,0},{0.371927,0},{0.633233,0}}" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/BaseProperty/EditDisName" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="MaxTextLength" Value="1073741823" />
+          <Property Name="UnifiedAreaRect" Value="{{0.423238,0},{0.474838,0},{0.994383,0},{0.622576,0}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/BaseProperty/Price" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" Value="价格" />
+          <Property Name="HorzExtent" Value="26" />
+          <Property Name="VertExtent" Value="13" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.00177331,0},{0.651873,0},{0.375821,0},{0.805169,0}}" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/BaseProperty/EditPrice" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="MaxTextLength" Value="1073741823" />
+          <Property Name="UnifiedAreaRect" Value="{{0.418855,0},{0.655226,0},{0.99,0},{0.794645,0}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/BaseProperty/OgriName" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" Value="原始名称" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="13" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00260922,0},{0.822505,0},{0.374322,0},{0.977521,0}}" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/BaseProperty/EditOgriName" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="MaxTextLength" Value="1073741823" />
+          <Property Name="UnifiedAreaRect" Value="{{0.421677,0},{0.819019,0},{0.985618,0},{0.99,0}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+      </AutoWindow>
+    </Window>
+    <Window Type="TaharezLook/GroupBox" Name="GoodsTreeFrame/ClientProperty" >
+      <Property Name="Font" Value="Chinese" />
+      <Property Name="Text" Value="客户端独有属性" />
+      <Property Name="RiseOnClick" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.197233,0},{0.461756,0},{0.534474,0},{0.995087,0}}" />
+      <AutoWindow NameSuffix="__auto_contentpane__" >
+        <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/ClientProperty/IconId" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" Value="界面图形ID" />
+          <Property Name="HorzExtent" Value="65" />
+          <Property Name="VertExtent" Value="13" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00955399,0},{0.00201684,0},{0.379096,0},{0.10965,0}}" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/ClientProperty/GroundIconId1" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" Value="落地图形ID" />
+          <Property Name="HorzExtent" Value="65" />
+          <Property Name="VertExtent" Value="13" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00884749,0},{0.112427,0},{0.382464,0},{0.22006,0}}" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/ClientProperty/IconId1" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" Value="换装图形ID" />
+          <Property Name="HorzExtent" Value="65" />
+          <Property Name="VertExtent" Value="13" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00747515,0},{0.225501,0},{0.381092,0},{0.333134,0}}" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/ClientProperty/IconId2" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" Value="拾取声音ID" />
+          <Property Name="HorzExtent" Value="65" />
+          <Property Name="VertExtent" Value="13" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0097362,0},{0.336888,0},{0.379278,0},{0.444521,0}}" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/ClientProperty/IconId3" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" Value="挥动弱伤害声音" />
+          <Property Name="HorzExtent" Value="91" />
+          <Property Name="VertExtent" Value="13" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00317259,0},{0.449697,0},{0.466145,0},{0.55733,0}}" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/ClientProperty/IconId31" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" Value="特殊击中被击中声音" />
+          <Property Name="HorzExtent" Value="117" />
+          <Property Name="VertExtent" Value="13" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00561652,0},{0.558415,0},{0.600828,0},{0.666048,0}}" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/ClientProperty/IconId4" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" Value="攻击时混音" />
+          <Property Name="HorzExtent" Value="65" />
+          <Property Name="VertExtent" Value="13" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00250886,0},{0.671223,0},{0.372051,0},{0.778856,0}}" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/ClientProperty/IconId5" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" Value="武器动作类型" />
+          <Property Name="HorzExtent" Value="78" />
+          <Property Name="VertExtent" Value="13" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.000461631,0},{0.777272,0},{0.413902,0},{0.884905,0}}" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/ClientProperty/IconId6" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" Value="描述" />
+          <Property Name="HorzExtent" Value="26" />
+          <Property Name="VertExtent" Value="13" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00658351,0},{0.89008,0},{0.20499,0},{0.997713,0}}" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/ClientProperty/EditGraID" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="MaxTextLength" Value="1073741823" />
+          <Property Name="UnifiedAreaRect" Value="{{0.41409,0},{0.00107326,0},{0.990062,0},{0.109617,0}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/ClientProperty/EditGraID1" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="MaxTextLength" Value="1073741823" />
+          <Property Name="UnifiedAreaRect" Value="{{0.411119,0},{0.115129,0},{0.987091,0},{0.223673,0}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/ClientProperty/EditGraID2" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="MaxTextLength" Value="1073741823" />
+          <Property Name="UnifiedAreaRect" Value="{{0.416298,0},{0.229185,0},{0.99227,0},{0.337728,0}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/ClientProperty/EditGraID3" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="MaxTextLength" Value="1073741823" />
+          <Property Name="UnifiedAreaRect" Value="{{0.417402,0},{0.340571,0},{0.993374,0},{0.449115,0}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/ClientProperty/EditGraID4" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="MaxTextLength" Value="1073741823" />
+          <Property Name="UnifiedAreaRect" Value="{{0.516299,0},{0.449289,0},{0.994479,0},{0.557833,0}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/ClientProperty/EditGraID5" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="MaxTextLength" Value="1073741823" />
+          <Property Name="UnifiedAreaRect" Value="{{0.627418,0},{0.566014,0},{0.999658,0},{0.674557,0}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/ClientProperty/EditGraID51" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="MaxTextLength" Value="1073741823" />
+          <Property Name="UnifiedAreaRect" Value="{{0.445163,0},{0.765477,0},{0.988538,0},{0.874021,0}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Combobox" Name="GoodsTreeFrame/BaseProperty/CombBoxIsDB1" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.419959,0},{0.67995,0},{0.991104,0},{0.888862,0}}" />
+          <Property Name="MaxEditTextLength" Value="1073741823" />
+          <AutoWindow NameSuffix="__auto_editbox__" >
+            <Property Name="Font" Value="Chinese" />
+            <Property Name="ReadOnly" Value="True" />
+            <Property Name="MaxTextLength" Value="1073741823" />
+            <Property Name="TextParsingEnabled" Value="False" />
+            <Property Name="ActiveSelectionColour" Value="FF6060FF" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_droplist__" >
+            <Property Name="Font" Value="Chinese" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="DistributeCapturedInputs" Value="True" />
+            <AutoWindow NameSuffix="__auto_hscrollbar__" >
+              <Property Name="RestoreOldCapture" Value="True" />
+              <AutoWindow NameSuffix="__auto_incbtn__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+              <AutoWindow NameSuffix="__auto_decbtn__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+              <AutoWindow NameSuffix="__auto_thumb__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+            </AutoWindow>
+            <AutoWindow NameSuffix="__auto_vscrollbar__" >
+              <Property Name="RestoreOldCapture" Value="True" />
+              <AutoWindow NameSuffix="__auto_incbtn__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+              <AutoWindow NameSuffix="__auto_decbtn__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+              <AutoWindow NameSuffix="__auto_thumb__" >
+                <Property Name="RestoreOldCapture" Value="True" />
+              </AutoWindow>
+            </AutoWindow>
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_button__" />
+        </Window>
+        <Window Type="TaharezLook/MultiLineEditbox" Name="GoodsTreeFrame/ClientProperty/Content" >
+          <Property Name="Font" Value="Chinese" />
+          <Property Name="Text" >
+          </Property>
+          <Property Name="MaxTextLength" Value="1073741823" />
+          <Property Name="UnifiedAreaRect" Value="{{0.218507,0},{0.890000,0},{0.996000,0},{0.997000,0}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+          <AutoWindow NameSuffix="__auto_hscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+          <AutoWindow NameSuffix="__auto_vscrollbar__" >
+            <AutoWindow NameSuffix="__auto_incbtn__" />
+            <AutoWindow NameSuffix="__auto_decbtn__" />
+            <AutoWindow NameSuffix="__auto_thumb__" />
+          </AutoWindow>
+        </Window>
+      </AutoWindow>
+    </Window>
+
+
+     <Window Type="TaharezLook/GroupBox" Name="GoodsTreeFrame/AddProperty" >
+        <Property Name="Font" Value="Chinese" />
+        <Property Name="Text" Value="附加属性" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.531918,0},{0.122135,0},{0.990786,0},{0.57171,0}}" />
+        <AutoWindow NameSuffix="__auto_contentpane__" >
+            <Window Type="TaharezLook/Combobox" Name="GoodsTreeFrame/AddProperty/GroupBox" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="ReadOnly" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.379306,0},{0.887955,0}}" />
+                <Property Name="MaxEditTextLength" Value="1073741823" />
+                <AutoWindow NameSuffix="__auto_editbox__" >
+                    <Property Name="Font" Value="Chinese" />
+                    <Property Name="ReadOnly" Value="True" />
+                    <Property Name="MaxTextLength" Value="1073741823" />
+                    <Property Name="TextParsingEnabled" Value="False" />
+                    <Property Name="ActiveSelectionColour" Value="FF6060FF" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_droplist__" >
+                    <Property Name="Font" Value="Chinese" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="DistributeCapturedInputs" Value="True" />
+                    <AutoWindow NameSuffix="__auto_hscrollbar__" >
+                        <Property Name="RestoreOldCapture" Value="True" />
+                        <AutoWindow NameSuffix="__auto_incbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_decbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_thumb__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_vscrollbar__" >
+                        <Property Name="RestoreOldCapture" Value="True" />
+                        <AutoWindow NameSuffix="__auto_incbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_decbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_thumb__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_button__" />
+            </Window>
+            <Window Type="TaharezLook/MultiColumnList" Name="GoodsTreeFrame/AddProperty/MultiColumnList" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0.165663,0},{0.999,0},{0.741905,0}}" />
+		<Property Name="DragMovingEnabled" Value="False" />
+		<Property Name="ColumnsMovable" Value="False" />
+		<Property Name="ColumnsSizable" Value="True" />
+		<Property Name="ColumnHeader" Value="text:名称 width:{0.26,0} id:0" />
+		<Property Name="ColumnHeader" Value="text:有效 width:{0.17,0} id:1" />
+		<Property Name="ColumnHeader" Value="text:隐藏 width:{0.17,0} id:2" />
+		<Property Name="ColumnHeader" Value="text:值1 width:{0.17,0} id:3" />
+		<Property Name="ColumnHeader" Value="text:值2 width:{0.17,0} id:4" />
+                <AutoWindow NameSuffix="__auto_listheader__" />
+                <AutoWindow NameSuffix="__auto_hscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/AddProperty/IsEffect1" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="是否隐藏" />
+                <Property Name="HorzExtent" Value="52" />
+                <Property Name="VertExtent" Value="13" />
+                <Property Name="UnifiedAreaRect" Value="{{0.494973,0},{0.74626,0},{0.714973,0},{0.860727,0}}" />
+                <AutoWindow NameSuffix="__auto_hscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+            </Window>
+            <Window Type="TaharezLook/Combobox" Name="GoodsTreeFrame/AddProperty/GroupBox1" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="ReadOnly" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.23,0},{0.754308,0},{0.46,0},{0.999,0}}" />
+                <Property Name="MaxEditTextLength" Value="1073741823" />
+                <AutoWindow NameSuffix="__auto_editbox__" >
+                    <Property Name="Font" Value="Chinese" />
+                    <Property Name="ReadOnly" Value="True" />
+                    <Property Name="MaxTextLength" Value="1073741823" />
+                    <Property Name="TextParsingEnabled" Value="False" />
+                    <Property Name="ActiveSelectionColour" Value="FF6060FF" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_droplist__" >
+                    <Property Name="Font" Value="Chinese" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="DistributeCapturedInputs" Value="True" />
+                    <AutoWindow NameSuffix="__auto_hscrollbar__" >
+                        <Property Name="RestoreOldCapture" Value="True" />
+                        <AutoWindow NameSuffix="__auto_incbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_decbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_thumb__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_vscrollbar__" >
+                        <Property Name="RestoreOldCapture" Value="True" />
+                        <AutoWindow NameSuffix="__auto_incbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_decbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_thumb__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_button__" />
+            </Window>
+            <Window Type="TaharezLook/Combobox" Name="GoodsTreeFrame/AddProperty/GroupBox11" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="ReadOnly" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.74,0},{0.754308,0},{0.999,0},{0.999,0}}" />
+                <Property Name="MaxEditTextLength" Value="1073741823" />
+                <AutoWindow NameSuffix="__auto_editbox__" >
+                    <Property Name="Font" Value="Chinese" />
+                    <Property Name="ReadOnly" Value="True" />
+                    <Property Name="MaxTextLength" Value="1073741823" />
+                    <Property Name="TextParsingEnabled" Value="False" />
+                    <Property Name="ActiveSelectionColour" Value="FF6060FF" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_droplist__" >
+                    <Property Name="Font" Value="Chinese" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="DistributeCapturedInputs" Value="True" />
+                    <AutoWindow NameSuffix="__auto_hscrollbar__" >
+                        <Property Name="RestoreOldCapture" Value="True" />
+                        <AutoWindow NameSuffix="__auto_incbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_decbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_thumb__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_vscrollbar__" >
+                        <Property Name="RestoreOldCapture" Value="True" />
+                        <AutoWindow NameSuffix="__auto_incbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_decbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_thumb__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_button__" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/AddProperty/IsEffect2" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="值1" />
+                <Property Name="HorzExtent" Value="20" />
+                <Property Name="VertExtent" Value="13" />
+                <Property Name="UnifiedAreaRect" Value="{{0.005081,0},{0.874036,0},{0.129844,0},{0.99,0}}" />
+                <AutoWindow NameSuffix="__auto_hscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/AddProperty/IsEffect21" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="是否有效" />
+                <Property Name="HorzExtent" Value="52" />
+                <Property Name="VertExtent" Value="13" />
+                <Property Name="UnifiedAreaRect" Value="{{0.004172,0},{0.74626,0},{0.224763,0},{0.86,0}}" />
+                <AutoWindow NameSuffix="__auto_hscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/AddProperty/IsEffect22" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="值2" />
+                <Property Name="HorzExtent" Value="19" />
+                <Property Name="VertExtent" Value="13" />
+                <Property Name="UnifiedAreaRect" Value="{{0.497968,0},{0.871015,0},{0.626043,0},{0.99,0}}" />
+                <AutoWindow NameSuffix="__auto_hscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+            </Window>
+            <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/AddProperty/EditBoxValue1" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedAreaRect" Value="{{0.150269,0},{0.867634,0},{0.463155,0},{0.99,0}}" />
+                <Property Name="TextParsingEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/AddProperty/EditBoxValue11" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedAreaRect" Value="{{0.649462,0},{0.870851,0},{0.999,0},{0.99,0}}" />
+                <Property Name="TextParsingEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="GoodsTreeFrame/AddProperty/ButtonPaset" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="粘贴" />
+                <Property Name="UnifiedAreaRect" Value="{{0.491656,0},{0,0},{0.648823,0},{0.072813,0}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="GoodsTreeFrame/AddProperty/ButtonPaset1" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="复制" />
+                <Property Name="UnifiedAreaRect" Value="{{0.658445,0},{0,0},{0.815612,0},{0.07603,0}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="GoodsTreeFrame/AddProperty/ButtonPaset2" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="修改" />
+                <Property Name="UnifiedAreaRect" Value="{{0.825236,0},{0,0},{0.999,0},{0.076128,0}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="GoodsTreeFrame/AddProperty/ButtonPaset3" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="删除" />
+                <Property Name="UnifiedAreaRect" Value="{{0.491656,0},{0.084308,0},{0.648823,0},{0.157121,0}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="GoodsTreeFrame/AddProperty/ButtonPaset31" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="添加" />
+                <Property Name="UnifiedAreaRect" Value="{{0.658445,0},{0.084308,0},{0.815612,0},{0.157219,0}}" />
+            </Window>
+        </AutoWindow>
+    </Window>
+     <Window Type="TaharezLook/GroupBox" Name="GoodsTreeFrame/GroupBoxSuitAtrr" >
+        <Property Name="Font" Value="Chinese" />
+        <Property Name="Text" Value="套装属性" />
+        <Property Name="RiseOnClick" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.54,0},{0.575,0},{0.997,0},{0.995,0}}" />
+        <AutoWindow NameSuffix="__auto_contentpane__" >
+            <Window Type="TaharezLook/Combobox" Name="GoodsTreeFrame/GroupBoxSuitAtrr/CombBoxSuitAttr" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="ReadOnly" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.01,0},{0,0},{0.4,0},{0.99,0}}" />
+                <Property Name="MaxEditTextLength" Value="1073741823" />
+                <AutoWindow NameSuffix="__auto_editbox__" >
+                    <Property Name="Font" Value="Chinese" />
+                    <Property Name="ReadOnly" Value="True" />
+                    <Property Name="MaxTextLength" Value="1073741823" />
+                    <Property Name="TextParsingEnabled" Value="False" />
+                    <Property Name="ActiveSelectionColour" Value="FF6060FF" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_droplist__" >
+                    <Property Name="Font" Value="Chinese" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="DistributeCapturedInputs" Value="True" />
+                    <AutoWindow NameSuffix="__auto_hscrollbar__" >
+                        <Property Name="RestoreOldCapture" Value="True" />
+                        <AutoWindow NameSuffix="__auto_incbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_decbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_thumb__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_vscrollbar__" >
+                        <Property Name="RestoreOldCapture" Value="True" />
+                        <AutoWindow NameSuffix="__auto_incbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_decbtn__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                        <AutoWindow NameSuffix="__auto_thumb__" >
+                            <Property Name="RestoreOldCapture" Value="True" />
+                        </AutoWindow>
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_button__" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="GoodsTreeFrame/GroupBoxSuitAtrr/ButtonAdd" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="添加" />
+                <Property Name="UnifiedAreaRect" Value="{{0.41,0},{0,0},{0.57,0},{0.092,0}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="GoodsTreeFrame/GroupBoxSuitAtrr/ButtonAdd1" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="删除" />
+                <Property Name="UnifiedAreaRect" Value="{{0.588991,0},{0,0},{0.748991,0},{0.092,0}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="GoodsTreeFrame/GroupBoxSuitAtrr/ButtonAdd2" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="另存为" />
+                <Property Name="UnifiedAreaRect" Value="{{0.764734,0},{0,0},{0.99,0},{0.095469,0}}" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/GroupBoxSuitAtrr/StaticTextValue" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="值1" />
+                <Property Name="HorzExtent" Value="20" />
+                <Property Name="VertExtent" Value="13" />
+                <Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.215,0},{0.133434,0},{0.33,0}}" />
+                <AutoWindow NameSuffix="__auto_hscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/GroupBoxSuitAtrr/StaticTextValue1" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="值2" />
+                <Property Name="HorzExtent" Value="19" />
+                <Property Name="VertExtent" Value="13" />
+                <Property Name="UnifiedAreaRect" Value="{{0.283014,0},{0.215,0},{0.407891,0},{0.33,0}}" />
+                <AutoWindow NameSuffix="__auto_hscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+            </Window>
+            <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/GroupBoxSuitAtrr/EditBox" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedAreaRect" Value="{{0.147983,0},{0.215,0},{0.265002,0},{0.33,0}}" />
+                <Property Name="TextParsingEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/GroupBoxSuitAtrr/EditBox1" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedAreaRect" Value="{{0.416447,0},{0.215,0},{0.542811,0},{0.33,0}}" />
+                <Property Name="TextParsingEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/MultiColumnList" Name="GoodsTreeFrame/GroupBoxSuitAtrr/MultiColumnList" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="ColumnsMovable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.347339,0},{0.99,0},{0.999,0}}" />
+                <Property Name="ColumnHeader" Value="text:名称 width:{0.32,0} id:0" />
+                <Property Name="ColumnHeader" Value="text:值1 width:{0.195,0} id:1" />
+                <Property Name="ColumnHeader" Value="text:值2 width:{0.17,0} id:2" />
+                <Property Name="ColumnHeader" Value="text:套装件数 width:{0.26,0} id:3" />
+                <AutoWindow NameSuffix="__auto_listheader__" >
+                    <Property Name="ColumnsMovable" Value="False" />
+                    <AutoWindow NameSuffix="__auto_seg_0" >
+                        <Property Name="Font" Value="Chinese" />
+                        <Property Name="Text" Value="名称" />
+                        <Property Name="Dragable" Value="False" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_seg_1" >
+                        <Property Name="ID" Value="1" />
+                        <Property Name="Font" Value="Chinese" />
+                        <Property Name="Text" Value="值1" />
+                        <Property Name="Dragable" Value="False" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_seg_2" >
+                        <Property Name="ID" Value="2" />
+                        <Property Name="Font" Value="Chinese" />
+                        <Property Name="Text" Value="值2" />
+                        <Property Name="Dragable" Value="False" />
+                    </AutoWindow>
+                    <AutoWindow NameSuffix="__auto_seg_3" >
+                        <Property Name="ID" Value="3" />
+                        <Property Name="Font" Value="Chinese" />
+                        <Property Name="Text" Value="套装件数" />
+                        <Property Name="Dragable" Value="False" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_hscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+            </Window>
+            <Window Type="TaharezLook/Button" Name="GoodsTreeFrame/GroupBoxSuitAtrr/ButtonAdd21" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="计算等级限制附加值" />
+                <Property Name="UnifiedAreaRect" Value="{{0.41,0},{0.107511,0},{0.99,0},{0.203511,0}}" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="GoodsTreeFrame/GroupBoxSuitAtrr/StaticTextSuitNum" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="Text" Value="件数" />
+                <Property Name="HorzExtent" Value="26" />
+                <Property Name="VertExtent" Value="13" />
+                <Property Name="UnifiedAreaRect" Value="{{0.558209,0},{0.215,0},{0.690647,0},{0.33,0}}" />
+                <AutoWindow NameSuffix="__auto_hscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+                <AutoWindow NameSuffix="__auto_vscrollbar__" >
+                    <AutoWindow NameSuffix="__auto_incbtn__" />
+                    <AutoWindow NameSuffix="__auto_decbtn__" />
+                    <AutoWindow NameSuffix="__auto_thumb__" />
+                </AutoWindow>
+            </Window>
+            <Window Type="TaharezLook/Editbox" Name="GoodsTreeFrame/GroupBoxSuitAtrr/EditBox2" >
+                <Property Name="Font" Value="Chinese" />
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedAreaRect" Value="{{0.706548,0},{0.215,0},{0.99,0},{0.33,0}}" />
+                <Property Name="TextParsingEnabled" Value="False" />
+            </Window>
+        </AutoWindow>
+    </Window>
+  </Window>
+</GUILayout>

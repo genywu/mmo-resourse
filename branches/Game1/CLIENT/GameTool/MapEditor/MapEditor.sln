@@ -1,0 +1,59 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MapEditor", "MapEditor.vcproj", "{F0A1AE14-0325-4F4D-AF1F-81EB84050727}"
+	ProjectSection(ProjectDependencies) = postProject
+		{07C5DAA8-76A8-43F6-BB1B-6E6A00469B6B} = {07C5DAA8-76A8-43F6-BB1B-6E6A00469B6B}
+		{98405C99-D848-4353-B1AA-AB475BBBC3BD} = {98405C99-D848-4353-B1AA-AB475BBBC3BD}
+		{76706A46-235B-42AE-A731-EAB81B3C91E6} = {76706A46-235B-42AE-A731-EAB81B3C91E6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MapEditorEngine", "..\..\FrostEngine\MapEditorEngine.vcproj", "{76706A46-235B-42AE-A731-EAB81B3C91E6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MapEditorPublic", "..\..\..\PUBLIC\MapEditorPublic.vcproj", "{98405C99-D848-4353-B1AA-AB475BBBC3BD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MapEditorEngineExtend", "..\..\GameEngine\MapEditorEngineExtend.vcproj", "{07C5DAA8-76A8-43F6-BB1B-6E6A00469B6B}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccProjectName0 = \\Workspace\\Game_Program_Develop\\guangmang\\CLIENT\\GameTool\\MapEditor\\
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Alienbrain
+		SccProjectUniqueName1 = MapEditor.vcproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\..\\FrostEngine\\MapEditorEngine.vcproj
+		SccProjectName2 = \\Workspace\\Game_Program_Develop\\guangmang\\CLIENT\\FrostEngine\\
+		SccLocalPath2 = ..\\..\\FrostEngine
+		SccProjectUniqueName3 = ..\\..\\..\\PUBLIC\\MapEditorPublic.vcproj
+		SccProjectName3 = \\Workspace\\Game_Program_Develop\\guangmang\\PUBLIC\\
+		SccLocalPath3 = ..\\..\\..\\PUBLIC
+		SccProjectUniqueName4 = ..\\..\\GameEngine\\MapEditorEngineExtend.vcproj
+		SccProjectName4 = \\Workspace\\Game_Program_Develop\\guangmang\\CLIENT\\GameEngine\\
+		SccLocalPath4 = ..\\..\\GameEngine
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0A1AE14-0325-4F4D-AF1F-81EB84050727}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F0A1AE14-0325-4F4D-AF1F-81EB84050727}.Debug|Win32.Build.0 = Debug|Win32
+		{F0A1AE14-0325-4F4D-AF1F-81EB84050727}.Release|Win32.ActiveCfg = Release|Win32
+		{F0A1AE14-0325-4F4D-AF1F-81EB84050727}.Release|Win32.Build.0 = Release|Win32
+		{76706A46-235B-42AE-A731-EAB81B3C91E6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{76706A46-235B-42AE-A731-EAB81B3C91E6}.Debug|Win32.Build.0 = Debug|Win32
+		{76706A46-235B-42AE-A731-EAB81B3C91E6}.Release|Win32.ActiveCfg = Release|Win32
+		{76706A46-235B-42AE-A731-EAB81B3C91E6}.Release|Win32.Build.0 = Release|Win32
+		{98405C99-D848-4353-B1AA-AB475BBBC3BD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{98405C99-D848-4353-B1AA-AB475BBBC3BD}.Debug|Win32.Build.0 = Debug|Win32
+		{98405C99-D848-4353-B1AA-AB475BBBC3BD}.Release|Win32.ActiveCfg = Release|Win32
+		{98405C99-D848-4353-B1AA-AB475BBBC3BD}.Release|Win32.Build.0 = Release|Win32
+		{07C5DAA8-76A8-43F6-BB1B-6E6A00469B6B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{07C5DAA8-76A8-43F6-BB1B-6E6A00469B6B}.Debug|Win32.Build.0 = Debug|Win32
+		{07C5DAA8-76A8-43F6-BB1B-6E6A00469B6B}.Release|Win32.ActiveCfg = Release|Win32
+		{07C5DAA8-76A8-43F6-BB1B-6E6A00469B6B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

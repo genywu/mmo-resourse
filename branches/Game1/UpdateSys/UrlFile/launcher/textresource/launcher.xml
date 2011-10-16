@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="GB2312" standalone="no"?>
+<!--人物应用模块相关操作的配置-->
+<textresource>
+  <textType>
+     <String  id="1" text="你的主程序已经打开，请先关闭主程序，再运行更新程序!"/>
+     <String  id="2" text="服务器选择"/>
+    <String  id="3" text="读取客户端文件信息..."/>
+    <String  id="4" text="读取客户端重要文件信息出错，请重新尝试。"/>
+    <String  id="5" text="自动更新失败，您可以到 官方网站 去下载最新的补丁包文件。"/>
+    <String  id="6" text="当前游戏版本号为%s"/>
+    <String  id="7" text="获取服务器列表文件..."/>
+    <String  id="8" text="连接更新服务器失败，请检查您的网络连接是否正常。"/>
+    <String  id="9" text="检查更新..."/>
+    <String  id="10" text="当前是最新版本。"/>
+    <String  id="11" text="从服务器得更新列表..."/>
+    <String  id="12" text="下载更新列表出错，请再次尝试连接，或者到 官方网站 下载升级包。"/>
+    <String  id="13" text="检查本地是否已有该版本的更新包。"/>
+    <String  id="14" text="已检查到该版本的更新包。"/>
+    <String  id="15" text="下载完毕."/>
+    <String  id="16" text="准备下载升级包..."/>
+    <String  id="17" text="下载成功，正在检测CRC..."/>
+    <String  id="18" text="验证码不正确,请到官网重新下载更新包"/>
+    <String  id="19" text="连接网络成功..."/>
+    <String  id="20" text="当前版本有更新。"/>
+    <String  id="21" text="下载文件(%.1fM/%.1fM)  %.0fk/s"/>
+    <String  id="22" text="获取更新服务器列表文件出错。请到 官方网站 下载升级包，升级后进入游戏。"/>
+    <String  id="23" text="获取服务器列表..."/>
+    <String  id="24" text="获取更新服务器列表文件出错。"/>
+    <String  id="25" text="准备更新。"/>
+    <String  id="26" text="重新检查版本。"/>
+    <String  id="27" text="检查上次文件,可能需要几分钟时间。"/>
+    <String  id="28" text="不支持断点续传"/>
+    <String  id="29" text="UpdateProc::得到包数据错误。"/>
+    <String  id="30" text="UpdateProc::读取资源数据错误。"/>
+    <String  id="31" text="补丁包内的被升级客户端版本号[%s]与客户端的版本号[%s]不符,\r\n请检查客户端的当前版本号。"/>
+    <String  id="32" text="升级游戏从版本%s 到版本%s。"/>
+    <String  id="33" text="被升级的游戏版本不符。"/>
+    <String  id="34" text="更新文件..."/>
+    <String  id="35" text="升级成功..."/>
+    <String  id="36" text="升级失败..."/>
+    <String  id="37" text="创建临时ZIP文件 %s 出错。"/>
+    <String  id="38" text="写临时ZIP文件 %s 数据出错，请重试。"/>
+    <String  id="39" text="解压得到数据..."/>
+    <String  id="40" text="写文件 %s 出错!"/>
+    <String  id="41" text="写数据出现严重错误:FileName:%s,dwSize:%d"/>
+    <String  id="42" text="从包中提取数据文件 %s 出错!"/>
+    <String  id="43" text="提取文件出现严重错误。"/>
+
+    <String  id="100" text="确定"/>
+    <String  id="101" text="取消"/>
+    <String  id="102" text="窗口模式"/>
+    <String  id="103" text="关闭"/>
+    <String  id="104" text="开启"/>
+    <String  id="105" text="模糊"/>
+    <String  id="106" text="清晰"/>
+    <String  id="107" text="底"/>
+    <String  id="108" text="高"/>
+    <String  id="109" text="关"/>
+    <String  id="110" text="开"/>
+    <String  id="111" text="键盘控制"/>
+    <String  id="112" text="鼠标控制"/>
+    <String  id="113" text="音乐"/>
+    <String  id="114" text="音效"/>
+    <String  id="115" text="语音"/>
+    <String  id="116" text="强化脚步"/>
+    <String  id="117" text="后台画面同步刷新"/>
+    <String  id="118" text="效果"/>
+    <String  id="119" text="速度"/>
+    <String  id="120" text="质量"/>
+    <String  id="121" text="分辨率"/>
+    <String  id="122" text="颜色"/>
+    <String  id="123" text="刷新率"/>
+    <String  id="124" text="简化模型"/>
+    <String  id="125" text="光照效果"/>
+    <String  id="126" text="阴影效果"/>
+    <String  id="127" text="材质效果"/>
+    <String  id="128" text="天气效果"/>
+    <String  id="129" text="屏幕转动"/>
+    <String  id="130" text="视野范围"/>
+    <String  id="131" text="近"/>
+    <String  id="132" text="远"/>
+    <String  id="133" text="小"/>
+    <String  id="134" text="大"/>
+  </textType>
+</textresource>

@@ -1,0 +1,8 @@
+
+$#include "ScriptCfg.h"
+$pfile "DefType.pkg"
+
+
+$cfile "../Funcs/BaseFunc.h"
+
+$using namespace ScriptFuncs;

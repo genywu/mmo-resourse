@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServerUpdate", "ServerUpdate.vcproj", "{9A49B57C-B405-476A-91D8-63BFD270773F}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectName0 = \\Workspace\\Game_Program_Develop
+		SccLocalPath0 = ..\\..\\..
+		SccProvider0 = MSSCCI:Alienbrain
+		SccProjectFilePathRelativizedFromConnection0 = guangmang\\UpdateSys\\ServerUpdate\\
+		SccProjectUniqueName1 = ServerUpdate.vcproj
+		SccLocalPath1 = ..\\..\\..
+		SccProjectFilePathRelativizedFromConnection1 = guangmang\\UpdateSys\\ServerUpdate\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A49B57C-B405-476A-91D8-63BFD270773F}.Debug|Default.ActiveCfg = Debug|Win32
+		{9A49B57C-B405-476A-91D8-63BFD270773F}.Debug|Default.Build.0 = Debug|Win32
+		{9A49B57C-B405-476A-91D8-63BFD270773F}.Release|Default.ActiveCfg = Release|Win32
+		{9A49B57C-B405-476A-91D8-63BFD270773F}.Release|Default.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

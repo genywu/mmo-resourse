@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScriptClaer", "ScriptClaer\ScriptClaer.vcproj", "{F1A517DC-7235-4491-8C71-83E1EC6F52E6}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectName0 = \\Workspace\\Game_Program_Develop
+		SccLocalPath0 = ..\\..\\..\\..
+		SccProvider0 = MSSCCI:Alienbrain
+		SccProjectFilePathRelativizedFromConnection0 = guangmang\\SERVER\\tools\\ScriptClaer\\
+		SccProjectUniqueName1 = ScriptClaer\\ScriptClaer.vcproj
+		SccLocalPath1 = ..\\..\\..\\..
+		SccProjectFilePathRelativizedFromConnection1 = guangmang\\SERVER\\tools\\ScriptClaer\\ScriptClaer\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1A517DC-7235-4491-8C71-83E1EC6F52E6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F1A517DC-7235-4491-8C71-83E1EC6F52E6}.Debug|Win32.Build.0 = Debug|Win32
+		{F1A517DC-7235-4491-8C71-83E1EC6F52E6}.Release|Win32.ActiveCfg = Release|Win32
+		{F1A517DC-7235-4491-8C71-83E1EC6F52E6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

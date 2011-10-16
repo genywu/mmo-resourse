@@ -1,0 +1,564 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\QuestEditor.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\QuestEditor.ico"
+IDI_ICON1               ICON                    "res\\FOLDER.ico"
+IDI_ICON2               ICON                    "res\\XMLSpyHot.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 QuestEditor"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "QuestEditor 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_QUESTEDITOR_DIALOG DIALOGEX 0, 0, 813, 507
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "任务+资源 编辑器"
+MENU IDR_MENU2
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,7,7,129,496
+    LISTBOX         IDC_LIST1,140,421,671,82,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_TAB,"SysTabControl32",0x0,139,7,672,413
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 647, 337
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,33,34,50,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT4,327,89,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT30,191,128,50,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,193,33,111,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT19,191,250,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT26,191,266,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,191,234,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,66,109,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT18,191,92,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT27,327,109,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,327,130,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,191,148,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT21,66,128,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT28,66,148,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT33,66,91,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT22,328,148,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT20,329,167,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT32,66,256,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,191,111,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT16,191,164,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT23,191,217,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT24,66,285,162,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,191,181,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT17,191,199,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,329,184,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,329,201,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT25,329,218,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT29,329,235,50,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "修改",IDC_BUTTON1,286,262,68,38
+    GROUPBOX        "任务基本属性和奖励信息",IDC_STATIC,7,7,639,330,BS_CENTER
+    RTEXT           "ID",IDC_STATIC,19,36,8,8
+    RTEXT           "任务类型",IDC_STATIC,83,36,39,8
+    RTEXT           "难度",IDC_STATIC,300,91,17,8
+    RTEXT           "删除脚本",IDC_STATIC,89,54,33,8
+    RTEXT           "任务地图标识",IDC_STATIC,136,236,49,8
+    RTEXT           "集结点",IDC_STATIC,294,131,25,8
+    RTEXT           "能否重新接",IDC_STATIC,22,94,41,8
+    RTEXT           "提示类型",IDC_STATIC,151,112,33,8
+    RTEXT           "查询任务描述索引",IDC_STATIC,120,185,65,8
+    RTEXT           "章节",IDC_STATIC,307,187,17,8
+    RTEXT           "任务名",IDC_STATIC,168,36,24,8
+    RTEXT           "是否被记录",IDC_STATIC,22,112,41,8
+    RTEXT           "任务描述文本",IDC_STATIC,137,151,49,8
+    RTEXT           "图片",IDC_STATIC,307,205,17,8
+    RTEXT           "NPC的原始名",IDC_STATIC,139,169,46,8
+    RTEXT           "查询任务简术索引",IDC_STATIC,119,202,65,8
+    RTEXT           "死亡后任务是否失败",IDC_STATIC,255,151,72,8
+    RTEXT           "任务接受者效果",IDC_STATIC,130,253,57,8
+    RTEXT           "能否被显示",IDC_STATIC,145,94,41,8
+    RTEXT           "最小等级",IDC_STATIC,30,131,33,8
+    RTEXT           "完成特效",IDC_STATIC,150,220,33,8
+    RTEXT           "Icon",IDC_STATIC,308,222,15,8
+    RTEXT           "任务可完成效果",IDC_STATIC,130,268,57,8
+    RTEXT           "任务稀有度",IDC_STATIC,280,112,41,8
+    RTEXT           "最大等级",IDC_STATIC,30,150,33,8
+    RTEXT           "任务可否共享",IDC_STATIC,307,36,49,8
+    RTEXT           "任务提示",IDC_STATIC,149,132,36,8
+    RTEXT           "描述",IDC_STATIC,307,239,17,8
+    RTEXT           "前置任务",IDC_STATIC,31,288,33,8
+    LTEXT           "死亡后是否能够重接",IDC_STATIC,255,170,73,8
+    COMBOBOX        IDC_COMBO2,123,34,38,48,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,125,52,170,44,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,359,34,34,47,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "需携带宠物",IDC_STATIC,23,167,40,8
+    LTEXT           "性别限制",IDC_STATIC,30,186,33,8
+    LTEXT           "技能限定",IDC_STATIC,30,204,33,8
+    EDITTEXT        IDC_EDIT31,66,201,49,14,ES_AUTOHSCROLL
+    LTEXT           "职业限定",IDC_STATIC,30,243,33,8
+    LTEXT           "副职业限定",IDC_STATIC,22,222,41,8
+    EDITTEXT        IDC_EDIT34,66,219,49,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT35,66,238,50,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO5,66,183,50,50,CBS_DROPDOWN | CBS_SORT | WS_TABSTOP
+    LTEXT           "后续任务",IDC_STATIC,29,257,35,8
+    GROUPBOX        "任务基本属性",IDC_STATIC,16,18,386,291
+    GROUPBOX        "任务奖励信息",IDC_STATIC,406,19,239,291
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,409,33,234,121
+    LTEXT           "奖励类型",IDC_STATIC,411,178,33,8
+    LTEXT           "奖励物品名称",IDC_STATIC,413,222,49,8
+    LTEXT           "数量",IDC_STATIC,413,201,17,8
+    LTEXT           "倍率",IDC_STATIC,413,243,17,8
+    COMBOBOX        IDC_COMBO6,494,177,72,76,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT3,495,199,71,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT8,495,220,144,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT36,495,239,143,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON7,447,286,32,14
+    PUSHBUTTON      "删除",IDC_BUTTON8,586,286,42,14
+    LTEXT           "任务奖励所占的格子数",IDC_STATIC,410,160,81,8
+    EDITTEXT        IDC_EDIT37,494,158,71,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT38,580,177,47,14,ES_AUTOHSCROLL | WS_DISABLED,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    GROUPBOX        "未知信息（未启用属性）",IDC_STATIC,253,79,133,175
+    EDITTEXT        IDC_EDIT39,66,165,49,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 662, 360
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT2,77,61,74,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,77,77,73,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT4,77,95,74,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT18,517,316,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT19,554,316,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT20,591,316,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "添加",IDC_BUTTON2,361,339,36,14
+    PUSHBUTTON      "删除",IDC_BUTTON3,450,339,36,14
+    LTEXT           "步骤ID",IDC_STATIC,48,46,24,8
+    LTEXT           "步骤NPC",IDC_STATIC,42,65,30,8
+    LTEXT           "Npc1特效",IDC_STATIC,39,81,33,8
+    LTEXT           "Npc2特效",IDC_STATIC,39,98,33,8
+    GROUPBOX        "基本属性",IDC_STATIC,21,14,142,134,BS_CENTER
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,182,26,410,97
+    CONTROL         "",IDC_LIST4,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,327,209,314,89
+    GROUPBOX        "服务器任务目标",IDC_STATIC,315,198,331,155,BS_CENTER
+    LTEXT           "DropFrom",IDC_STATIC,517,300,32,8
+    LTEXT           "DropOdds",IDC_STATIC,559,300,33,8
+    LTEXT           "param",IDC_STATIC,598,300,21,8
+    EDITTEXT        IDC_EDIT21,480,316,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "AimNum",IDC_STATIC,484,300,26,8
+    EDITTEXT        IDC_EDIT22,443,316,30,14,ES_AUTOHSCROLL
+    LTEXT           "AimName",IDC_STATIC,446,300,30,8
+    EDITTEXT        IDC_EDIT23,406,316,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "AimType",IDC_STATIC,411,300,28,8
+    EDITTEXT        IDC_EDIT27,369,316,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT31,332,316,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "AimModel",IDC_STATIC,370,300,31,8
+    LTEXT           "ID",IDC_STATIC,344,300,8,8
+    EDITTEXT        IDC_EDIT17,77,44,42,14,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    LTEXT           "Param",IDC_STATIC,173,298,30,8
+    LTEXT           "Desc",IDC_STATIC,19,298,16,8
+    LTEXT           "ShowNum",IDC_STATIC,71,298,32,8
+    LTEXT           "Sum",IDC_STATIC,127,298,14,8
+    LTEXT           "ID",IDC_STATIC,221,298,8,8
+    LTEXT           "Name",IDC_STATIC,261,161,19,10
+    LTEXT           "ID",IDC_STATIC,183,142,8,8
+    GROUPBOX        "任务步骤 + 任务文本",IDC_STATIC,7,7,648,347,BS_CENTER
+    GROUPBOX        "任务步骤相关文本",IDC_STATIC,171,15,473,184,BS_CENTER
+    EDITTEXT        IDC_EDIT10,168,312,34,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT7,15,310,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,69,311,34,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT9,123,311,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT11,221,311,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT16,284,138,308,59,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT15,201,140,73,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST6,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,11,208,296,88
+    GROUPBOX        "客户端任务追踪",IDC_STATIC,7,198,301,155,BS_CENTER
+    PUSHBUTTON      "添加",IDC_BUTTON6,75,338,36,14
+    PUSHBUTTON      "删除",IDC_BUTTON12,145,338,36,14
+    EDITTEXT        IDC_EDIT30,77,114,73,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "任务占格子",IDC_STATIC,29,116,43,8
+    LTEXT           "Id描述",IDC_STATIC,177,124,24,8
+    EDITTEXT        IDC_EDIT1,201,123,199,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "1-5是服务器脚本文本调用,6客户端任务描述",IDC_STATIC,403,126,170,8
+    PUSHBUTTON      "修改",IDC_BUTTON4,76,129,43,18
+    LTEXT           "任务ID",IDC_STATIC,47,31,24,8
+    EDITTEXT        IDC_EDIT5,77,26,42,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "生成任务脚本",IDC_BUTTON1,549,339,66,14
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 598, 358
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "任务文本",IDC_STATIC,7,7,586,344,BS_CENTER
+    PUSHBUTTON      "添加",IDC_BUTTON1,277,325,38,26
+    PUSHBUTTON      "删除",IDC_BUTTON2,337,323,37,26
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,16,541,205
+    LTEXT           "文本索引",IDC_STATIC,33,247,33,8
+    EDITTEXT        IDC_EDIT1,67,245,81,14,ES_AUTOHSCROLL
+    LTEXT           "文本内容",IDC_STATIC,151,222,8,66
+    LTEXT           "文本描述提示",IDC_STATIC,18,226,49,8
+    EDITTEXT        IDC_EDIT2,67,224,80,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT3,165,223,389,102,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "最多2000个字",IDC_STATIC,561,230,16,98
+END
+
+IDD_INPUT DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,87,24,74,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "请输入新建任务ID",IDC_STATIC,15,26,70,8
+    PUSHBUTTON      "确定",IDOK,34,57,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON4,102,57,50,14
+END
+
+IDD_DIALOG5 DIALOGEX 0, 0, 210, 258
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "索引窗口"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT2,86,36,83,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "索引",IDC_BUTTON1,172,36,38,14
+    COMBOBOX        IDC_COMBO1,5,36,76,42,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "F3继续检索!",IDC_STATIC,17,19,139,8
+    GROUPBOX        "更新信息：",IDC_STATIC,3,70,202,187
+    LTEXT           "1:2010/10/20 修改前期奖励，任务编辑BUG。",IDC_STATIC,12,84,168,8
+    LTEXT           "2:修正任务目标添加多个问题,排序问题.。",IDC_STATIC,12,102,168,8
+    LTEXT           "3:更新了任务文本编辑，添加不需要重新选中某项。",IDC_STATIC,12,120,192,8
+    LTEXT           "",IDC_STATIC,12,138,180,8
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建资源文件"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,25,61,50,14
+    PUSHBUTTON      "取消",IDCANCEL,107,60,50,14
+    EDITTEXT        IDC_EDIT1,31,30,95,14,ES_AUTOHSCROLL
+    LTEXT           "输入资源名字",IDC_STATIC,35,18,49,8
+END
+
+IDD_DIALOG6 DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,20,81,50,14
+    PUSHBUTTON      "取消",IDCANCEL,122,81,50,14
+    LTEXT           "粘贴任务ＩＤ",IDC_STATIC,19,17,49,8
+    EDITTEXT        IDC_EDIT1,23,33,104,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "QuestEditor.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "QuestEditor.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_QUESTEDITOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        VERTGUIDE, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 503
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 655
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 353
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 593
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 351
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 95
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "删除"
+    BEGIN
+        MENUITEM "添加任务",                        ID_32795
+        MENUITEM "删除任务",                        ID_32794
+        MENUITEM "复制任务",                        ID_32793
+        MENUITEM "粘贴任务",                        ID_32796
+        MENUITEM "新建资源文件",                      ID_32797
+    END
+END
+
+IDR_MENU2 MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "重新加载\t(&R)",                  ID_32804
+        MENUITEM "保存\t(&S)",                    ID_32792
+        MENUITEM "保存任务\t(&Q)",                  ID_32802
+        MENUITEM "保存资源\t(&T)",                  ID_32803
+        MENUITEM "退出\t(&E)",                    ID_32791
+    END
+    MENUITEM "任务检索(&Q)",                    ID_32798
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG1 DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO3, 0x403, 41, 0
+0x6373, 0x6972, 0x7470, 0x2f73, 0x7571, 0x7365, 0x6d74, 0x646f, 0x6c65, 
+0x712f, 0x6575, 0x7473, 0x6d5f, 0x646f, 0x6c65, 0x645f, 0x6c65, 0x335f, 
+0x6c2e, 0x6175, "\000" 
+    IDC_COMBO3, 0x403, 41, 0
+0x6373, 0x6972, 0x7470, 0x2f73, 0x7571, 0x7365, 0x6d74, 0x646f, 0x6c65, 
+0x712f, 0x6575, 0x7473, 0x6d5f, 0x646f, 0x6c65, 0x645f, 0x6c65, 0x315f, 
+0x6c2e, 0x6175, "\000" 
+    IDC_COMBO4, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO5, 0x403, 3, 0
+0x312d, "\000" 
+    IDC_COMBO5, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO6, 0x403, 4, 0
+0x3031, 0x0030, 
+    0
+END
+
+IDD_DIALOG5 DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0xb4b0, 0x4449, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO1, 0x403, 13, 0
+0xb4b0, 0xcec8, 0xf1ce, 0xfbc3, 0xe9b2, 0xafd1, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    "S",            ID_32792,               VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_32798,               VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 QuestEditor(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\QuestEditor.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,1333 @@
+<?xml version="1.0" encoding="gb2312" standalone="no" ?>
+<!--采集物品列表-->
+<CollectionList>
+  <!--采集物品名字，采集物id，工匠id，图片id，小地图显示id，最小采集数量，最大采集数量 ，技能等级-->
+  
+  <Collection name="铜矿脉" orginname="D01001" id="101001" artisanID="1" picID="101001"   radarID="10001" mintimes="1" maxtimes="2" skilllevel="1">
+    <BringBlock>1</BringBlock>
+    <!--限制--><!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件--><!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9003" numtype="0" num="1"/>
+    <!--获得物品--><!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC1001A" num="1" odds="1"/>
+    <GainedGoods name="PMC1001A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC1001B" num="1" odds="0.2"/>
+  </Collection>
+  
+  <Collection name="铁矿脉" orginname="D01002" id="102001" artisanID="1" picID="102001"   radarID="10001" mintimes="1" maxtimes="2" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制--><!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件--><!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9003" numtype="0" num="1"/>
+    <!--获得物品--><!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC1002A" num="1" odds="1"/>
+    <GainedGoods name="PMC1002A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC1002B" num="1" odds="0.2"/>
+  </Collection>
+  
+  <Collection name="黄铜矿脉" orginname="D04001" id="104001" artisanID="1" picID="104001"   radarID="10001" mintimes="1" maxtimes="2" skilllevel="3">
+    <BringBlock>1</BringBlock>
+    <!--限制--><!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件--><!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9003" numtype="0" num="1"/>
+    <!--获得物品--><!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC1003A" num="1" odds="1"/>
+    <GainedGoods name="PMC1003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC1003B" num="1" odds="0.2"/>
+  </Collection>
+
+  <Collection name="赤铜矿脉" orginname="D06001" id="106001" artisanID="1" picID="106001"   radarID="10001" mintimes="1" maxtimes="2" skilllevel="4">
+    <BringBlock>1</BringBlock>
+    <!--限制--><!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件--><!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9003" numtype="0" num="1"/>
+    <!--获得物品--><!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC1004A" num="1" odds="1"/>
+    <GainedGoods name="PMC1004A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC1004B" num="1" odds="0.2"/>
+  </Collection>
+
+ <Collection name="黑铁矿脉（稀有）" orginname="D06002" id="106002" artisanID="1" picID="106002"   radarID="10001" mintimes="1" maxtimes="2" skilllevel="4">
+    <BringBlock>1</BringBlock>
+    <!--限制--><!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件--><!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9003" numtype="0" num="1"/>
+    <!--获得物品--><!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC1005A" num="1" odds="1"/>
+    <GainedGoods name="PMC1005A" num="1" odds="0.1"/>
+  </Collection>
+  
+  <Collection name="白银矿脉" orginname="D08001" id="108001" artisanID="1" picID="108001"   radarID="10001" mintimes="1" maxtimes="2" skilllevel="5">
+    <BringBlock>1</BringBlock>
+    <!--限制--><!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件--><!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9003" numtype="0" num="1"/>
+    <!--获得物品--><!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC1006A" num="1" odds="1"/>
+    <GainedGoods name="PMC1006A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC1006B" num="1" odds="0.2"/>
+  </Collection>
+  
+  <Collection name="精金矿脉" orginname="D10001" id="110001" artisanID="1" picID="110001"   radarID="10001" mintimes="1" maxtimes="2" skilllevel="6">
+    <BringBlock>1</BringBlock>
+    <!--限制--><!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件--><!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9003" numtype="0" num="1"/>
+    <!--获得物品--><!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC1007A" num="1" odds="1"/>
+    <GainedGoods name="PMC1007A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC1007B" num="1" odds="0.2"/>
+  </Collection>
+  
+   <Collection name="秘银矿脉" orginname="D12001" id="112001" artisanID="1" picID="112001"   radarID="10001" mintimes="1" maxtimes="2" skilllevel="7">
+    <BringBlock>1</BringBlock>
+    <!--限制--><!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件--><!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9003" numtype="0" num="1"/>
+    <!--获得物品--><!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC1008A" num="1" odds="1"/>
+    <GainedGoods name="PMC1008A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC1008B" num="1" odds="0.2"/>
+  </Collection>
+  
+   <Collection name="赤金矿脉" orginname="D14001" id="114001" artisanID="1" picID="114001"   radarID="10001" mintimes="1" maxtimes="2" skilllevel="8">
+    <BringBlock>1</BringBlock>
+    <!--限制--><!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件--><!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9003" numtype="0" num="1"/>
+    <!--获得物品--><!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC1009A" num="1" odds="1"/>
+    <GainedGoods name="PMC1009A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC1009B" num="1" odds="0.2"/>
+  </Collection>
+  
+   <Collection name="白金矿脉（稀有）" orginname="D14002" id="114002" artisanID="1" picID="114002"   radarID="10001" mintimes="1" maxtimes="2" skilllevel="9">
+    <BringBlock>1</BringBlock>
+    <!--限制--><!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件--><!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9003" numtype="0" num="1"/>
+    <!--获得物品--><!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC1010A" num="1" odds="1"/>
+    <GainedGoods name="PMC1010A" num="1" odds="0.1"/>
+  </Collection>
+
+
+
+
+
+
+
+
+
+
+
+
+  <Collection name="紫丁兰" orginname="L01001" id="201001" artisanID="2" picID="201001"   radarID="10002" mintimes="1" maxtimes="2" skilllevel="1">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9005" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC2001" num="1" odds="1"/>
+    <GainedGoods name="PMC2001" num="1" odds="0.8"/>
+    <GainedGoods name="PMC2001" num="1" odds="0.3"/>
+  </Collection>
+
+  <Collection name="火绒草" orginname="L02001" id="202001" artisanID="2" picID="202001"   radarID="10002" mintimes="1" maxtimes="2" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9005" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC2002" num="1" odds="1"/>
+    <GainedGoods name="PMC2002" num="1" odds="0.3"/>
+    <GainedGoods name="PMC2001" num="1" odds="0.7"/>
+    <GainedGoods name="PMC2001" num="1" odds="0.4"/>
+  </Collection>
+
+  <Collection name="忘忧昙" orginname="L04001" id="204001" artisanID="2" picID="204001"   radarID="10002" mintimes="1" maxtimes="2" skilllevel="3">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9005" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC2003" num="1" odds="1"/>
+    <GainedGoods name="PMC2003" num="1" odds="0.3"/>
+    <GainedGoods name="PMC2001" num="1" odds="0.7"/>
+    <GainedGoods name="PMC2001" num="1" odds="0.4"/>
+  </Collection>
+
+  <Collection name="龙舌兰" orginname="L06001" id="206001" artisanID="2" picID="206001"   radarID="10002" mintimes="1" maxtimes="2" skilllevel="4">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9005" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC2004" num="1" odds="1"/>
+    <GainedGoods name="PMC2004" num="1" odds="0.3"/>
+    <GainedGoods name="PMC2001" num="1" odds="0.7"/>
+    <GainedGoods name="PMC2001" num="1" odds="0.4"/>
+  </Collection>
+
+  <Collection name="红石竹（稀有）" orginname="L06002" id="206002" artisanID="2" picID="206002"   radarID="10002" mintimes="1" maxtimes="2" skilllevel="4">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9005" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC2005" num="1" odds="1"/>
+    <GainedGoods name="PMC2005" num="1" odds="0.1"/>
+  </Collection>
+
+<Collection name="七叶蕨" orginname="L08001" id="208001" artisanID="2" picID="208001"   radarID="10002" mintimes="1" maxtimes="2" skilllevel="5">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9005" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC2006" num="1" odds="1"/>
+    <GainedGoods name="PMC2006" num="1" odds="0.3"/>
+    <GainedGoods name="PMC2007" num="1" odds="0.7"/>
+    <GainedGoods name="PMC2007" num="1" odds="0.4"/>
+  </Collection>
+  
+  <Collection name="烈日参" orginname="L10001" id="210001" artisanID="2" picID="210001"   radarID="10002" mintimes="1" maxtimes="2" skilllevel="5">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9005" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC2008" num="1" odds="1"/>
+    <GainedGoods name="PMC2008" num="1" odds="0.3"/>
+    <GainedGoods name="PMC2007" num="1" odds="0.7"/>
+    <GainedGoods name="PMC2007" num="1" odds="0.4"/>
+  </Collection>
+  
+   <Collection name="十色梅" orginname="L12001" id="212001" artisanID="2" picID="212001"   radarID="10002" mintimes="1" maxtimes="2" skilllevel="6">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9005" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC2009" num="1" odds="1"/>
+    <GainedGoods name="PMC2009" num="1" odds="0.3"/>
+    <GainedGoods name="PMC2007" num="1" odds="0.7"/>
+    <GainedGoods name="PMC2007" num="1" odds="0.4"/>
+  </Collection>
+  
+  <Collection name="龙血草" orginname="L14001" id="214001" artisanID="2" picID="214001"   radarID="10002" mintimes="1" maxtimes="2" skilllevel="7">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9005" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC2010" num="1" odds="1"/>
+    <GainedGoods name="PMC2010" num="1" odds="0.3"/>
+    <GainedGoods name="PMC2007" num="1" odds="0.7"/>
+    <GainedGoods name="PMC2007" num="1" odds="0.4"/>
+  </Collection>
+  
+   <Collection name="月亮花（稀有）" orginname="L14002" id="214002" artisanID="2" picID="214002"   radarID="10002" mintimes="1" maxtimes="2" skilllevel="7">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9005" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC2011" num="1" odds="1"/>
+    <GainedGoods name="PMC2011" num="1" odds="0.1"/>
+  </Collection>
+
+
+
+
+
+
+
+
+
+
+  <Collection name="猫头鹰" orginname="C01001" id="301001" artisanID="3" picID="301001"   radarID="0" mintimes="1" maxtimes="1" skilllevel="1">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3001A" num="1" odds="1"/>
+    <GainedGoods name="PMC3001A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3001B" num="1" odds="0.2"/>
+  </Collection>
+
+  <Collection name="跳蚤鼠" orginname="C01002" id="301002" artisanID="3" picID="301002"   radarID="0" mintimes="1" maxtimes="1" skilllevel="1">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3001A" num="1" odds="1"/>
+    <GainedGoods name="PMC3001A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3001B" num="1" odds="0.2"/>
+  </Collection>
+
+  <Collection name="凶残的跳蚤鼠" orginname="C01003" id="301003" artisanID="3" picID="301003"   radarID="0" mintimes="1" maxtimes="1" skilllevel="1">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3001A" num="1" odds="1"/>
+    <GainedGoods name="PMC3001A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3001B" num="1" odds="0.2"/>
+  </Collection>
+  
+  <Collection name="野猫" orginname="C01004" id="301004" artisanID="3" picID="301004"   radarID="0" mintimes="1" maxtimes="1" skilllevel="1">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3001A" num="1" odds="1"/>
+    <GainedGoods name="PMC3001A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3001B" num="1" odds="0.2"/>
+  </Collection>
+  
+  <Collection name="幼狼" orginname="C01005" id="301005" artisanID="3" picID="301005"   radarID="0" mintimes="1" maxtimes="1" skilllevel="1">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3001A" num="1" odds="1"/>
+    <GainedGoods name="PMC3001A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3001B" num="1" odds="0.2"/>
+  </Collection>
+
+
+
+
+
+  <Collection name="凶恶野狗" orginname="C02001" id="302001" artisanID="3" picID="302001"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3002A" num="1" odds="1"/>
+    <GainedGoods name="PMC3002A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3002B" num="1" odds="0.2"/>
+  </Collection>
+
+  <Collection name="疯狂野狗" orginname="C02002" id="302002" artisanID="3" picID="302002"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3002A" num="1" odds="1"/>
+    <GainedGoods name="PMC3002A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3002B" num="1" odds="0.2"/>
+  </Collection>
+
+  <Collection name="暴躁的山羊" orginname="C02003" id="302003" artisanID="3" picID="302003"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3002A" num="1" odds="1"/>
+    <GainedGoods name="PMC3002A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3002B" num="1" odds="0.2"/>
+  </Collection>
+
+  <Collection name="山林野猪" orginname="C02005" id="302005" artisanID="3" picID="302005"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3002A" num="1" odds="1"/>
+    <GainedGoods name="PMC3002A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3002B" num="1" odds="0.2"/>
+  </Collection>
+  
+  <Collection name="山林幼狮" orginname="C02006" id="302006" artisanID="3" picID="302006"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3002A" num="1" odds="1"/>
+    <GainedGoods name="PMC3002A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3002B" num="1" odds="0.2"/>
+  </Collection>
+
+  <Collection name="卡玛拉寻路兽" orginname="C02007" id="302007" artisanID="3" picID="302007"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3002A" num="1" odds="1"/>
+    <GainedGoods name="PMC3002A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3002B" num="1" odds="0.2"/>
+  </Collection>
+
+  <Collection name="卡玛拉猎食兽" orginname="C02008" id="302008" artisanID="3" picID="302008"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3002A" num="1" odds="1"/>
+    <GainedGoods name="PMC3002A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3002B" num="1" odds="0.2"/>
+  </Collection>
+
+  <Collection name="剧毒之猎食蜥蜴" orginname="C02009" id="302009" artisanID="3" picID="302009"   radarID="0" mintimes="1" maxtimes="1" skilllevel="3">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3002A" num="1" odds="1"/>
+    <GainedGoods name="PMC3002A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3002B" num="1" odds="0.2"/>
+  </Collection>
+  
+  <Collection name="麻痹之猎食蜥蜴" orginname="C02010" id="302010" artisanID="3" picID="302010"   radarID="0" mintimes="1" maxtimes="1" skilllevel="3">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3002A" num="1" odds="1"/>
+    <GainedGoods name="PMC3002A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3002B" num="1" odds="0.2"/>
+  </Collection>
+
+
+
+
+  <Collection name="丛林野狼" orginname="C04001" id="304001" artisanID="3" picID="304001"   radarID="0" mintimes="1" maxtimes="1" skilllevel="1">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+
+  <Collection name="大嘴熊" orginname="C04002" id="304002" artisanID="3" picID="304002"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+
+  <Collection name="纲背猩猩" orginname="C04003" id="304003" artisanID="3" picID="304003"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+
+  <Collection name="红狐" orginname="C04004" id="304004" artisanID="3" picID="304004"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+
+  <Collection name="银狐" orginname="C04005" id="304005" artisanID="3" picID="304005"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+
+  <Collection name="银背狒狒" orginname="C04006" id="304006" artisanID="3" picID="304006"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+
+  <Collection name="幼年欢兽" orginname="C04008" id="304008" artisanID="3" picID="304008"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+
+  <Collection name="利齿幼狼" orginname="C04009" id="304009" artisanID="3" picID="304009"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+
+  <Collection name="成年欢兽" orginname="C04010" id="304010" artisanID="3" picID="304010"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+
+  <Collection name="利齿恶狼" orginname="C04011" id="304011" artisanID="3" picID="304011"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+
+  <Collection name="利爪黑熊" orginname="C04013" id="304013" artisanID="3" picID="304013"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+
+  <Collection name="利齿巨熊" orginname="C04014" id="304014" artisanID="3" picID="304014"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+  
+   <Collection name="奇美拉" orginname="C04015" id="304015" artisanID="3" picID="304015"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection> 
+  
+    <Collection name="恶齿熊" orginname="C04016" id="304016" artisanID="3" picID="304016"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>  
+  
+    <Collection name="游牧巨魔训狼" orginname="C04017" id="304017" artisanID="3" picID="304017"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>   
+  
+    <Collection name="游牧巨魔锯齿兽" orginname="C04018" id="304018" artisanID="3" picID="304018"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3003A" num="1" odds="1"/>
+    <GainedGoods name="PMC3003A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3003B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+  
+  <Collection name="雪原巨熊" orginname="C06001" id="306001" artisanID="3" picID="306001"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3004A" num="1" odds="1"/>
+    <GainedGoods name="PMC3004A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3004B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+  
+  <Collection name="雪原翼兽" orginname="C06002" id="306002" artisanID="3" picID="306002"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3004A" num="1" odds="1"/>
+    <GainedGoods name="PMC3004A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3004B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+  
+  <Collection name="宝石兽" orginname="C06003" id="306003" artisanID="3" picID="306003"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3004A" num="1" odds="1"/>
+    <GainedGoods name="PMC3004A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3004B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+  
+  <Collection name="雪原灵狐" orginname="C06004" id="306004" artisanID="3" picID="306004"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3004A" num="1" odds="1"/>
+    <GainedGoods name="PMC3004A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3004B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+  
+  <Collection name="荒野宝石兽" orginname="C06005" id="306005" artisanID="3" picID="306005"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3004A" num="1" odds="1"/>
+    <GainedGoods name="PMC3004A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3004B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection> 
+  
+  <Collection name="翼翅兽" orginname="C06006" id="306006" artisanID="3" picID="306006"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3004A" num="1" odds="1"/>
+    <GainedGoods name="PMC3004A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3004B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>   
+
+  <Collection name="旷野双头兽" orginname="C06007" id="306007" artisanID="3" picID="306007"   radarID="0" mintimes="1" maxtimes="1" skilllevel="2">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <!--Restrict  roolID="2003" roolstepID="4" /-->
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="GSC9001" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="PMC3004A" num="1" odds="1"/>
+    <GainedGoods name="PMC3004A" num="1" odds="0.5"/>
+    <GainedGoods name="PMC3004B" num="1" odds="0.2"/>
+    <GainedGoods name="PMC3010A" num="1" odds="0.05"/>
+  </Collection>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <Collection name="珍珠鱼巢穴" orginname="Q900001" id="900001" artisanID="4" picID="900001"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <EndScript>scripts/collectionlist/call_monster_Pearlfish.script</EndScript>
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="101008" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q10100102" numtype="2" num="6"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q10100102" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="猫球果树" orginname="Q900002" id="900002" artisanID="4" picID="900002"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="102006" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q10200102" numtype="2" num="6"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q10200102" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="遗失的标旗" orginname="Q900003" id="900003" artisanID="4" picID="900003"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="202003" roolstepID="3"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q20200202" numtype="2" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q20200202" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="遗失的药材" orginname="Q900004" id="900004" artisanID="4" picID="900004"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="202007" roolstepID="2"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q20200301" numtype="2" num="8"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q20200301" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="捕兽器" orginname="Q900005" id="900005" artisanID="4" picID="900005"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <EndScript>scripts/collectionlist/10300122.script</EndScript>
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="103029" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q10300122" numtype="0" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <!--GainedGoods name="" num="1" odds="1"/-->
+  </Collection>
+  
+   <Collection name="娜苏族祭祀法器" orginname="Q900006" id="900006" artisanID="4" picID="900006"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <EndScript>scripts/collectionlist/call_goods_103045.script</EndScript>
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="103045" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="" numtype="2" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="" num="1" odds="1"/>
+  </Collection>
+  
+    <Collection name="五味树" orginname="Q900007" id="900007" artisanID="4" picID="900007"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <EndScript>scripts/collectionlist/monster_103012_random.script</EndScript>
+    <!--EndScript></EndScript-->
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="103012" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q10300109" numtype="2" num="10"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q10300109" num="1" odds="1"/>
+  </Collection>
+  
+    <Collection name="《平等条约》" orginname="Q900008" id="900008" artisanID="4" picID="900008"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="103022" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q10300119" numtype="2" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q10300119" num="1" odds="1"/>
+  </Collection>
+ 
+    <Collection name="英灵菊" orginname="Q900009" id="900009" artisanID="4" picID="900009"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="103026" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q10300120" numtype="2" num="3"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q10300120" num="1" odds="1"/>
+  </Collection>
+  
+   <Collection name="卫生报告手稿" orginname="Q900010" id="900010" artisanID="4" picID="900010"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="403004" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q40300118" numtype="2" num="10"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q40300118" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="木材" orginname="Q900011" id="900011" artisanID="4" picID="900011"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="403020" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q40300119" numtype="2" num="10"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q40300119" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="大石堆" orginname="Q900012" id="900012" artisanID="4" picID="900012"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="403020" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q40300120" numtype="2" num="10"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q40300120" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="思乡花" orginname="Q900013" id="900013" artisanID="4" picID="900013"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="403021" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q40300121" numtype="2" num="15"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q40300121" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="卡卡豆" orginname="Q900014" id="900014" artisanID="4" picID="900014"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="403028" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q40300122" numtype="2" num="20"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q40300122" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="黑色苦果" orginname="Q900015" id="900015" artisanID="4" picID="900015"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="403028" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q40300123" numtype="2" num="20"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q40300123" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="藏匿的箱子" orginname="Q900016" id="900016" artisanID="4" picID="900016"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="403011" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q40300124" numtype="2" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q40300124" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="草丛" orginname="Q900017" id="900017" artisanID="4" picID="900017"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="403017" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q40300126" numtype="2" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q40300126" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="野生浆果" orginname="Q900028" id="900028" artisanID="4" picID="900028"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="411018" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q41100114" numtype="2" num="20"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q41100114" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="红衣草" orginname="Q900029" id="900029" artisanID="4" picID="900029"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="411033" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q41100127" numtype="2" num="22"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q41100127" num="1" odds="1"/>
+  </Collection>
+  
+   <Collection name="生锈的箱子" orginname="Q900030" id="900030" artisanID="4" picID="900030"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <!--EndScript></EndScript-->
+    <EndScript>scripts/monster/monster_201001_random_b.script</EndScript>
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="-1" roolstepID="0"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于；表示numtype与num的判断)，数量-->
+    <GoodsCondition goodsname="Q20100106" numtype="0" num="1"/>
+    <!--获得物品-->
+  </Collection>
+    
+   <Collection name="地精大头领比比特的尸体" orginname="Q900031" id="900031" artisanID="4" picID="900031"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <!--EndScript></EndScript-->
+    <EndScript>scripts/monster/完成该任务目标的脚本.script</EndScript>
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="王城副本杀BOSS任务" roolstepID="1"/>
+  </Collection>
+
+  <Collection name="大口袋" orginname="Q900032" id="900032" artisanID="4" picID="900004"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <!--EndScript></EndScript-->
+    <!--EndScript></EndScript-->
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="103035" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于；表示numtype与num的判断)，数量-->
+    <GoodsCondition goodsname="Q10300126" numtype="2" num="1"/>
+    <!--获得物品-->
+    <GainedGoods name="Q10300126" num="1" odds="1"/>
+  </Collection>
+  
+   <Collection name="生锈的箱子" orginname="Q900033" id="900033" artisanID="4" picID="900033"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <!--EndScript></EndScript-->
+    <EndScript>scripts/monster/monster_201001_random_b.script</EndScript>
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="-1" roolstepID="0"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于；表示numtype与num的判断)，数量-->
+    <GoodsCondition goodsname="Q20100106" numtype="0" num="1"/>
+    <!--获得物品-->
+  </Collection>
+  
+   <Collection name="生锈的箱子" orginname="Q900034" id="900034" artisanID="4" picID="900034"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <!--EndScript></EndScript-->
+    <EndScript>scripts/monster/monster_201001_random_b.script</EndScript>
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="-1" roolstepID="0"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于；表示numtype与num的判断)，数量-->
+    <GoodsCondition goodsname="Q20100106" numtype="0" num="1"/>
+    <!--获得物品-->
+  </Collection>
+  
+   <Collection name="娜苏族陷阱" orginname="Q900035" id="900035" artisanID="4" picID="900005"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <EndScript>scripts/collectionlist/call_103049_nasuxianjing.script</EndScript>
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="103049" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <!--GoodsCondition goodsname="" numtype="2" num="10"/-->
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <!--GainedGoods name="" num="1" odds="1"/-->
+  </Collection>
+  
+  <Collection name="深坑" orginname="Q900036" id="900036" artisanID="4" picID="900036"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <EndScript>scripts/monster/monster_202002_shenkeng.script</EndScript>
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="202002" roolstepID="2"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <!--GoodsCondition goodsname="" numtype="2" num="10"/-->
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <!--GainedGoods name="" num="1" odds="1"/-->
+  </Collection>
+  
+  <Collection name="研究笔记" orginname="Q900038" id="900038" artisanID="4" picID="900038"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="202004" roolstepID="2"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q20200103" numtype="2" num="1"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q20200103" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="银鳃草" orginname="Q900039" id="900039" artisanID="4" picID="900039"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="102041" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q10200114" numtype="2" num="10"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q10200114" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="粘稠的蜘蛛网" orginname="Q900040" id="900040" artisanID="4" picID="900040"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="102014" roolstepID="1"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q10200102" numtype="2" num="8"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q10200102" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="被抢夺的粮食" orginname="Q900041" id="900041" artisanID="4" picID="900004"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="202020" roolstepID="2"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q20200115" numtype="2" num="8"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q20200115" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="破碎的粮食袋" orginname="Q900042" id="900042" artisanID="4" picID="900004"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="202007" roolstepID="2"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q20200106" numtype="2" num="10"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q20200106" num="1" odds="1"/>
+  </Collection>
+  
+  <Collection name="蜂胶" orginname="Q900043" id="900043" artisanID="4" picID="900043"   radarID="0" mintimes="1" maxtimes="1" skilllevel="0">
+    <BringBlock>1</BringBlock>
+    <!--限制-->
+    <!--任务id，任务步骤-->
+    <Restrict  roolID="202022" roolstepID="2"/>
+    <!--物品条件-->
+    <!--物品名字，数量判断类型(0表示大于，1表示等于，2表示小于)，数量-->
+    <GoodsCondition goodsname="Q20200111" numtype="2" num="10"/>
+    <!--获得物品-->
+    <!--物品名字，物品数量，几率-->
+    <GainedGoods name="Q20200111" num="1" odds="1"/>
+  </Collection>
+    
+    
+
+</CollectionList>

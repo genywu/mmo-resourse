@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppWorld", "AppWorld\AppWorld.vcproj", "{B298F68D-4A17-4218-904A-7EAE758EC493}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DBPublic", "..\..\PUBLIC\DBPublic.vcproj", "{54D1399A-6E4F-47E8-B992-D0882D7DF79C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DBServer", "DBServer\DBServer.vcproj", "{414BFFCC-2EE7-4C2F-9762-AB2F5D388C6A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0E40EC55-C595-4881-8CCC-0CEA8FE06017} = {0E40EC55-C595-4881-8CCC-0CEA8FE06017}
+		{E2BEF9D3-3500-4FA5-BF43-927EF7400299} = {E2BEF9D3-3500-4FA5-BF43-927EF7400299}
+		{54D1399A-6E4F-47E8-B992-D0882D7DF79C} = {54D1399A-6E4F-47E8-B992-D0882D7DF79C}
+		{B298F68D-4A17-4218-904A-7EAE758EC493} = {B298F68D-4A17-4218-904A-7EAE758EC493}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netdb", "..\..\NETS\netdb\netdb.vcproj", "{E2BEF9D3-3500-4FA5-BF43-927EF7400299}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WorldDB", "..\..\DBACCESS\WorldDB\WorldDB.vcproj", "{0E40EC55-C595-4881-8CCC-0CEA8FE06017}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B298F68D-4A17-4218-904A-7EAE758EC493}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B298F68D-4A17-4218-904A-7EAE758EC493}.Debug|Win32.Build.0 = Debug|Win32
+		{B298F68D-4A17-4218-904A-7EAE758EC493}.Release|Win32.ActiveCfg = Release|Win32
+		{B298F68D-4A17-4218-904A-7EAE758EC493}.Release|Win32.Build.0 = Release|Win32
+		{54D1399A-6E4F-47E8-B992-D0882D7DF79C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{54D1399A-6E4F-47E8-B992-D0882D7DF79C}.Debug|Win32.Build.0 = Debug|Win32
+		{54D1399A-6E4F-47E8-B992-D0882D7DF79C}.Release|Win32.ActiveCfg = Release|Win32
+		{54D1399A-6E4F-47E8-B992-D0882D7DF79C}.Release|Win32.Build.0 = Release|Win32
+		{414BFFCC-2EE7-4C2F-9762-AB2F5D388C6A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{414BFFCC-2EE7-4C2F-9762-AB2F5D388C6A}.Debug|Win32.Build.0 = Debug|Win32
+		{414BFFCC-2EE7-4C2F-9762-AB2F5D388C6A}.Release|Win32.ActiveCfg = Release|Win32
+		{414BFFCC-2EE7-4C2F-9762-AB2F5D388C6A}.Release|Win32.Build.0 = Release|Win32
+		{E2BEF9D3-3500-4FA5-BF43-927EF7400299}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E2BEF9D3-3500-4FA5-BF43-927EF7400299}.Debug|Win32.Build.0 = Debug|Win32
+		{E2BEF9D3-3500-4FA5-BF43-927EF7400299}.Release|Win32.ActiveCfg = Release|Win32
+		{E2BEF9D3-3500-4FA5-BF43-927EF7400299}.Release|Win32.Build.0 = Release|Win32
+		{0E40EC55-C595-4881-8CCC-0CEA8FE06017}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0E40EC55-C595-4881-8CCC-0CEA8FE06017}.Debug|Win32.Build.0 = Debug|Win32
+		{0E40EC55-C595-4881-8CCC-0CEA8FE06017}.Release|Win32.ActiveCfg = Release|Win32
+		{0E40EC55-C595-4881-8CCC-0CEA8FE06017}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

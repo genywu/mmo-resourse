@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BillingPublic", "..\..\PUBLIC\BillingPublic.vcproj", "{6E722107-D177-4600-8B6D-593F57E26E0F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BillingServer", "BillingServer\BillingServer.vcproj", "{29276DE1-E8AC-4C4E-8F4F-0CCF8333AB48}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6E722107-D177-4600-8B6D-593F57E26E0F} = {6E722107-D177-4600-8B6D-593F57E26E0F}
+		{DC1B4E6D-206F-46C9-82DB-5A2351986AE7} = {DC1B4E6D-206F-46C9-82DB-5A2351986AE7}
+		{C831A6D3-E5BE-415D-9293-E0769ECED5E6} = {C831A6D3-E5BE-415D-9293-E0769ECED5E6}
+		{317975A1-B228-4A4C-A33A-F5E8B65B1C19} = {317975A1-B228-4A4C-A33A-F5E8B65B1C19}
+		{56EF82B9-C9EA-444E-8974-F97C810EDB07} = {56EF82B9-C9EA-444E-8974-F97C810EDB07}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetBilling", "..\..\NETS\NetBilling\NetBilling.vcproj", "{DC1B4E6D-206F-46C9-82DB-5A2351986AE7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppBilling", "AppBilling\AppBilling.vcproj", "{56EF82B9-C9EA-444E-8974-F97C810EDB07}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LogClient_bs", "..\..\LogClient\LogClient_bs.vcproj", "{C831A6D3-E5BE-415D-9293-E0769ECED5E6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BillingDB", "..\..\DBACCESS\BillingDB\BillingDB.vcproj", "{317975A1-B228-4A4C-A33A-F5E8B65B1C19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E722107-D177-4600-8B6D-593F57E26E0F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6E722107-D177-4600-8B6D-593F57E26E0F}.Debug|Win32.Build.0 = Debug|Win32
+		{6E722107-D177-4600-8B6D-593F57E26E0F}.Release|Win32.ActiveCfg = Release|Win32
+		{6E722107-D177-4600-8B6D-593F57E26E0F}.Release|Win32.Build.0 = Release|Win32
+		{29276DE1-E8AC-4C4E-8F4F-0CCF8333AB48}.Debug|Win32.ActiveCfg = Debug|Win32
+		{29276DE1-E8AC-4C4E-8F4F-0CCF8333AB48}.Debug|Win32.Build.0 = Debug|Win32
+		{29276DE1-E8AC-4C4E-8F4F-0CCF8333AB48}.Release|Win32.ActiveCfg = Release|Win32
+		{29276DE1-E8AC-4C4E-8F4F-0CCF8333AB48}.Release|Win32.Build.0 = Release|Win32
+		{DC1B4E6D-206F-46C9-82DB-5A2351986AE7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DC1B4E6D-206F-46C9-82DB-5A2351986AE7}.Debug|Win32.Build.0 = Debug|Win32
+		{DC1B4E6D-206F-46C9-82DB-5A2351986AE7}.Release|Win32.ActiveCfg = Release|Win32
+		{DC1B4E6D-206F-46C9-82DB-5A2351986AE7}.Release|Win32.Build.0 = Release|Win32
+		{56EF82B9-C9EA-444E-8974-F97C810EDB07}.Debug|Win32.ActiveCfg = Debug|Win32
+		{56EF82B9-C9EA-444E-8974-F97C810EDB07}.Debug|Win32.Build.0 = Debug|Win32
+		{56EF82B9-C9EA-444E-8974-F97C810EDB07}.Release|Win32.ActiveCfg = Release|Win32
+		{56EF82B9-C9EA-444E-8974-F97C810EDB07}.Release|Win32.Build.0 = Release|Win32
+		{C831A6D3-E5BE-415D-9293-E0769ECED5E6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C831A6D3-E5BE-415D-9293-E0769ECED5E6}.Debug|Win32.Build.0 = Debug|Win32
+		{C831A6D3-E5BE-415D-9293-E0769ECED5E6}.Release|Win32.ActiveCfg = Release|Win32
+		{C831A6D3-E5BE-415D-9293-E0769ECED5E6}.Release|Win32.Build.0 = Release|Win32
+		{317975A1-B228-4A4C-A33A-F5E8B65B1C19}.Debug|Win32.ActiveCfg = Debug|Win32
+		{317975A1-B228-4A4C-A33A-F5E8B65B1C19}.Debug|Win32.Build.0 = Debug|Win32
+		{317975A1-B228-4A4C-A33A-F5E8B65B1C19}.Release|Win32.ActiveCfg = Release|Win32
+		{317975A1-B228-4A4C-A33A-F5E8B65B1C19}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

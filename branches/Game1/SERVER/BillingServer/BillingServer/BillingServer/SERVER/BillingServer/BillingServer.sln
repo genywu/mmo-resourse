@@ -1,0 +1,73 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BillingServer", "BillingServer\BillingServer.vcproj", "{C2F561E0-0134-4352-99E2-EA71981E6FAB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5AD9BF15-8218-40B9-A138-F4F12028F657} = {5AD9BF15-8218-40B9-A138-F4F12028F657}
+		{EFF032C7-9F80-4325-945C-86B3E52DA751} = {EFF032C7-9F80-4325-945C-86B3E52DA751}
+		{300C1DE0-804D-4894-8A94-02B7755C1522} = {300C1DE0-804D-4894-8A94-02B7755C1522}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppBilling", "AppBilling\AppBilling.vcproj", "{5AD9BF15-8218-40B9-A138-F4F12028F657}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetBilling", "..\..\NETS\NetBilling\NetBilling.vcproj", "{EFF032C7-9F80-4325-945C-86B3E52DA751}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DBBilling", "..\..\DBACCESS\DBBilling\DBBilling.vcproj", "{300C1DE0-804D-4894-8A94-02B7755C1522}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {297F578B-D77C-418F-B154-55F694DC1411}
+		SccProjectUniqueName1 = BillingServer\\BillingServer.vcproj
+		SccProjectName1 = \u0022$/fengyun_tw/src/Server/BillingServer/BillingServer\u0022,\u0020FLOBAAAA
+		SccLocalPath1 = BillingServer
+		CanCheckoutShared = false
+		SccProjectUniqueName2 = AppBilling\\AppBilling.vcproj
+		SccProjectName2 = \u0022$/fengyun_tw/src\u0022,\u0020PNHBAAAA
+		SccLocalPath2 = ..\\..
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection2 = SERVER\\BillingServer\\AppBilling\\
+		SccProjectUniqueName3 = ..\\..\\NETS\\NetBilling\\NetBilling.vcproj
+		SccProjectName3 = \u0022$/fengyun_tw/src/Nets\u0022,\u0020XWIBAAAA
+		SccLocalPath3 = ..\\..\\Nets
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection3 = NetBilling\\
+		SccProjectUniqueName4 = ..\\..\\DBACCESS\\DBBilling\\DBBilling.vcproj
+		SccProjectName4 = \u0022$/fengyun_tw/src/DBACCESS\u0022,\u0020PBJBAAAA
+		SccLocalPath4 = ..\\..\\Dbaccess
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection4 = DBBilling\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C2F561E0-0134-4352-99E2-EA71981E6FAB}.Debug.ActiveCfg = Debug|Win32
+		{C2F561E0-0134-4352-99E2-EA71981E6FAB}.Debug.Build.0 = Debug|Win32
+		{C2F561E0-0134-4352-99E2-EA71981E6FAB}.Release.ActiveCfg = Release|Win32
+		{C2F561E0-0134-4352-99E2-EA71981E6FAB}.Release.Build.0 = Release|Win32
+		{5AD9BF15-8218-40B9-A138-F4F12028F657}.Debug.ActiveCfg = Debug|Win32
+		{5AD9BF15-8218-40B9-A138-F4F12028F657}.Debug.Build.0 = Debug|Win32
+		{5AD9BF15-8218-40B9-A138-F4F12028F657}.Release.ActiveCfg = Release|Win32
+		{5AD9BF15-8218-40B9-A138-F4F12028F657}.Release.Build.0 = Release|Win32
+		{EFF032C7-9F80-4325-945C-86B3E52DA751}.Debug.ActiveCfg = Debug|Win32
+		{EFF032C7-9F80-4325-945C-86B3E52DA751}.Debug.Build.0 = Debug|Win32
+		{EFF032C7-9F80-4325-945C-86B3E52DA751}.Release.ActiveCfg = Release|Win32
+		{EFF032C7-9F80-4325-945C-86B3E52DA751}.Release.Build.0 = Release|Win32
+		{300C1DE0-804D-4894-8A94-02B7755C1522}.Debug.ActiveCfg = Debug|Win32
+		{300C1DE0-804D-4894-8A94-02B7755C1522}.Debug.Build.0 = Debug|Win32
+		{300C1DE0-804D-4894-8A94-02B7755C1522}.Release.ActiveCfg = Release|Win32
+		{300C1DE0-804D-4894-8A94-02B7755C1522}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

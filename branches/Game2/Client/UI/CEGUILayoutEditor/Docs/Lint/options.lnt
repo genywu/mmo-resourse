@@ -1,0 +1,232 @@
+// PC-Lint 8.00w Personal options for use in VS2005 (VC++8) 
+// and CELayoutEditor (part of CEGUI project - http://www.cegui.org.uk/wiki/index.php/Main_Page)
+// Author: Frederico Jerónimo (fjeronimo)
+// Creation Date: 11/11/07
+// Last Updated: 04/12/07
+
+//////////////////////////////////////////////////////////////////////////
+// TORTURE TESTING
+//////////////////////////////////////////////////////////////////////////
+
+// Assume string constants are const char*.
++fsc
+
+// Make sure we use plenty of passes as a sequence of calls can have a ripple effect.
+// NOTE: This option REALLY SLOWS DOWN the process and should only be used for torture testing in specific situations.
+//-passes(6) 
+
+// Warn about the use of pointer parameters without first checking for NULL.
+// NOTE: This option might slow down the process considerably but can be vital to detect bugs
++fpn 
+
+// Set warning to the max.
+// NOTE: This leads to MANY messages. Use with caution (or if you are feeling over zealous)
+//-w4 
+
+//////////////////////////////////////////////////////////////////////////
+// GENERAL
+//////////////////////////////////////////////////////////////////////////
+
+// ----------------------------------------
+// 1) WARNING ELIMINATION
+// ----------------------------------------
+
+// NOTE: Only relevant when full warning level is set (-w4). See above.
+
+-e1911 // Implicit call of constructor
+-e1901 // Creating a temporary of type
+-e964 // Header file not directly used in module
+-e966 // Indirectly included header file not used by module
+-e970 // Use of modifier or type outside of a typedef
+
+//////////////////////////////////////////////////////////////////////////
+// STANDARD C++
+//////////////////////////////////////////////////////////////////////////
+
+// ----------------------------------
+// 1) FUNCTION MIMICRY
+// ----------------------------------
+
+// _wassert behaves just like the special function exit() - i.e. no return property. 
+// @see 'The assert remedy section' in the 'Living with Lint' pdf manual.
+-function(exit,_wassert)
+
+// --------------------------------------------
+// 2) WARNING SUPPRESSION
+// --------------------------------------------
+
+// va_end macro can issue many different warnings. We ignore them all.
+-emacro((???),va_end)
+
+// -----------------------------------------------
+// 3) SEMANTIC SPECIFICATIONS
+// -----------------------------------------------
+
+// The following lines make sure the referenced C++ functions (first parameter)
+// are recognized as valid custody takers. This means that custodial pointers that
+// are passed to the functions will no longer trigger warning 429 -- Custodial pointer 'X'
+// has not been freed or returned -- since C++ will take care of them for us. 
+// @see 'Possible semantics' in the 'Living with Lint' pdf manual.
+// NOTE: The entries which receive 1p as the second parameter also check for NULL 
+// custodial pointers and if supplied will issue a corresponding warning
+-sem( std::vector::push_back, custodial(1) )
+
+//////////////////////////////////////////////////////////////////////////
+// WXWIDGETS SPECIFIC
+//////////////////////////////////////////////////////////////////////////
+
+// -----------------------------------
+// 1) FUNCTION MIMICRY
+// -----------------------------------
+
+// The wxWidgets wxOnAssert behaves exactly like the _wassert function. This allows
+// the use of the WXASSERT_* macros and prevents any NULL pointer warnings (613 & 413)
+// while doing so.
+-function(_wassert, wxOnAssert)
+
+// --------------------------------------------
+// 2) WARNING SUPPRESSION
+// --------------------------------------------
+
+// Prevent warning 437 -- Passing struct 'wxString' to ellipsis
+-esym(437, wxString)
+
+// Prevent info 1764 -- Reference parameter could be declared const ref
+-esym(1764, event)
+
+// Prevent info 1754 -- Expected symbol to be declared for class
+--esym(1754, wxArrayString::reverse_iterator)
+--esym(1754, wxArrayString::const_reverse_iterator)
+
+// wxWidgets uses C-Style casts internally. For these macros, we want to avoid 
+// elective note 1924 -- C-style cast.
+--emacro( (1924), IMPLEMENT_CLASS)
+-emacro(1924, IMPLEMENT_DYNAMIC_CLASS)
+-emacro(1924, IMPLEMENT_APP)
+-emacro(1924, EVT_SIZE)
+-emacro(1924, EVT_UPDATE_UI)
+-emacro(1924, EVT_MENU)
+-emacro(1924, EVT_BUTTON)
+-emacro(1924, EVT_TREE_SEL_CHANGED)
+-emacro(1924, EVT_TEXT)
+-emacro(1924, EVT_COMBOBOX)
+-emacro(1924, EVT_RADIOBOX)
+-emacro(1924, EVT_GRID_CELL_CHANGE)
+-emacro(1924, EVT_GRID_COL_SIZE)
+-emacro(1924, EVT_PAINT)
+-emacro(1924, EVT_ERASE_BACKGROUND)
+-emacro(1924, EVT_MOTION)
+-emacro(1924, EVT_LEFT_DOWN)
+-emacro(1924, EVT_LEFT_UP)
+-emacro(1924, EVT_KEY_DOWN)
+-emacro(1924, wxT)
+
+// Prevent warning 527 -- Unreachable code
+-emacro(527, wxCHECK_RET)
+
+// Prevent info 753 -- local struct not referenced
+-esym(753, wxDummyCheckStruct)
+
+// Prevent warning 522 -- Expected void type, assignment, increment or decrement
+-emacro(522, CLASSINFO) 
+
+// Prevent warning 534 -- Ignoring return value of function
+--emacro( (534), IMPLEMENT_APP)
+
+// Prevent info 762 -- Redundantly declared symbol previously declared at
+-emacro(762, IMPLEMENT_APP)
+
+// Prevent info 1717 -- Empty prototype for function declaration
+-emacro(1717, IMPLEMENT_APP)
+
+// Prevent info 1929 -- Function returning a reference
+-emacro(1929, IMPLEMENT_APP)
+
+// ------------------------------------------------
+// 3) SEMANTIC SPECIFICATIONS
+// ------------------------------------------------
+
+// The following lines make sure the referenced wxWidgets functions (first parameter)
+// are recognized as valid custody takers. This means that custodial pointers that
+// are passed to the functions will no longer trigger warning 429 -- Custodial pointer 'X'
+// has not been freed or returned -- since wxWidgets will take care of them for us. 
+// @see 'Possible semantics' in the 'Living with Lint' pdf manual.
+// NOTE: The entries which receive 1p as the second parameter also check for NULL 
+// custodial pointers and if supplied will issue a corresponding warning
+-sem( wxFrameBase::SetToolBar, 1p, custodial(1) )
+-sem( wxFrameBase::SetMenuBar, 1p, custodial(1) )
+-sem( wxMenuBar::Append, 1p, custodial(1) )
+-sem( wxMenuBase::Append, custodial(3) )
+-sem( wxStaticBoxSizer::wxStaticBoxSizer, custodial(1) )
+-sem( wxWindowBase::SetSizer, 1p, custodial(1) )
+-sem( wxWindowBase::SetSizerAndFit, 1p, custodial(1) )
+-sem( wxSizer::Add, 1p, custodial(1) )
+
+//////////////////////////////////////////////////////////////////////////
+// CEGUI SPECIFIC
+//////////////////////////////////////////////////////////////////////////
+
+// --------------------------------------------
+// 1) WARNING SUPPRESSION
+// --------------------------------------------
+
+// Prevent info 747 -- Significant prototype coercion
+// NOTE: This is necessary while the CEGUI macro cegui_reldim is not modified to contemplate 0.0f as the second element 
+// instead of 0 (same for cegui_absdim but for the first argument)
+-emacro(747, cegui_reldim)
+
+//////////////////////////////////////////////////////////////////////////
+// CELAYOUTEDITOR SPECIFIC
+//////////////////////////////////////////////////////////////////////////
+
+// ---------------------------------------------
+// 1) WARNING SUPPRESSION
+// ---------------------------------------------
+
+// Prevent info 790 -- Suspicious truncation, integral to float.
+-efunc(790, EditorCanvas::DrawGrid)
+
+// Prevent info 731 -- Boolean argument to equal/not equal
+-efunc(731, CELayoutEditor::SetModificationStateAllDocuments)
+
+// Prevent info 818 -- Pointer parameter could be declared as pointing to const
+-efunc(818, VectoredHandler)
+
+// Prevent elective note 952 -- Parameter could be declared const
+-efunc(952, VectoredHandler)
+
+// Prevent info 785 -- Too few initializers for aggregate
+-efunc(785, SimpleSymbolEngine::AddressToString)
+
+// Prevent info 754 -- Local structure member not referenced
+-esym(754, tagSymInfo::nameBuffer)
+
+// Prevent info 1740 -- Pointer member not directly freed or zeroed by destructor
+-esym(1740, ExceptionManager::m_handler)
+
+// Prevent wxWidgets overridden functions from issuing elective note 952 -- Parameter could be declared const
+-efunc(952, EditorFrame::Refresh)
+-efunc(952,CELayoutEditor::HandleEvent)
+-efunc(952,DialogMain::LayoutModified)
+
+// Prevent wxWidgets event functions from issuing info 1762 -- Member function could be made const
+-efunc(1762, EditorFrame::OnUpdate640x480)
+-efunc(1762, EditorFrame::OnUpdate800x600)
+-efunc(1762, EditorFrame::OnUpdate1024x768)
+-efunc(1762, EditorFrame::OnUpdateSetBackground)
+-efunc(1762, EditorFrame::OnUpdateShowBackground)
+-efunc(1762, EditorFrame::OnUpdateSelectAll)
+-efunc(1762, EditorFrame::OnUpdateLayoutSkin)
+-efunc(1762, DialogMain::OnOK)
+-efunc(1762, DialogMain::OnCancel)
+-efunc(1762, EditorCanvas::OnLeftDown)
+-efunc(1762, EditorCanvas::OnLeftUp)
+-efunc(1762, EditorCanvas::OnErase)
+-efunc(1762, EditorCanvas::OnKeyDown)
+
+// Prevent wxWidgets overridden functions from issuing elective note 1961 -- Virtual member function could be made const
+-efunc(1961, EditorView::OnDraw)
+-efunc(1961, CELayoutEditor::OnExit)
+-efunc(1961, CELayoutEditor::OnUnhandledException)
+-efunc(1961, CELayoutEditor::OnFatalException)
+-efunc(1961, DialogMain::LayoutModified)

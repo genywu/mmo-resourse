@@ -1,0 +1,195 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_WORLDSERVER         ICON                    "WorldServer.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_WORLDSERVER MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "退出(&X)",                      IDM_EXIT
+    END
+    POPUP "操作(&C)"
+    BEGIN
+        MENUITEM "连接LoginServer(&C)",           ID_CONNECT_LOGINSERVER
+        MENUITEM "连接DBServer(&D)",              ID_CONNECT_DBSERVER
+        MENUITEM "连接CostServer(&T)",            ID_CONNECT_COSTSERVER
+        MENUITEM SEPARATOR
+        POPUP "重读系统数据(&R)"
+        BEGIN
+            MENUITEM "重读日志参数表",                     ID_MENU_RELOAD_LOGSYSTEM
+            MENUITEM "重读GM列表",                      ID_MENU_RELOAD_GMLIST
+            MENUITEM "重读系统广播文件",                    ID_MENU_RELOAD_BROADCAST
+            MENUITEM "重读增值商店，公告，top10",             ID_MENE_ReLoadIncrement
+            MENUITEM "重读经验值和掉宝倍数等...",              ID_MENE_ReLoadGameSetup
+            MENUITEM "重读名字脏话验证列表",                  ID_RELOAD_WORDFILTER
+            MENUITEM "重读副本服务器配置(duprgnserver.ini)", ID_RELOAD_DUPRGNSERVER
+            MENUITEM "重读功能配置文件(GameSetup.ini)",     ID_RELOAD_FUNCSETUP
+            MENUITEM "重读内存影射文件配置",                  ID_RELOAD_MAP_FILE
+            MENUITEM "重读玩家管理配置(&M)",                ID_RELOAD_PLAYER_MAN
+            MENUITEM "重读宠物列表(&P)",                  ID_RELOAD_PET_LIST
+            MENUITEM "重读反外挂配置(&A)",                 ID_RELOAD_ANTI_CHEAT
+        END
+        POPUP "重读游戏数据(&G)"
+        BEGIN
+            MENUITEM "重读玩家属性和经验值列表",                ID_MENU_RELOAD_PLAYERLIST
+            MENUITEM "重读物品属性列表",                    ID_MENU_RELOAD_GOODSLIST
+            MENUITEM "重读怪物属性和掉宝列表",                 ID_MENU_RELOAD_MONSTERLIST
+            MENUITEM "重读建物属性",                      ID_MENU_ReloadBuild
+            MENUITEM "重读商店列表",                      ID_MENU_RELOAD_TRADELIST
+            MENUITEM "重读技能列表",                      ID_MENU_RELOAD_SKILLLIST
+            MENUITEM "重读所有脚本文件",                    ID_MENU_RELOADSCRIPTS
+            MENUITEM "重读单个脚本文件(*.scripts)...",      ID_MENU_RELOADONESCRIPT
+            MENUITEM "重读并初始化全局脚本变量",                ID_MENU_RELOAD_GENVARLIST
+            MENUITEM "重读场景列表",                      ID_MENU_RELOAD_REGIONLIST
+            MENUITEM "重读场景等级设置...",                 ID_MENU_RELOAD_REGIONSETUP
+            MENUITEM "重读单个场景配置文件(*.rs)...",         ID_MENU_RELOAD_ONEREGIONSETUP
+            MENUITEM "重读所有场景配置文件...",               ID_MENU_RELOAD_AllREGION
+            MENUITEM "重读所有场景配置文件(*.rs)...",         ID_MENU_REGIONS
+            MENUITEM "重读帮会参数列表...",                 ID_MENU_RELOAD_FACTIONPARA
+            MENUITEM "重读帮战系统参数",                    ID_MENU_ReloadFactionWarPara
+            MENUITEM "重读任务列表...",                   ID_MENU_ReloadQuestDat
+            MENUITEM "重读国家贡献暴出物品",                  ID_MENU_RELOAD_CONTRIBUTE_ITEM
+            MENUITEM "重读副职业系统",                     ID_MENU_RELOADDOCCULIST
+            MENUITEM "重读字符串资源",                     ID_MENU_RELOADSTRINGRESOURCE
+            MENUITEM "重读系统邮件",                      ID_MENU_RELOADSYSMAIL
+            MENUITEM "重读声望配置",                      ID_MENU_RELOADCREDIT
+            MENUITEM "重读玩家定时器",                     ID_MENU_RELOADCOUNTTIMERLIST
+			MENUITEM "重读美容配置",					   ID_MENU_RELOADCOSMETOLOGY
+			MENUITEM "重读彩票配置",			           ID_MENU_RELOADLOTTERY
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "统计玩家排行榜(P)",                  ID_MENU_StatPlayerRanks
+        MENUITEM "踢世界所有人(&K)",                  ID_MENU_KICKALL
+        MENUITEM SEPARATOR
+        MENUITEM "保存游戏数据(&S)",                  ID_Menu_SaveNow
+        MENUITEM SEPARATOR
+        MENUITEM "重读配置文件",                      ID_RELOADSETUP
+        MENUITEM "开关显示存盘成功信息",                  ID_SHOWSAVEINFO
+        MENUITEM "开关日志系统",                      ID_SWITCH_LOGSYS
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于(&A)...",                   IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_WORLDSERVER ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  22, 17, 230, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "关于"
+FONT 9, "System"
+BEGIN
+    ICON            IDI_WORLDSERVER,IDC_MYICON,14,9,16,16
+    LTEXT           "WorldServer Version 1.0",IDC_STATIC,49,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "确定",IDOK,195,6,30,11,WS_GROUP
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "WorldServer"
+    IDC_WORLDSERVER         "WORLDSERVER"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
