@@ -1,0 +1,22 @@
+
+$#include "ScriptCfg.h"
+
+class CGUID
+{
+public:
+	CGUID();
+
+	~CGUID();
+
+	CGUID( const char *str );
+
+	bool operator == ( const CGUID &other ) const;
+
+	const char *tostring() const;
+
+	bool IsInvalid();
+
+	static bool CreateGUID( CGUID &guid );
+
+	static CGUID GUID_INVALID;
+};

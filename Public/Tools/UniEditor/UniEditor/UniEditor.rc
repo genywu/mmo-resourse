@@ -1,0 +1,543 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\UniEditor.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\UniEditor.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 UniEditor"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "UniEditor 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_UNIEDITOR_DIALOG DIALOGEX 0, 0, 934, 599
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "UniEditor"
+MENU IDR_MENU2
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "保存(&S)",IDC_BTN_SAVE,703,501,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_LIST_LOG,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,629,291,143,134
+    PUSHBUTTON      "关闭JPG(&D)",IDC_REFRESH,767,501,50,14
+    LTEXT           "新建:  Shift+左键拖动",IDC_STATIC,811,521,87,9
+    LTEXT           "放大:  Ctrl+右键",IDC_STATIC,811,531,87,9
+    LTEXT           "缩小:  Ctrl+左键",IDC_STATIC,811,542,87,9
+    LTEXT           "移动:  空格+左键",IDC_STATIC,811,552,87,9
+    CONTROL         "",IDC_NUMLIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,779,31,143,209
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,779,290,143,134
+    LTEXT           "脚本检查结果",IDC_STATIC,784,274,80,9
+    GROUPBOX        "怪物信息",IDC_STATIC,776,13,150,439
+    GROUPBOX        "采集物信息",IDC_STATIC,625,14,150,246
+    GROUPBOX        "日志",IDC_STATIC,626,273,149,178
+    CONTROL         "",IDC_LISTCOLL,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,628,31,143,209
+    CONTROL         "分开显示",IDC_RADIOSORT,"Button",BS_AUTORADIOBUTTON,697,455,69,12
+    CONTROL         "完全显示",IDC_RADIOALL,"Button",BS_AUTORADIOBUTTON,697,474,69,12
+END
+
+IDD_COLLECTION DIALOGEX 0, 0, 517, 76
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_COLL_NO,63,14,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_COLL_COOR_LEFT,192,14,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_COLL_COOR_TOP,278,14,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_COLL_COOR_RIGHT,364,14,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_COLL_COOR_BOTTOM,450,14,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_COLL_QUANTITY,63,36,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_COLL_TIME_BORN,192,36,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_COLL_TIME_START,321,36,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    CONTROL         "采集物生成",IDC_CHECK_COLL_BORN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,368,50,56,10
+    LTEXT           "产生区域：左",IDC_STATIC,139,17,49,8
+    LTEXT           "右",IDC_STATIC,351,17,9,8
+    LTEXT           "上",IDC_STATIC,265,17,9,8
+    LTEXT           "下",IDC_STATIC,437,17,9,8
+    LTEXT           "产生数量",IDC_STATIC,26,39,33,8
+    LTEXT           "采集物批次",IDC_STATIC,17,17,41,8
+    LTEXT           "产生时间",IDC_STATIC,155,39,33,8
+    LTEXT           "初始时间",IDC_STATIC,284,39,33,8
+    LTEXT           "产生方向",IDC_STATIC,413,39,33,8
+    GROUPBOX        "怪物批次信息",IDC_STATIC,7,5,503,59
+    EDITTEXT        IDC_COLL_DIRECTION,449,36,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+END
+
+IDD_NPC DIALOGEX 0, 0, 517, 67
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NPC_NAME,63,11,117,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NPC_COOR_LEFT,256,11,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_NPC_COOR_TOP,321,11,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_NPC_COOR_RIGHT,385,11,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_NPC_COOR_BOTTOM,450,11,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_NPC_QUANTITY,346,28,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_NPC_DIRECTION,439,28,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "采集物显示",IDC_CHECK_SHOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,46,60,10
+    CONTROL         "采集物生成",IDC_CHECK_BORN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,104,46,58,10
+    LTEXT           "产生区域：左",IDC_STATIC,203,14,49,8
+    LTEXT           "右",IDC_STATIC,372,14,9,8
+    LTEXT           "上",IDC_STATIC,308,14,9,8
+    LTEXT           "下",IDC_STATIC,437,14,9,8
+    LTEXT           "采集物名称",IDC_STATIC,17,15,41,8
+    LTEXT           "产生数量",IDC_STATIC,308,30,33,8
+    LTEXT           "产生方向",IDC_STATIC,401,31,33,8
+    GROUPBOX        "NPC详细信息",IDC_STATIC,7,4,503,57
+    EDITTEXT        IDC_NPC_PICID,7,47,6,14,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    EDITTEXT        IDC_NPC_SCRIPT,7,45,6,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "产生时间",IDC_STATIC,25,31,33,8
+    EDITTEXT        IDC_EDIT1,63,28,36,14,ES_AUTOHSCROLL
+    LTEXT           "起始时间",IDC_STATIC,118,30,33,8
+    EDITTEXT        IDC_EDIT2,150,28,36,14,ES_AUTOHSCROLL
+    LTEXT           "几率",IDC_STATIC,214,32,17,8
+    EDITTEXT        IDC_EDIT3,232,29,36,14,ES_AUTOHSCROLL
+END
+
+IDD_MONSTERINFO DIALOGEX 0, 0, 517, 69
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_MONSTER_LIST,63,9,156,88,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MONSTER_PROBABILITY,272,9,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MONSTER_IDENTIFIER,361,9,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MONSTER_LEADER,450,9,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MONSTER_DISTANCE,63,26,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MONSTER_SCRIPT,217,25,230,14,ES_AUTOHSCROLL
+    LTEXT           "怪物名称",IDC_STATIC,26,12,33,8
+    LTEXT           "脚本",IDC_STATIC,199,28,17,8
+    LTEXT           "产生几率",IDC_STATIC,235,12,33,8
+    LTEXT           "标识",IDC_STATIC,324,12,17,8
+    LTEXT           "产生领导",IDC_STATIC,413,12,33,8
+    LTEXT           "产生距离",IDC_STATIC,26,29,33,8
+    GROUPBOX        "怪物详细信息",IDC_STATIC,7,1,503,60
+    PUSHBUTTON      "...",IDC_BROWSE,451,24,15,14
+    LTEXT           "路径标识",IDC_STATIC,114,29,33,8
+    EDITTEXT        IDC_MONSTER_PATHID,148,26,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MONSTER_TALKSCRIPT,217,43,230,14,ES_AUTOHSCROLL
+    LTEXT           "对话脚本",IDC_STATIC,181,46,33,8
+    PUSHBUTTON      "...",IDC_TALKBROWSE,451,43,15,14
+END
+
+IDD_FILELIST DIALOGEX 0, 0, 212, 209
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "未保存文件"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_FILELIST,7,7,137,195,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "保存(&S)",IDC_SAVE,155,32,50,14,WS_DISABLED
+    PUSHBUTTON      "全部保存(&A)",IDC_SAVE_ALL,155,7,50,14
+    PUSHBUTTON      "不保存(&N)",IDCANCEL,155,57,50,14
+END
+
+IDD_ADDNODE DIALOGEX 0, 0, 296, 257
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,123,236,50,14
+    LISTBOX         IDC_LISTREGION,7,20,103,80,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTREGIONADD,186,20,103,80,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加全部 >>",IDC_BUTADD,122,31,50,14
+    PUSHBUTTON      "<< 移除全部",IDC_BUTDEL,122,59,50,14
+    CONTROL         "Monster",IDC_RADIOMONSTER,"Button",BS_AUTORADIOBUTTON | WS_GROUP,123,91,42,10
+    CONTROL         "NPC",IDC_RADIONPC,"Button",BS_AUTORADIOBUTTON,123,109,29,10
+    CONTROL         "MonsterInfo",IDC_RADIOMONINFO,"Button",BS_AUTORADIOBUTTON,123,126,55,10
+    LTEXT           "可编辑场景列表",IDC_STATIC,29,7,59,8
+    LTEXT           "选定场景列表",IDC_STATIC,206,7,59,8
+    LISTBOX         IDC_LISTMONS,7,126,103,102,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTMONSADD,186,126,103,102,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "可编辑怪物列表",IDC_STATIC,30,112,59,8
+    LTEXT           "选定怪物列表",IDC_STATIC,206,112,59,8
+    PUSHBUTTON      "添加全部 >>",IDC_BUTADDM,123,154,50,14
+    PUSHBUTTON      "<< 移除全部",IDC_BUTDELM,123,183,50,14
+END
+
+IDD_DLGEDIT DIALOG  0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话框"
+FONT 9, "宋体, MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,129,7,50,16
+    PUSHBUTTON      "取消",IDCANCEL,129,26,50,16
+END
+
+IDD_DLGCOLOR DIALOGEX 0, 0, 274, 215
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "颜色配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           " 阻挡颜色",IDC_STATIC,37,26,35,8
+    LTEXT           " 阻挡颜色",IDC_STATIC,37,47,35,8
+    LTEXT           " 阻挡颜色",IDC_STATIC,37,68,35,8
+    LTEXT           " 阻挡颜色",IDC_STATIC,37,89,35,8
+    LTEXT           " 阻挡颜色",IDC_STATIC,37,110,35,8
+    LTEXT           " 阻挡颜色",IDC_STATIC,37,131,35,8
+    LTEXT           " 阻挡颜色",IDC_STATIC,37,152,35,8
+END
+
+IDD_MONSTER DIALOGEX 0, 0, 517, 76
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_MONSTER_NO,63,14,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MONSTER_COOR_LEFT,192,14,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_MONSTER_COOR_TOP,278,14,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_MONSTER_COOR_RIGHT,364,14,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_MONSTER_COOR_BOTTOM,450,14,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_MONSTER_QUANTITY,63,36,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_MONSTER_TIME_BORN,192,36,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_MONSTER_TIME_START,321,36,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    EDITTEXT        IDC_MONSTER_DIRECTION,450,36,40,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    CONTROL         "怪物生成",IDC_CHECK_BORN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,368,50,48,10
+    LTEXT           "产生区域：左",IDC_STATIC,139,17,49,8
+    LTEXT           "右",IDC_STATIC,351,17,9,8
+    LTEXT           "上",IDC_STATIC,265,17,9,8
+    LTEXT           "下",IDC_STATIC,437,17,9,8
+    LTEXT           "产生数量",IDC_STATIC,26,39,33,8
+    LTEXT           "怪物批次",IDC_STATIC,26,17,33,8
+    LTEXT           "产生时间",IDC_STATIC,155,39,33,8
+    LTEXT           "初始时间",IDC_STATIC,284,39,33,8
+    LTEXT           "产生方向",IDC_STATIC,413,39,33,8
+    GROUPBOX        "怪物批次信息",IDC_STATIC,7,5,503,59
+END
+
+IDD_COLLECTIONINFO DIALOGEX 0, 0, 517, 69
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COLL_LIST,63,18,156,88,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_COLL_PROBABILITY,272,18,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "采集物名称",-1,17,21,41,8
+    LTEXT           "产生几率",-1,235,21,33,8
+    GROUPBOX        "采集物详细信息",-1,7,1,503,60
+END
+
+IDD_SIGNPOS DIALOGEX 0, 0, 345, 65
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SIGNPOS_NO,63,17,33,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SIGNPOS_X,158,18,46,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SIGNPOS_Y,240,18,46,16,ES_AUTOHSCROLL
+    LTEXT           "序号",IDC_STATIC,40,21,23,10
+    LTEXT           "x坐标",IDC_STATIC,132,21,21,10
+    LTEXT           "y坐标",IDC_STATIC,216,21,21,10
+    GROUPBOX        "路标点信息",IDC_STATIC,14,7,324,51
+END
+
+IDD_ROADPOINT DIALOGEX 0, 0, 294, 92
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_ROADSNO,55,26,58,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROADSPOINTX,54,46,58,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROADSPOINTY,136,46,58,14,ES_AUTOHSCROLL
+    LTEXT           "路径标识",IDC_STATIC,18,28,37,10
+    LTEXT           "X",IDC_STATIC,40,48,8,9
+    LTEXT           "Y",IDC_STATIC,125,48,8,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "成都锦天"
+            VALUE "FileDescription", "By: Yule Fox"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "UniEditor.exe"
+            VALUE "LegalCopyright", "UniEditor:辅助编辑器 (C) 成都锦天 保留所有权利。"
+            VALUE "OriginalFilename", "UniEditor.exe"
+            VALUE "ProductName", "UniEditor:辅助编辑器"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_UNIEDITOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 926
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 591
+    END
+
+    IDD_COLLECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 510
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_NPC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 510
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_MONSTERINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 510
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_FILELIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_ADDNODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_DLGEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DLGCOLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_MONSTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 510
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_COLLECTIONINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 510
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_SIGNPOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_ROADPOINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "ssss"
+    BEGIN
+        MENUITEM "添加(&A)",                      ID__ADD
+        MENUITEM "删除(&D)",                      ID__DEL
+    END
+END
+
+IDR_MENU2 MENU 
+BEGIN
+    POPUP "缩放"
+    BEGIN
+        MENUITEM "缩小",                          ID_ZOOMOUT
+        MENUITEM "放大",                          ID_ZOOMIN
+    END
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "添加",                          ID_VKADD
+        MENUITEM "删除",                          ID_VKDEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MENU2 ACCELERATORS 
+BEGIN
+    "D",            IDC_REFRESH,            VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_ZOOMOUT,             VIRTKEY, CONTROL, NOINVERT
+    VK_LBUTTON,     ID_VKADD,               VIRTKEY, SHIFT, NOINVERT
+    VK_RBUTTON,     ID_ZOOMIN,              VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 UniEditor(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\UniEditor.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

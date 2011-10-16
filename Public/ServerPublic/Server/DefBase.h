@@ -1,0 +1,8 @@
+#include "Basedef/BasePetServerDef.h"
+#include "Basedef/FBusinessSvrCommon.h"
+#include "Basedef/GateMsgType.h"
+#include "Basedef/GoodsExEnum.h"
+#include "Basedef/InfoType.h"
+#include "Basedef/LeaveWordDef.h"
+#include "Basedef/pooldef.h"
+#include "BaseDef/PhaseSeverDef.h"

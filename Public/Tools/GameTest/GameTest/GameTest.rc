@@ -1,0 +1,731 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameTest.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GameTest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 GameTest"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "GameTest Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Author:wangqiao Copyright (C) 2009",IDC_STATIC,40,25,155,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+    LTEXT           "Simo",IDC_STATIC,140,43,17,9
+END
+
+IDD_GAMETEST_DIALOG DIALOGEX 0, 0, 631, 463
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "GameTest"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_PAGE,"SysTabControl32",0x0,0,0,631,462
+END
+
+IDD_PROPPAGE_GAMEINFO DIALOGEX 0, 0, 730, 530
+STYLE DS_SETFONT | WS_CHILD | WS_BORDER
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_INPUT_INFO,103,303,616,45,ES_MULTILINE | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_OUTPUT_INFO,102,361,618,97,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    LTEXT           "输出信息:",IDC_STATIC,103,351,37,8
+    LTEXT           "输入信息:",IDC_STATIC,103,294,37,8
+    EDITTEXT        IDC_ScriptName,163,271,494,15,ES_AUTOHSCROLL
+    GROUPBOX        "静态",IDC_STATIC,103,261,616,30
+    PUSHBUTTON      "执行",IDC_RunScript,664,271,46,14
+    CONTROL         "执行单个",IDC_CheckOne,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,109,274,47,8
+    LTEXT           "",IDC_STATIC_ShowAmount,185,476,18,8
+    LTEXT           "Connecting Num:",IDC_STATIC,122,476,61,8
+    GROUPBOX        "MultiClientInfo",IDC_STATIC,103,461,618,37
+    LTEXT           "Client Num:",IDC_STATIC,265,475,45,8
+    LTEXT           "",IDC_STATIC_ShowClientNum,317,475,8,8
+END
+
+IDD_PROPPAGE_TESTSCRIPT DIALOGEX 0, 0, 730, 530
+STYLE DS_SETFONT | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_COMBO_TestType,201,424,61,120,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ServerList,201,400,61,100,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_StartCDKey,85,376,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EndCDKey,85,400,35,14,ES_AUTOHSCROLL
+    CONTROL         "盛大登录",IDC_CHECK_PtToken,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,31,450,48,10
+    EDITTEXT        IDC_EDIT_Timer,85,424,35,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "ForCheck",IDC_BUTTON_CHECK_SCRIPT_SYNTAX,669,67,42,13,NOT WS_TABSTOP
+    PUSHBUTTON      "Save",IDC_SaveScript,669,99,42,13,NOT WS_TABSTOP
+    DEFPUSHBUTTON   "ReLoad",IDC_UpdateScript,669,33,42,13,NOT WS_TABSTOP
+    DEFPUSHBUTTON   "Start",IDC_StartLogin,161,485,93,30,WS_GROUP
+    LTEXT           "选择测试类型",IDC_STATIC,145,428,49,8
+    EDITTEXT        IDC_EDIT_SCRIPT_ERROR_INFO,15,267,692,84,ES_MULTILINE | ES_READONLY | WS_VSCROLL | NOT WS_TABSTOP
+    CONTROL         "",IDC_TREE_TEST_CASE,"SysTreeView32",TVS_HASBUTTONS | TVS_LINESATROOT | TVS_SHOWSELALWAYS | TVS_NOTOOLTIPS | WS_BORDER,19,18,158,229
+    EDITTEXT        IDC_EDIT_SCRIPT_EDIT,200,17,463,230,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL | NOT WS_TABSTOP
+    GROUPBOX        "RunTime ErrorInfo",IDC_STATIC,7,255,708,102
+    LTEXT           "起始帐号:",IDC_STATIC_CDKeyStart,31,380,37,8
+    LTEXT           "结束帐号",IDC_STATIC_CDKeyEnd,31,404,33,8
+    GROUPBOX        "CEDIT",IDC_STATIC,193,8,521,249
+    LTEXT           "选择服务器",IDC_STATIC,145,404,41,8
+    LTEXT           "定时器间隔:",IDC_STATIC,31,428,47,8
+    GROUPBOX        "Setting",IDC_STATIC,9,360,295,115
+    GROUPBOX        "Envi",IDC_STATIC,322,361,390,116
+    CONTROL         "开启Max属性",IDC_MAXSTATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,404,419,60,10
+    CONTROL         "武器装备",IDC_EQUIPWEAPON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,340,419,48,10
+    CONTROL         "开启3转职业平均分配",IDC_THIRDOCCU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,476,419,92,10
+    EDITTEXT        IDC_PLAYERRGNX,491,438,23,12,ES_AUTOHSCROLL
+    LTEXT           "出生场景:",IDC_STATIC,339,442,37,8
+    EDITTEXT        IDC_PLAYERLEVEL,377,378,32,14,ES_AUTOHSCROLL
+    LTEXT           "角色等级:",IDC_STATIC,339,382,37,8
+    LTEXT           "角色职业:",IDC_STATIC,339,400,37,8
+    COMBOBOX        IDC_COMBO_OccuList,377,398,70,163,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_RegionList,377,438,100,183,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PLAYERRGNY,527,438,23,12,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,481,442,8,8
+    LTEXT           "Y",IDC_STATIC,518,442,8,8
+    LTEXT           "选择项目:",IDC_STATIC,145,380,38,8
+    COMBOBOX        IDC_COMBO_TDLG_PROJNAME,201,376,61,146,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "手动路径",IDC_BUTTON_TESTDLG_CHOOSEPATH,143,448,46,13
+    LTEXT           "",IDC_STATIC_WORKPATH,31,464,268,8
+    DEFPUSHBUTTON   "Close",IDC_CLOSE_GT,425,486,93,30,WS_GROUP
+    GROUPBOX        "CASEFILE",IDC_STATIC,8,8,175,247
+    LTEXT           "",IDC_ShowScriptPath,204,248,493,8,SS_ENDELLIPSIS
+END
+
+IDD_PROPPAGE_REGION_INFO DIALOGEX 0, 0, 397, 250
+STYLE DS_SETFONT | WS_CHILD | WS_BORDER
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    LTEXT           "",IDC_STATIC_PLAYER_Y,88,1,22,8
+    LTEXT           "",IDC_STATIC_PLAYER_X,51,1,22,8
+    LTEXT           "",IDC_STATIC,74,1,8,8
+    LTEXT           "",IDC_STATIC,37,1,8,8
+    LTEXT           "",IDC_STATIC_RegionID,5,0,27,8
+END
+
+IDD_PROPPAGE_PLAYER_INFO DIALOGEX 0, 0, 400, 352
+STYLE DS_SETFONT | WS_CHILD | WS_BORDER
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    LTEXT           "Name:",IDC_STATIC,8,16,18,8
+    LTEXT           "Name",IDC_STATIC_PLAYE_NAME,30,16,43,8
+    LTEXT           "/",IDC_STATIC,75,50,8,8
+    LTEXT           "ID",IDC_STATIC_PALYER_ID,40,33,39,8
+    LTEXT           "Hp:",IDC_STATIC,8,50,13,8
+    LTEXT           "Mp:",IDC_STATIC,8,67,13,8
+    LTEXT           "lLevel:",IDC_STATIC,8,101,26,8
+    LTEXT           "Money:",IDC_STATIC,8,118,22,8
+    LTEXT           "Hp",IDC_STATIC_PLAYE_Hp,40,50,33,8
+    LTEXT           "MaxHp",IDC_STATIC_PLAYE_MaxHp,86,50,25,8
+    LTEXT           "Mp",IDC_STATIC_PLAYE_Mp,40,67,33,8
+    LTEXT           "/",IDC_STATIC,75,67,8,8
+    LTEXT           "MaxMp",IDC_STATIC_PLAYE_MaxMp,86,67,25,8
+    LTEXT           "lLevel",IDC_STATIC_PLAYER_Level,40,101,25,8
+    LTEXT           "Money",IDC_STATIC_PLAYER_Money,40,118,21,8
+    LTEXT           "Exp:",IDC_STATIC,8,84,17,8
+    LTEXT           "Exp",IDC_STATIC_PLAYER_Exp,40,84,34,8
+    LTEXT           "ID:",IDC_STATIC,8,33,13,8
+    LTEXT           "/",IDC_STATIC,75,84,8,8
+    LTEXT           "UpExp",IDC_STATIC_PLAYER_UpExp,86,84,40,8
+    CONTROL         "",IDC_Goods_List,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,187,24,202,104
+    LTEXT           "体力",IDC_STATIC,8,152,22,8
+    LTEXT           "能量值",IDC_STATIC,8,186,30,8
+    LTEXT           "爵位等级",IDC_STATIC,86,135,35,8
+    LTEXT           "爵位声望",IDC_STATIC,86,118,35,8
+    LTEXT           "国家ID",IDC_STATIC,86,102,28,8
+    LTEXT           "国家贡献",IDC_STATIC,8,203,34,8
+    LTEXT           "升级所需经验",IDC_STATIC,8,219,50,8
+    LTEXT           "职业",IDC_STATIC,8,169,28,8
+    LTEXT           "性别",IDC_STATIC,8,135,28,8
+    LTEXT           "配偶身份ID",IDC_STATIC,86,152,41,8
+    LTEXT           "Money",IDC_STATIC_PLAYER_Sex,40,135,21,8
+    LTEXT           "Money",IDC_STATIC_PLAYER_Stamina,40,152,21,8
+    LTEXT           "Money",IDC_STATIC_PLAYER_Occupation,40,169,21,8
+    LTEXT           "Money",IDC_STATIC_PLAYER_Energy,40,186,35,8
+    LTEXT           "Money",IDC_STATIC_PLAYER_CountryContribute,40,203,33,8
+    LTEXT           "Money",IDC_STATIC_PLAYER_UpgradeExp,64,219,39,8
+    LTEXT           "Money",IDC_STATIC_PLAYER_SpouseID,151,152,21,8
+    LTEXT           "Money",IDC_STATIC_PLAYER_RankOfNobility,149,135,21,8
+    LTEXT           "Money",IDC_STATIC_PLAYER_RanOfNobCredit,149,116,21,8
+    LTEXT           "Money",IDC_STATIC_PLAYER_Country,145,102,21,8
+    LTEXT           "SocketID:",IDC_STATIC_PLAYE_NAME2,82,16,35,8
+    LTEXT           "SocketID:",IDC_STATIC_PLAYE_SocketID,120,16,35,8
+    GROUPBOX        "背包物品",IDC_STATIC,182,15,213,120
+END
+
+IDD_PROPPAGE_MONSTER_INFO DIALOGEX 0, 0, 301, 262
+STYLE DS_SETFONT | WS_CHILD | WS_BORDER
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST_Monster,"SysListView32",LVS_REPORT | LVS_NOLABELWRAP | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,23,21,109,207
+    CONTROL         "",IDC_LIST_Npc,"SysListView32",LVS_REPORT | LVS_NOLABELWRAP | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,158,21,109,208
+    LTEXT           "Monster",IDC_STATIC,23,11,29,8
+    LTEXT           "Npc",IDC_STATIC,158,11,13,8
+END
+
+IDD_PROPPAGE_SKILL_INFO DIALOGEX 0, 0, 392, 246
+STYLE DS_SETFONT | WS_CHILD | WS_BORDER
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_SKILL_EDIT,122,32,116,190,ES_AUTOHSCROLL
+    LTEXT           "技能描述",IDC_STATIC,122,16,33,8
+    LTEXT           "已学技能",IDC_STATIC,26,16,34,8
+    CONTROL         "",IDC_SKILL_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,22,31,83,191
+    CONTROL         "",IDC_OccupSkillList,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,258,31,112,191
+    LTEXT           "技能",IDC_STATIC,326,18,17,8
+    LTEXT           "职业",IDC_Occup,271,18,47,8
+END
+
+IDD_PROPPAGE_Region_Goods_Info DIALOGEX 0, 0, 384, 263
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_RegionGoods,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,12,13,359,237
+END
+
+IDD_DIALOG_AddName DIALOGEX 0, 0, 160, 69
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,117,15,25,14
+    PUSHBUTTON      "取消",IDCANCEL,117,29,25,14
+    LTEXT           "请填入名字:",IDC_AddTitle,17,15,47,8
+    EDITTEXT        IDC_AddName,16,30,87,13,ES_AUTOHSCROLL
+END
+
+IDD_DriveClient DIALOGEX 0, 0, 444, 258
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Auto Dirve Client",IDC_STATIC,17,17,58,10
+    PUSHBUTTON      "start",IDC_BUTTON1,165,73,50,14
+    LTEXT           "起始帐号: GM",IDC_STATIC,35,51,48,8
+    LTEXT           "结束帐号: GM",IDC_STATIC,36,75,48,8
+    EDITTEXT        IDC_EDIT1,87,48,49,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,88,73,49,13,ES_AUTOHSCROLL
+    LTEXT           "输出信息和重新载入脚本信息统一在测试管理页面中显示",IDC_STATIC,307,160,82,31
+END
+
+IDD_DIALOG_AllTest DIALOGEX 0, 0, 581, 394
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_TypePage,"SysTabControl32",0x0,0,7,581,387
+END
+
+IDD_PROPPAGE_SKILL DIALOGEX 0, 0, 400, 304
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "选择场景以及坐标进行技能测试",IDC_STATIC,19,14,308,32
+    LTEXT           "场景ID",IDC_STATIC,30,28,27,15
+    EDITTEXT        IDC_EDIT_REGIONID,67,26,40,14,ES_AUTOHSCROLL
+    LTEXT           "X坐标",IDC_STATIC,119,28,21,8
+    EDITTEXT        IDC_EDIT_POSX,149,25,40,14,ES_AUTOHSCROLL
+    LTEXT           "Y坐标",IDC_STATIC,201,28,21,8
+    EDITTEXT        IDC_EDIT_POSY,229,25,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "攻击力设置",IDC_STATIC,19,49,140,29
+    CONTROL         "高攻击力",IDC_RADIO_ATTACK_HIGH,"Button",BS_AUTORADIOBUTTON | WS_GROUP,31,62,59,10
+    CONTROL         "低攻击力",IDC_RADIO_ATTACK_LOW,"Button",BS_AUTORADIOBUTTON,99,62,48,10
+    COMBOBOX        IDC_COMBO_OCCU,27,159,58,207,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "职业选择",IDC_STATIC,28,143,47,9
+    CONTROL         "使用1转技能",IDC_CHECK_SKILL1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,94,57,10
+    CONTROL         "使用2转技能",IDC_CHECK_SKILL2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,111,56,10
+    CONTROL         "使用3转技能",IDC_CHECK_SKILL3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,128,54,10
+    GROUPBOX        "使用的技能范围",IDC_STATIC,19,83,141,99
+    EDITTEXT        IDC_EDIT_SKILLID1,95,107,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SKILLID2,95,124,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SKILLID3,95,140,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SKILLID4,95,158,59,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC,97,97,56,10
+    GROUPBOX        "自定义技能ID",IDC_STATIC,93,90,63,83
+    CONTROL         "单手剑",IDC_RADIO_WEAPON1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,180,63,40,10
+    CONTROL         "单手锤",IDC_RADIO_WEAPON2,"Button",BS_AUTORADIOBUTTON,180,95,40,10
+    CONTROL         "双手剑",IDC_RADIO_WEAPON3,"Button",BS_AUTORADIOBUTTON,180,126,40,10
+    CONTROL         "双手斧",IDC_RADIO_WEAPON4,"Button",BS_AUTORADIOBUTTON,180,160,40,10
+    CONTROL         "双剑",IDC_RADIO_WEAPON6,"Button",BS_AUTORADIOBUTTON,237,95,32,10
+    CONTROL         "匕首",IDC_RADIO_WEAPON7,"Button",BS_AUTORADIOBUTTON,237,126,32,10
+    CONTROL         "弓箭",IDC_RADIO_WEAPON5,"Button",BS_AUTORADIOBUTTON,237,63,32,10
+    GROUPBOX        "装备的武器类型",IDC_STATIC,163,49,158,132
+    GROUPBOX        "机器人登陆",IDC_STATIC,19,185,301,79
+    LTEXT           "起始帐号: gm",IDC_STATIC_SKILL_START_CDKEY,25,197,49,9,SS_NOTIFY
+    LTEXT           "结束帐号: gm",IDC_STATIC_SKILL_END_CDKEY,112,197,49,10
+    EDITTEXT        IDC_SkillStartCDKey,75,195,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SkillEndCDKey,162,194,37,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SkillTimer,125,211,41,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "机器人发送消息的时间间隔",IDC_STATIC,25,214,99,10
+    LTEXT           "毫秒",IDC_STATIC,169,213,17,9
+    LTEXT           "版本号",IDC_STATIC,139,234,25,8
+    EDITTEXT        IDC_EDIT_SkillVersion,166,231,33,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "技能机器人开始测试",IDC_BUTTON_SkillStart,232,194,84,51
+    CONTROL         "坐标随机",IDC_CHECK_RANDOMPOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,277,27,43,10
+    CONTROL         "开启反外挂答题",IDC_CHECK_SKILL_ACCAnswer,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,244,249,72,10
+    CONTROL         "盛大登陆方式",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,231,84,15
+    LTEXT           "连接的服务器",IDC_STATIC_SERVER,25,234,48,8
+    COMBOBOX        IDC_COMBO_SkillIP,77,232,58,84,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROPPAGE_MAIL DIALOGEX 0, 0, 444, 258
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_MAIL_REGION,33,48,41,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAIL_POSX,96,35,41,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAIL_POSY,96,56,41,12,ES_AUTOHSCROLL
+    GROUPBOX        "登陆场景",IDC_STATIC,5,18,141,66
+    LTEXT           "场景:",IDC_STATIC,9,51,22,9
+    LTEXT           "X:",IDC_STATIC,83,39,9,10
+    LTEXT           "Y:",IDC_STATIC,83,57,9,11
+    GROUPBOX        "发信配置",IDC_STATIC,5,85,430,81
+    GROUPBOX        "收信配置",IDC_STATIC,5,169,430,80
+    LTEXT           "Mail Operation",IDC_STATIC,139,3,49,10
+    GROUPBOX        "帐号管理",IDC_STATIC_MailLogin2,163,18,271,66
+    LTEXT           "起始帐号: GM",IDC_STATIC_strStartCDkey,171,32,50,9
+    LTEXT           "结束帐号: GM",IDC_STATIC_strEndCDkey,171,52,50,9
+    EDITTEXT        IDC_EDIT_MAIL_StartCdKey,221,29,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAIL_EndCdkey,221,49,38,13,ES_AUTOHSCROLL
+    LTEXT           "消息间隔:",IDC_STATIC,265,31,40,9
+    LTEXT           "服务器:",IDC_STATIC,265,70,37,9,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_MAIL_MsgTimer,311,27,47,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_MAILSever,311,65,48,100,CBS_DROPDOWN | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Start",IDC_BUTTON_MailStart,365,29,60,51
+    LTEXT           "物品:",IDC_STATIC,14,112,27,10
+    EDITTEXT        IDC_EDIT_MAIL_SendDoodsName,51,110,47,15,ES_AUTOHSCROLL
+    LTEXT           "金钱:",IDC_STATIC,115,112,27,10
+    EDITTEXT        IDC_EDIT_MAIL_SendMoney,153,110,47,15,ES_AUTOHSCROLL
+    LTEXT           "接收人:",IDC_STATIC,212,112,27,10
+    EDITTEXT        IDC_EDIT_MAIL_SendName,248,110,52,16,ES_AUTOHSCROLL
+    LTEXT           "物品数量:",IDC_STATIC,115,136,35,8
+    EDITTEXT        IDC_EDIT_MAIL_SendGoodsNum,153,134,47,15,ES_AUTOHSCROLL
+    LTEXT           "邮件类型:",IDC_STATIC,14,136,35,11
+    EDITTEXT        IDC_EDIT_MAIL_SendType,51,134,47,15,ES_AUTOHSCROLL
+    LTEXT           "重复次数:",IDC_STATIC,213,150,37,9
+    EDITTEXT        IDC_EDIT_MAIL_SendRepeatNum,249,148,51,13,ES_AUTOHSCROLL
+    LTEXT           "几率:",IDC_STATIC,52,227,20,8
+    LTEXT           "几率:",IDC_STATIC,52,206,20,8
+    EDITTEXT        IDC_EDIT_MAIL_RejectProbability,75,202,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAIL_DeleteProbability,75,224,40,14,ES_AUTOHSCROLL
+    LTEXT           "SiMo",IDC_STATIC,410,240,15,9
+    LTEXT           "几率:",IDC_STATIC,306,227,20,8
+    EDITTEXT        IDC_EDIT_MAIL_ExitProbability,329,223,40,14,ES_AUTOHSCROLL
+    CONTROL         "激活发信（否则不发）",IDC_CHECK_MAIL_SEND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,96,95,9
+    CONTROL         "从复发给此人",IDC_CHECK_MAIL_RepeatSendName,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,213,133,63,8
+    CONTROL         "激活收信（否则不收）",IDC_CHECK_MAILREC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,188,95,9
+    CONTROL         "退信",IDC_CHECK_MAIL_Reject,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,204,31,10
+    CONTROL         "删信",IDC_CHECK_MAIL_Delete,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,226,29,10
+    CONTROL         "取物品",IDC_CHECK_MAIL_GetGoods,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,157,204,40,10
+    CONTROL         "同意付款",IDC_CHECK_MAIL_AgreedPay,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,157,226,48,10
+    CONTROL         "取金钱",IDC_CHECK_MAIL_GetMoney,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,258,204,40,10
+    CONTROL         "上下线",IDC_CHECK_MAIL_ExitClient,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,258,226,40,10
+    LTEXT           "服务器版本:",IDC_STATIC,265,49,43,9
+    EDITTEXT        IDC_EDIT_MAIL_SeverSub,311,47,47,13,ES_AUTOHSCROLL
+    LTEXT           "（-1为0-5随机）",IDC_STATIC,45,150,58,9
+    LTEXT           "（-1为0-5随机）",IDC_STATIC,126,150,58,9
+    CONTROL         "一次消息从复发送",IDC_CHECK_MAIL_RepeatSendMsg,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,324,133,87,8
+    LTEXT           "重复次数:",IDC_STATIC,324,151,37,9
+    EDITTEXT        IDC_EDIT_MAIL_SendMsgRepeatNum,361,148,51,13,ES_AUTOHSCROLL
+    GROUPBOX        "重复消息发送设置",IDC_STATIC,317,122,110,42
+    CONTROL         "盛大登陆方式",IDC_CHECK_MAIL_PT_LOGIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,70,64,10
+END
+
+IDD_PROPPAGE_LINKMAN DIALOGEX 0, 0, 444, 258
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_LINKMAN_REGION,33,48,41,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LINKMAN_POSX,96,35,41,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LINKMAN_POSY,96,56,41,12,ES_AUTOHSCROLL
+    GROUPBOX        "登陆场景",IDC_STATIC,5,18,141,66
+    LTEXT           "场景:",IDC_STATIC,9,51,22,9
+    LTEXT           "X:",IDC_STATIC,83,39,9,10
+    LTEXT           "Y:",IDC_STATIC,83,57,9,11
+    LTEXT           "LinkMan Operation",IDC_STATIC,138,3,59,9
+    GROUPBOX        "帐号管理",IDC_STATIC_MailLogin2,163,18,271,66
+    LTEXT           "起始帐号: GM",IDC_STATIC_LINKMAN_strStartCDkey,171,32,50,9
+    LTEXT           "结束帐号: GM",IDC_STATIC_LINKMAN_strEndCDkey,171,52,50,9
+    EDITTEXT        IDC_EDIT_LINKMAN_StartCdKey,221,29,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LINKMAN_EndCdkey,221,49,38,13,ES_AUTOHSCROLL
+    LTEXT           "消息间隔:",IDC_STATIC,266,31,40,9
+    LTEXT           "服务器:",IDC_STATIC,266,71,37,9,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_LINKMAN_MsgTimer,312,27,47,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_LINKMAN_SeverIP,312,67,48,82,CBS_DROPDOWN | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Start",IDC_BUTTON_LINKMAN_START,365,29,60,51
+    LTEXT           "服务器版本:",IDC_STATIC,266,50,43,9
+    EDITTEXT        IDC_EDIT_LINKMAN_SeverSub,312,48,47,13,ES_AUTOHSCROLL
+    GROUPBOX        "添加、移动、删除好友设置",IDC_STATIC,6,100,429,149
+    LTEXT           "SiMo",IDC_STATIC,410,240,15,9
+    CONTROL         "激活发送添加",IDC_CHECK_LINKMAN_SendAdd,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,118,64,10
+    CONTROL         "激活回复邀请",IDC_CHECK_LINKMAN_ResponseAdd,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,186,59,10
+    CONTROL         "激活移动联系人",IDC_CHECK_LINKMAN_SendMove,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,283,118,69,10
+    CONTROL         "激活删除好友",IDC_CHECK_LINKMAN_Del,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,283,186,62,10
+    GROUPBOX        "",IDC_STATIC,10,111,148,61
+    GROUPBOX        "",IDC_STATIC,10,176,148,61
+    GROUPBOX        "",IDC_STATIC,270,111,148,61
+    GROUPBOX        "",IDC_STATIC,270,176,148,61
+    EDITTEXT        IDC_EDIT_LINKMAN_ExitProbability,205,217,40,14,ES_AUTOHSCROLL
+    CONTROL         "上下线",IDC_CHECK_LINKMAN_ExitClient,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,181,206,40,10
+    LTEXT           "几率:",IDC_STATIC,180,222,20,8
+    EDITTEXT        IDC_EDIT_LINKMAN_DelProbability,307,206,41,12,ES_AUTOHSCROLL
+    LTEXT           "几率:",IDC_STATIC,281,208,20,8
+    EDITTEXT        IDC_EDIT_LINKMAN_MoveProbability,307,138,42,12,ES_AUTOHSCROLL
+    LTEXT           "几率:",IDC_STATIC,282,140,20,8
+    CONTROL         "盛大登陆方式",IDC_CHECK_LINKMAN_PT_LOGIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,68,74,10
+END
+
+IDD_DIALOG_GOODS_TEST DIALOGEX 0, 0, 504, 310
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,447,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,447,24,50,14
+    LTEXT           "开始帐号:",IDC_STATIC,20,15,36,8
+    LTEXT           "结束帐号:",IDC_STATIC,125,15,36,8
+    CONTROL         "上下线",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,123,39,40,10
+    CONTROL         "子背包1",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,34,44,10
+    CONTROL         "子背包2",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,55,44,10
+    CONTROL         "字背包3",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,74,44,10
+    CONTROL         "子背包4",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,92,44,10
+    CONTROL         "子背包5",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,111,44,10
+END
+
+IDD_PROPPAGE_AC_ANSWER DIALOGEX 0, 0, 444, 258
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_ACC_REGION,33,48,41,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ACC_POSX,96,35,41,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ACC_POSY,96,56,41,12,ES_AUTOHSCROLL
+    GROUPBOX        "登陆场景",IDC_STATIC,5,18,141,68
+    LTEXT           "场景:",IDC_STATIC,9,51,22,9
+    LTEXT           "X:",IDC_STATIC,83,39,9,10
+    LTEXT           "Y:",IDC_STATIC,83,57,9,11
+    GROUPBOX        "帐号管理",IDC_STATIC_MailLogin2,163,18,271,68
+    LTEXT           "起始帐号: GM",IDC_STATIC_ACC_strStartCDkey,171,32,50,9
+    LTEXT           "结束帐号: GM",IDC_STATIC_ACC_strEndCDkey,171,52,50,9
+    EDITTEXT        IDC_EDIT_ACC_StartCdKey,224,29,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ACC_EndCdkey,224,49,35,13,ES_AUTOHSCROLL
+    LTEXT           "消息间隔:",IDC_STATIC,266,31,40,9
+    LTEXT           "服务器:",IDC_STATIC,266,71,37,9,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_ACC_MsgTimer,312,27,47,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_ACC_SeverIP,312,67,48,82,CBS_DROPDOWN | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Start",IDC_BUTTON_ACC_START,365,29,60,51
+    LTEXT           "服务器版本:",IDC_STATIC,266,50,43,9
+    EDITTEXT        IDC_EDIT_ACC_SeverSub,312,48,47,13,ES_AUTOHSCROLL
+    GROUPBOX        "反外挂答题设置",IDC_STATIC,6,100,429,149
+    LTEXT           "SiMo",IDC_STATIC,410,240,15,9
+    LTEXT           "AC Answer Operation",IDC_STATIC,138,3,71,9
+    CONTROL         "激活答题",IDC_ACC_CHECK_Answer,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,119,50,10
+    CONTROL         "激活安全测试(几率压入错误值)",IDC_ACC_CHECK_SAFE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,139,126,10
+    CONTROL         "复制整块消息(次数1-5)",IDC_ACC_CHECK_CopyMsg,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,160,96,10
+    CONTROL         "消息Send时复制(次数1-5)",IDC_ACC_CHECK_CopySend,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,183,104,10
+    CONTROL         "是否上下线",IDC_ACC_CHECK_ExitClient,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,204,56,10
+    LTEXT           "（此功能由脚本增加活跃度值,［技能功能］里添加得有通过打怪增加活跃度值进行答题）",IDC_STATIC,264,190,164,17
+    CONTROL         "盛大登陆方式",IDC_CHECK_ACA_PT_LOGIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,68,73,10
+END
+
+IDD_DIALOG_TESTRESULT DIALOGEX 0, 0, 730, 491
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "GT Test Report",IDC_STATIC_TESTRS,305,18,191,18
+    EDITTEXT        IDC_EDIT_TESTRT,7,33,716,444,ES_MULTILINE | ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "GameTest.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "GameTest.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GAMETEST_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 495
+        BOTTOMMARGIN, 376
+    END
+
+    IDD_PROPPAGE_GAMEINFO, DIALOG
+    BEGIN
+        RIGHTMARGIN, 724
+        BOTTOMMARGIN, 519
+    END
+
+    IDD_PROPPAGE_TESTSCRIPT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 724
+        BOTTOMMARGIN, 523
+    END
+
+    IDD_PROPPAGE_PLAYER_INFO, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 351
+    END
+
+    IDD_PROPPAGE_MONSTER_INFO, DIALOG
+    BEGIN
+        RIGHTMARGIN, 287
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_PROPPAGE_Region_Goods_Info, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 377
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_DIALOG_AddName, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_DriveClient, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG_AllTest, DIALOG
+    BEGIN
+        RIGHTMARGIN, 561
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 377
+    END
+
+    IDD_PROPPAGE_SKILL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 297
+    END
+
+    IDD_DIALOG_GOODS_TEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 497
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 303
+    END
+
+    IDD_DIALOG_TESTRESULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 723
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 477
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TestCase_MENU MENU 
+BEGIN
+    POPUP "Case"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "执行用例",                        ID_CASE_START
+        MENUITEM "结束用例",                        ID_CASE_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "添加脚本",                        ID_AddScript
+        MENUITEM "删除脚本",                        ID_DelScript
+        MENUITEM SEPARATOR
+    END
+END
+
+IDR_MENU_Tools MENU 
+BEGIN
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "保存",                          ID_TOOLS_32793
+    END
+END
+
+IDR_TreeRootMenu MENU 
+BEGIN
+    POPUP "树状控件根节点"
+    BEGIN
+        MENUITEM "添加用例",                        ID_AddCase
+    END
+END
+
+IDR_MENU_TRAY MENU 
+BEGIN
+    POPUP "GameTest"
+    BEGIN
+        MENUITEM "显示主界面",                       ID_TRAY_SHOW
+        MENUITEM "显示信息",                        ID_VIEW_SHOWINFO
+        MENUITEM "显示测试报告",                      ID_VIEW_SHOWRESLUT
+        MENUITEM "隐藏",                          ID_TRAY_HIDE
+        MENUITEM SEPARATOR
+        MENUITEM "退出",                          ID_TRAY_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SKIN_MSN            BITMAP                  "res\\skinmsn.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 400
+//
+
+IDR_4001                400                     "GameTest.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 GameTest(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameTest.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

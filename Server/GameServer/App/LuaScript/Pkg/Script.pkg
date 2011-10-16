@@ -1,0 +1,25 @@
+
+$#include "ScriptCfg.h"
+$#include "../Script.h"
+
+$pfile "DefType.pkg"
+
+class Script
+{
+public:
+$pfile "../Funcs/ScriptClientFunc.h"
+$pfile "../Funcs/ScriptBaseFunc.h"
+$pfile "../Funcs/ScriptRgnFunc.h"
+$pfile "../Funcs/ScriptGoodsFunc.h"
+$pfile "../Funcs/ScriptSkillFunc.h"
+$pfile "../Funcs/ScriptQuestFunc.h"
+$pfile "../Funcs/ScriptOrganFunc.h"
+$pfile "../Funcs/ScriptGlobalFunc.h"
+$pfile "../Funcs/ScriptPlayerFunc.h"
+$pfile "../Funcs/ScriptShapeFunc.h"
+$pfile "../Funcs/ScriptPhaseFunc.h"
+$pfile "../Funcs/ScriptPetFunc.h"
+$pfile "../Funcs/ScriptMonsterFunc.h"
+$pfile "../Funcs/ScriptMailFunc.h"
+$pfile "../Funcs/ScriptTauntFunc.h"
+};

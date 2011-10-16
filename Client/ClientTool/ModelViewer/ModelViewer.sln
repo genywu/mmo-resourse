@@ -1,0 +1,57 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModelViewer", "ModelViewer.vcproj", "{B599CEDB-F2DA-49AA-BCFE-A55D0FB91C08}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E84B2614-8913-47AE-AA73-6E8D502251EB} = {E84B2614-8913-47AE-AA73-6E8D502251EB}
+		{9CA5D636-D0F3-4D41-BD04-EA647B521F2F} = {9CA5D636-D0F3-4D41-BD04-EA647B521F2F}
+		{59A0906E-ABF5-4AA0-9E00-DF12C079FEA7} = {59A0906E-ABF5-4AA0-9E00-DF12C079FEA7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModelViewerEngine", "..\..\FrostEngine\ModelViewerEngine.vcproj", "{59A0906E-ABF5-4AA0-9E00-DF12C079FEA7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModelViewerEngineExtend", "..\..\GameEngine\ModelViewerEngineExtend.vcproj", "{E84B2614-8913-47AE-AA73-6E8D502251EB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModelViewerPublic", "..\..\..\PUBLIC\ModelViewerPublic.vcproj", "{9CA5D636-D0F3-4D41-BD04-EA647B521F2F}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccProjectUniqueName0 = ..\\..\\..\\PUBLIC\\ModelViewerPublic.vcproj
+		SccProjectName0 = \\Workspace\\Game_Program_Develop\\guangmang\\PUBLIC\\
+		SccLocalPath0 = ..\\..\\..\\PUBLIC
+		SccProvider0 = MSSCCI:Alienbrain
+		SccProjectUniqueName1 = ..\\..\\GameEngine\\ModelViewerEngineExtend.vcproj
+		SccProjectName1 = \\Workspace\\Game_Program_Develop\\guangmang\\CLIENT\\GameEngine\\
+		SccLocalPath1 = ..\\..\\GameEngine
+		SccProvider1 = MSSCCI:Alienbrain
+		SccProjectUniqueName2 = ..\\..\\FrostEngine\\ModelViewerEngine.vcproj
+		SccProjectName2 = \\Workspace\\Game_Program_Develop\\guangmang\\CLIENT\\FrostEngine\\
+		SccLocalPath2 = ..\\..\\FrostEngine
+		SccProvider2 = MSSCCI:Alienbrain
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B599CEDB-F2DA-49AA-BCFE-A55D0FB91C08}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B599CEDB-F2DA-49AA-BCFE-A55D0FB91C08}.Debug|Win32.Build.0 = Debug|Win32
+		{B599CEDB-F2DA-49AA-BCFE-A55D0FB91C08}.Release|Win32.ActiveCfg = Release|Win32
+		{B599CEDB-F2DA-49AA-BCFE-A55D0FB91C08}.Release|Win32.Build.0 = Release|Win32
+		{59A0906E-ABF5-4AA0-9E00-DF12C079FEA7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{59A0906E-ABF5-4AA0-9E00-DF12C079FEA7}.Debug|Win32.Build.0 = Debug|Win32
+		{59A0906E-ABF5-4AA0-9E00-DF12C079FEA7}.Release|Win32.ActiveCfg = Release|Win32
+		{59A0906E-ABF5-4AA0-9E00-DF12C079FEA7}.Release|Win32.Build.0 = Release|Win32
+		{E84B2614-8913-47AE-AA73-6E8D502251EB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E84B2614-8913-47AE-AA73-6E8D502251EB}.Debug|Win32.Build.0 = Debug|Win32
+		{E84B2614-8913-47AE-AA73-6E8D502251EB}.Release|Win32.ActiveCfg = Release|Win32
+		{E84B2614-8913-47AE-AA73-6E8D502251EB}.Release|Win32.Build.0 = Release|Win32
+		{9CA5D636-D0F3-4D41-BD04-EA647B521F2F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9CA5D636-D0F3-4D41-BD04-EA647B521F2F}.Debug|Win32.Build.0 = Debug|Win32
+		{9CA5D636-D0F3-4D41-BD04-EA647B521F2F}.Release|Win32.ActiveCfg = Release|Win32
+		{9CA5D636-D0F3-4D41-BD04-EA647B521F2F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

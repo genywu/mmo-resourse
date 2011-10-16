@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoodsViewer", "GoodsViewer\GoodsViewer.vcproj", "{2B84F0B0-93F8-469E-BEB7-0CF8473BDE31}"
+	ProjectSection(ProjectDependencies) = postProject
+		{76DAD8A8-A27D-4EE0-8439-2388D5B24AA5} = {76DAD8A8-A27D-4EE0-8439-2388D5B24AA5}
+		{26121CEC-E21D-4252-96D4-A0FF163A2CFB} = {26121CEC-E21D-4252-96D4-A0FF163A2CFB}
+		{977A9BFC-F737-406E-B090-7EFE12BDD091} = {977A9BFC-F737-406E-B090-7EFE12BDD091}
+		{90FF144F-EC9C-434F-853C-F50A1BE456E6} = {90FF144F-EC9C-434F-853C-F50A1BE456E6}
+		{DB5B7ED8-12AE-43CA-88EC-4710287C7ADD} = {DB5B7ED8-12AE-43CA-88EC-4710287C7ADD}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoodsViewerEngine", "GoodsViewerEngine\GoodsViewerEngine.vcproj", "{90FF144F-EC9C-434F-853C-F50A1BE456E6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoodsViewerEngineExtend", "GoodsViewerEngineExtend\GoodsViewerEngineExtend.vcproj", "{977A9BFC-F737-406E-B090-7EFE12BDD091}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CEGUIEngine", "CEGUIEngine\CEGUIEngine.vcproj", "{26121CEC-E21D-4252-96D4-A0FF163A2CFB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Public", "..\..\..\Public\Public.vcproj", "{DB5B7ED8-12AE-43CA-88EC-4710287C7ADD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClientPublic", "..\..\..\Public\ClientPublic\ClientPublic.vcproj", "{76DAD8A8-A27D-4EE0-8439-2388D5B24AA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B84F0B0-93F8-469E-BEB7-0CF8473BDE31}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2B84F0B0-93F8-469E-BEB7-0CF8473BDE31}.Debug|Win32.Build.0 = Debug|Win32
+		{2B84F0B0-93F8-469E-BEB7-0CF8473BDE31}.Release|Win32.ActiveCfg = Release|Win32
+		{2B84F0B0-93F8-469E-BEB7-0CF8473BDE31}.Release|Win32.Build.0 = Release|Win32
+		{90FF144F-EC9C-434F-853C-F50A1BE456E6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{90FF144F-EC9C-434F-853C-F50A1BE456E6}.Debug|Win32.Build.0 = Debug|Win32
+		{90FF144F-EC9C-434F-853C-F50A1BE456E6}.Release|Win32.ActiveCfg = Release|Win32
+		{90FF144F-EC9C-434F-853C-F50A1BE456E6}.Release|Win32.Build.0 = Release|Win32
+		{977A9BFC-F737-406E-B090-7EFE12BDD091}.Debug|Win32.ActiveCfg = Debug|Win32
+		{977A9BFC-F737-406E-B090-7EFE12BDD091}.Debug|Win32.Build.0 = Debug|Win32
+		{977A9BFC-F737-406E-B090-7EFE12BDD091}.Release|Win32.ActiveCfg = Release|Win32
+		{977A9BFC-F737-406E-B090-7EFE12BDD091}.Release|Win32.Build.0 = Release|Win32
+		{26121CEC-E21D-4252-96D4-A0FF163A2CFB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{26121CEC-E21D-4252-96D4-A0FF163A2CFB}.Debug|Win32.Build.0 = Debug|Win32
+		{26121CEC-E21D-4252-96D4-A0FF163A2CFB}.Release|Win32.ActiveCfg = Release|Win32
+		{26121CEC-E21D-4252-96D4-A0FF163A2CFB}.Release|Win32.Build.0 = Release|Win32
+		{DB5B7ED8-12AE-43CA-88EC-4710287C7ADD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DB5B7ED8-12AE-43CA-88EC-4710287C7ADD}.Debug|Win32.Build.0 = Debug|Win32
+		{DB5B7ED8-12AE-43CA-88EC-4710287C7ADD}.Release|Win32.ActiveCfg = Release|Win32
+		{DB5B7ED8-12AE-43CA-88EC-4710287C7ADD}.Release|Win32.Build.0 = Release|Win32
+		{76DAD8A8-A27D-4EE0-8439-2388D5B24AA5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{76DAD8A8-A27D-4EE0-8439-2388D5B24AA5}.Debug|Win32.Build.0 = Debug|Win32
+		{76DAD8A8-A27D-4EE0-8439-2388D5B24AA5}.Release|Win32.ActiveCfg = Release|Win32
+		{76DAD8A8-A27D-4EE0-8439-2388D5B24AA5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

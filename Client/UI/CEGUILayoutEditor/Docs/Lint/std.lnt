@@ -1,0 +1,93 @@
+// PC-Lint Configuration file for use in VS2005 (VC++8)
+// and CELayoutEditor (part of CEGUI project - http://www.cegui.org.uk/wiki/index.php/Main_Page)
+// Author: Frederico Jerónimo (fjeronimo)
+// Date: 11/11/07
+// Last Updated: 04/12/07
+// NOTE: Dates in format dd/mm/yy
+
+//////////////////////////////////////////////////////////////////////////
+// INIT
+//////////////////////////////////////////////////////////////////////////
+
+// Increase macro storage to 16384 bytes (4096 * 4). Safety precaution
++macros
++macros 
+
+//////////////////////////////////////////////////////////////////////////
+// LINT FILES
+//////////////////////////////////////////////////////////////////////////
+
+// Scott Meyers Effective C++ (1992),  More Effective C++ (1996) and Effective C++ Third Edition (2005) style notes - 05/01/06
+// Available at http://www.gimpel.com/html/ptch80.htm
+CEGUI\au-sm123.lnt
+
+// Dan Saks notes - ??/??/??
+// Available at http://www.gimpel.com/html/ptch80.htm 
+CEGUI\au-ds.lnt
+
+// Visual Studio 2005 (VC++8) compiler options - 03/05/07
+// Available at http://www.gimpel.com/html/ptch80.htm
+CEGUI\co-msc80.lnt
+
+// Active Template Library checks - 24/06/02
+// Available at http://www.gimpel.com/html/ptch80.htm
+CEGUI\lib-atl.lnt 
+
+// Microsoft Foundation Class Library checks - 24/06/02
+// Available at http://www.gimpel.com/html/ptch80.htm
+CEGUI\lib-mfc.lnt 
+
+// Standard Template Library checks - 16/08/05
+// Available at http://www.gimpel.com/html/ptch80.htm
+CEGUI\lib-stl.lnt 
+
+// Microsoft 32-bit windows.h checks - ??/??/??
+// Available at http://www.gimpel.com/html/ptch80.htm
+CEGUI\lib-w32.lnt 
+
+// Microsoft Windows NT checks - 26/11/03
+// Available at http://www.gimpel.com/html/ptch80.htm
+CEGUI\lib-wnt.lnt
+
+// Visual Lint checks - 19/07/07  
+// Available at http://www.riverblade.co.uk/products/visual_lint/downloads/PcLintConfigFiles.zip
+// NOTE: The original file is named options.lnt but has been renamed to vcLint-options.lnt to avoid conflicts
+// with our own configuration file.
+CEGUI\vcLint-options.lnt
+
+// Personal CELayoutEditor options - 04/12/07
+// Available as part of the CELayoutEditor project
+CEGUI\options.lnt
+
+//////////////////////////////////////////////////////////////////////////
+// GENERAL CONFIGURATION
+//////////////////////////////////////////////////////////////////////////
+
+// Sizeof(int) is 4
+-si4 
+
+// Size of pointers (near data, far data, near program, far program) is 4
+-sp4
+
+// Prevent library warning messages
+-wlib(0)
+
+// Make sure processing continues after an #error directive
++fce
+
+// Adopt a loose model for enumerations (loose model means that 
+// enumerations are regarded semantically as integers)
++fie
+
+//////////////////////////////////////////////////////////////////////////
+// INCLUDES
+//////////////////////////////////////////////////////////////////////////
+
+// Include definitions for platform 'Win32'
+// NOTE: These should be changed to suit your own directories. If you use Visual Lint, the application will automatically
+// detect any problems and correct them for you.
+-i"D:\Dev\Microsoft DirectX 9.0 SDK (October 2004)\Include"
+-i"C:\Program Files\Microsoft Visual Studio 8\VC\include"
+-i"C:\Program Files\Microsoft Visual Studio 8\VC\atlmfc\include"
+-i"C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include"
+-i"C:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\include"

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="GoodModeCtr" >
+        <Property Name="UnifiedAreaRect" Value="{{0.708266,0},{0.00224942,0},{0.999197,0},{0.353487,0}}" />
+        <Window Type="TaharezLook/Button" Name="GoodModeCtr/RightRot" >
+            <Property Name="Text" Value="R" />
+            <Property Name="UnifiedAreaRect" Value="{{0.64116,0},{0.787698,0},{0.744051,0},{0.911375,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GoodModeCtr/LeftRot" >
+            <Property Name="Text" Value="L" />
+            <Property Name="UnifiedAreaRect" Value="{{0.392372,0},{0.779282,0},{0.497019,0},{0.905487,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GoodModeCtr/FrontRot" >
+            <Property Name="Text" Value="F" />
+            <Property Name="UnifiedAreaRect" Value="{{0.522268,0},{0.7043,0},{0.617857,0},{0.830612,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GoodModeCtr/BackRot" >
+            <Property Name="Text" Value="B" />
+            <Property Name="UnifiedAreaRect" Value="{{0.51696,0},{0.862558,0},{0.607009,0},{0.997688,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GoodModeCtr/Scal+" >
+            <Property Name="Text" Value="+" />
+            <Property Name="HorzExtent" Value="7" />
+            <Property Name="VertExtent" Value="26.8222" />
+            <Property Name="UnifiedAreaRect" Value="{{0.012354,0},{-0.00190592,0},{0.095328,0},{0.111111,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GoodModeCtr/Scal-" >
+            <Property Name="Text" Value="-" />
+            <Property Name="HorzExtent" Value="7" />
+            <Property Name="VertExtent" Value="26.8222" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00964882,0},{0.59835,0},{0.0980906,0},{0.704375,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Slider" Name="GoodModeCtr/SclaSlider" >
+            <Property Name="CurrentValue" Value="0.5" />
+            <Property Name="MaximumValue" Value="1" />
+            <Property Name="ClickStepSize" Value="0.05" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0117741,0},{0.113389,0},{0.086269,0},{0.597188,0}}" />
+        </Window>
+    </Window>
+</GUILayout>
