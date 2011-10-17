@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BillingPublic", "..\..\PUBLIC\BillingPublic.vcproj", "{6E722107-D177-4600-8B6D-593F57E26E0F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BillingServer", "BillingServer\BillingServer.vcproj", "{29276DE1-E8AC-4C4E-8F4F-0CCF8333AB48}"

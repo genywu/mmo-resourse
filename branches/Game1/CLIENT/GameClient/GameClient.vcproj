@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8.00"
+	Version="9.00"
 	Name="GameClient"
 	ProjectGUID="{E97D1298-5AE0-473C-A6A6-4AA498A15C76}"
 	RootNamespace="GameClient"
 	Keyword="Win32Proj"
+	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
 		<Platform
@@ -73,6 +74,8 @@
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/GameClient.pdb"
 				SubSystem="2"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -92,9 +95,6 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
-			/>
-			<Tool
-				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -157,8 +157,10 @@
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
-				TargetMachine="1"
+				RandomizedBaseAddress="1"
 				FixedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="1"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -177,9 +179,6 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
-			/>
-			<Tool
-				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"

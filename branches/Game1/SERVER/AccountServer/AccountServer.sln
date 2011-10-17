@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netAccount", "..\..\NETS\netAccount\netAccount.vcproj", "{E209710D-05B9-4F4C-85D0-CCB02FCEC456}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccountPublic", "..\..\PUBLIC\AccountPublic.vcproj", "{273C48D0-6988-4FA1-B1F9-24D86DBF71AF}"

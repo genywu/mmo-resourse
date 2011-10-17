@@ -1,19 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MonsterEditor", "MonsterEditor\MonsterEditor.vcproj", "{64780166-D82D-4463-8082-C8CBED5C5A62}"
 EndProject
 Global
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 2
-		SccProjectName0 = \\Workspace\\Game_Program_Develop
-		SccLocalPath0 = ..\\..\\..\\..
-		SccProvider0 = MSSCCI:Alienbrain
-		SccProjectFilePathRelativizedFromConnection0 = guangmang\\SERVER\\tools\\MonsterEditor\\
-		SccProjectUniqueName1 = MonsterEditor\\MonsterEditor.vcproj
-		SccLocalPath1 = ..\\..\\..\\..
-		SccProjectFilePathRelativizedFromConnection1 = guangmang\\SERVER\\tools\\MonsterEditor\\MonsterEditor\\
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
 		Release|Win32 = Release|Win32

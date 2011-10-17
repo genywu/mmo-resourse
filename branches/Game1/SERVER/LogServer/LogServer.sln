@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LogServer", "LogServer\LogServer.vcproj", "{414BFFCC-2EE7-4C2F-9762-AB2F5D388C6A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E89B2ACB-0787-4323-A0A4-137D0781FE99} = {E89B2ACB-0787-4323-A0A4-137D0781FE99}

@@ -1,5 +1,5 @@
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppWorld", "AppWorld\AppWorld.vcproj", "{B298F68D-4A17-4218-904A-7EAE758EC493}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DBPublic", "..\..\PUBLIC\DBPublic.vcproj", "{54D1399A-6E4F-47E8-B992-D0882D7DF79C}"

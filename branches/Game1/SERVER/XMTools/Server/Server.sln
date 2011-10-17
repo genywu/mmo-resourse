@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\Server.vcproj", "{EA3257FF-4C88-46B4-A9F4-A9548034859D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{0157275E-736A-4582-805D-474517230C8B} = {0157275E-736A-4582-805D-474517230C8B}
@@ -16,23 +16,22 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LogClient", "..\..\LogClien
 EndProject
 Global
 	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 5
+		SccNumberOfProjects = 3
+		SccProjectUniqueName0 = ..\\..\\NETS\\Net\\Net.vcproj
 		SccProjectName0 = \\Workspace\\Game_Program_Develop
 		SccLocalPath0 = ..\\..\\..
 		SccProvider0 = MSSCCI:Alienbrain
-		SccProjectFilePathRelativizedFromConnection0 = guangmang\\SERVER\\Server\\
-		SccProjectUniqueName1 = ..\\..\\NETS\\Net\\Net.vcproj
+		SccProjectFilePathRelativizedFromConnection0 = SERVER\\NETS\\Net\\
+		SccProjectUniqueName1 = ..\\..\\PUBLIC\\Public\\Public.vcproj
+		SccProjectName1 = \\Workspace\\Game_Program_Develop
 		SccLocalPath1 = ..\\..\\..
-		SccProjectFilePathRelativizedFromConnection1 = guangmang\\NETS\\Net\\
-		SccProjectUniqueName2 = ..\\..\\PUBLIC\\Public\\Public.vcproj
+		SccProvider1 = MSSCCI:Alienbrain
+		SccProjectFilePathRelativizedFromConnection1 = SERVER\\PUBLIC\\Public\\
+		SccProjectUniqueName2 = ..\\..\\LogClient\\LogClient.vcproj
+		SccProjectName2 = \\Workspace\\Game_Program_Develop
 		SccLocalPath2 = ..\\..\\..
-		SccProjectFilePathRelativizedFromConnection2 = guangmang\\PUBLIC\\Public\\
-		SccProjectUniqueName3 = Server\\Server.vcproj
-		SccLocalPath3 = ..\\..\\..
-		SccProjectFilePathRelativizedFromConnection3 = guangmang\\SERVER\\Server\\Server\\
-		SccProjectUniqueName4 = ..\\..\\LogClient\\LogClient.vcproj
-		SccLocalPath4 = ..\\..\\..
-		SccProjectFilePathRelativizedFromConnection4 = guangmang\\LogClient\\
+		SccProvider2 = MSSCCI:Alienbrain
+		SccProjectFilePathRelativizedFromConnection2 = SERVER\\LogClient\\
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32

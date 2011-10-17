@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8.00"
+	Version="9.00"
 	Name="MemManage"
 	ProjectGUID="{3CC780CE-F73A-47AA-8BA3-AD01356117DA}"
 	RootNamespace="MemManage"
-	SccProjectName="\Workspace\Game_Program_Develop"
-	SccLocalPath="..\..\..\..\.."
-	SccProvider="MSSCCI:Alienbrain"
 	Keyword="Win32Proj"
+	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
 		<Platform

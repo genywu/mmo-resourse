@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8.00"
+	Version="9.00"
 	Name="BillingPublic"
 	ProjectGUID="{6E722107-D177-4600-8B6D-593F57E26E0F}"
 	RootNamespace="BillingPublic"
+	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
 		<Platform

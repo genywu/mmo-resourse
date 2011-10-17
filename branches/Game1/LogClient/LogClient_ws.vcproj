@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8.00"
+	Version="9.00"
 	Name="LogClient_ws"
 	ProjectGUID="{4EDC7F66-A703-4E25-A19D-DD04A5F4BC1C}"
 	RootNamespace="LogClient"
 	Keyword="Win32Proj"
+	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
 		<Platform

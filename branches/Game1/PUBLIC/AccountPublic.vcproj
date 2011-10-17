@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8.00"
+	Version="9.00"
 	Name="AccountPublic"
 	ProjectGUID="{273C48D0-6988-4FA1-B1F9-24D86DBF71AF}"
 	RootNamespace="LoginPublic"
 	Keyword="Win32Proj"
+	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
 		<Platform
