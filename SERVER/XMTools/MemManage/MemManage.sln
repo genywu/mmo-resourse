@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemManage", "MemManage\MemManage.vcproj", "{3CC780CE-F73A-47AA-8BA3-AD01356117DA}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcproj", "{2771EEB7-964C-4346-9B24-90E7A85974DD}"
@@ -9,19 +9,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcproj", 
 	EndProjectSection
 EndProject
 Global
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 3
-		SccProjectName0 = \\Workspace\\Game_Program_Develop
-		SccLocalPath0 = ..\\..\\..\\..
-		SccProvider0 = MSSCCI:Alienbrain
-		SccProjectFilePathRelativizedFromConnection0 = guangmang\\SERVER\\XMTools\\MemManage\\
-		SccProjectUniqueName1 = MemManage\\MemManage.vcproj
-		SccLocalPath1 = ..\\..\\..\\..
-		SccProjectFilePathRelativizedFromConnection1 = guangmang\\SERVER\\XMTools\\MemManage\\MemManage\\
-		SccProjectUniqueName2 = Test\\Test.vcproj
-		SccLocalPath2 = ..\\..\\..\\..
-		SccProjectFilePathRelativizedFromConnection2 = guangmang\\SERVER\\XMTools\\MemManage\\Test\\
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
 		Release|Win32 = Release|Win32
